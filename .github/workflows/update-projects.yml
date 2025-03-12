@@ -1,0 +1,92 @@
+name: Update Project Showcase
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */12 * * *"  # Runs every 12 hours
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          
+      - name: Create Project Showcase
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            
+            async function generateProjectSection() {
+              const { data: repos } = await github.rest.repos.listForUser({
+                username: context.repo.owner,
+                sort: 'updated',
+                direction: 'desc',
+                per_page: 6
+              });
+              
+              let projectSection = `<div align="center">
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 1200px;">`;
+              
+              for (const repo of repos) {
+                if (!repo.fork && !repo.private) {  // Only show non-fork, public repos
+                  const description = repo.description || 'A cool project in development!';
+                  const language = repo.language || 'Various';
+                  
+                  projectSection += `
+                    <div style="border: 1px solid #30363d; border-radius: 10px; padding: 20px; margin: 10px;">
+                      <h3 align="center">🚀 ${repo.name}</h3>
+                      <p align="center">
+                        <a href="${repo.html_url}" target="_blank">
+                          <img src="https://raw.githubusercontent.com/gist/patevs/b007a0e98fb216438d4cbf559fac4166/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif" width="100%" alt="Project Preview"/>
+                        </a>
+                        <p align="center">
+                          ${description}<br>
+                          <code>${language}</code>
+                          <br><br>
+                          <a href="${repo.html_url}" target="_blank">
+                            <img src="https://img.shields.io/badge/View_Project-00C7FF?style=for-the-badge&logo=github&logoColor=white"/>
+                          </a>
+                        </p>
+                      </p>
+                    </div>`;
+                }
+              }
+              
+              projectSection += `</div></div>`;
+              return projectSection;
+            }
+            
+            // Read the current README
+            let readme = fs.readFileSync('README.md', 'utf8');
+            
+            // Generate new project section
+            const newProjectSection = await generateProjectSection();
+            
+            // Replace the project section
+            const startMarker = '<h2 align="center">🌟 Featured Projects: Learning Through Building</h2>';
+            const endMarker = '<h2 align="center">📊 GitHub Analytics: Track Your Growth</h2>';
+            
+            const beforeSection = readme.split(startMarker)[0];
+            const afterSection = readme.split(endMarker)[1];
+            
+            // Combine everything
+            const newReadme = `${beforeSection}${startMarker}\n\n${newProjectSection}\n\n${endMarker}${afterSection}`;
+            
+            // Write the new README
+            fs.writeFileSync('README.md', newReadme);
+            
+            // Commit the changes
+            await exec.exec('git', ['config', '--global', 'user.email', 'action@github.com']);
+            await exec.exec('git', ['config', '--global', 'user.name', 'GitHub Action']);
+            await exec.exec('git', ['add', 'README.md']);
+            await exec.exec('git', ['commit', '-m', 'Update project showcase [skip ci]']);
+            await exec.exec('git', ['push']);
