@@ -1,157 +1,157 @@
-<!-- HEADER -->
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=FF71CE&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B+I'm+Aashish+Thakuri;Creative+Full+Stack+Developer;AI+%26+ML+Enthusiast;Always+Learning+New+Things" alt="Typing SVG" />
-  </a>
+<!-- Custom CSS for 3D effects -->
+<link rel="stylesheet" href="assets/css/profile-3d.css">
 
-  <!-- Coding GIF -->
-  <img width="400" src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" />
+<!-- Custom 3D Header -->
+<div align="center">
+  <div class="profile-3d-container">
+    <div class="card-3d">
+      <div class="card-front">
+        <img src="https://avatars.githubusercontent.com/u/AashishThakuri" width="150" style="border-radius: 50%; border: 3px solid #FF71CE; box-shadow: 0 0 20px #FF71CE;">
+        <h1 style="color: #FF71CE; text-shadow: 0 0 10px #FF71CE;">Aashish Thakuri</h1>
+        <p style="color: #fff;">Creative Developer & AI Enthusiast</p>
+      </div>
+      <div class="card-back">
+        <h2 style="color: #FF71CE;">About Me</h2>
+        <p style="color: #fff; text-align: center;">
+          🎓 Student at Kathmandu University<br>
+          💻 Full Stack Developer<br>
+          🤖 AI/ML Enthusiast<br>
+          🚀 Founder of Advance Data Science Classroom
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- ABOUT ME MATRIX STYLE -->
-<div align="center">
-  <h2>
-    <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="30px" height="30px">
-    About.me
-  </h2>
+<!-- Interactive 3D Skills Display -->
+<div id="skills-3d" style="width: 100%; height: 400px; margin: 20px 0;">
+  <!-- Three.js will render here -->
 </div>
+<script type="module" src="assets/js/profile-3d.js"></script>
 
-```js
-class AashishThakuri {
-    constructor() {
-        this.name = "Aashish Thakuri";
-        this.username = "AashishThakuri";
-        this.location = "Kathmandu University, Nepal";
-        this.portfolio = "https://aashishh.vercel.app";
-        this.email = "taashish848@gmail.com";
-    }
+<!-- Dynamic Code Section -->
+```typescript
+interface Developer {
+  name: string;
+  title: string;
+  location: string;
+  skills: Skills;
+  projects: Project[];
+  contact: Contact;
+}
 
-    getSkills() {
-        return {
-            languages: ["Python", "JavaScript", "TypeScript", "Java"],
-            frameworks: ["React.js", "Next.js", "Node.js", "Express.js"],
-            databases: ["MongoDB", "PostgreSQL", "Firebase"],
-            ai_ml: ["TensorFlow", "PyTorch", "Scikit-learn"],
-            tools: ["Git", "Docker", "AWS", "Vercel"],
-            interests: ["Web Development", "AI/ML", "Data Science"]
-        };
-    }
+interface Skills {
+  languages: string[];
+  frameworks: string[];
+  databases: string[];
+  ai_ml: string[];
+  tools: string[];
+}
 
-    getCurrentWork() {
-        return {
-            project: "Advance Data Science Classroom",
-            role: "Founder & Lead Developer",
-            mission: "Democratizing Data Science Education",
-            impact: "Empowering Next-Gen Data Scientists"
-        };
-    }
+interface Project {
+  name: string;
+  description: string;
+  tech_stack: string[];
+  impact: string;
+}
 
-    getFutureGoal() {
-        return "To create innovative solutions that make a difference";
+interface Contact {
+  email: string;
+  linkedin: string;
+  twitter: string;
+  portfolio: string;
+}
+
+const aashish: Developer = {
+  name: "Aashish Thakuri",
+  title: "Creative Developer & AI Enthusiast",
+  location: "Kathmandu University, Nepal 🇳🇵",
+  
+  skills: {
+    languages: ["Python", "TypeScript", "JavaScript", "Java"],
+    frameworks: ["React", "Next.js", "Node.js", "Express"],
+    databases: ["MongoDB", "PostgreSQL", "Firebase"],
+    ai_ml: ["TensorFlow", "PyTorch", "Scikit-learn"],
+    tools: ["Git", "Docker", "AWS", "Vercel"]
+  },
+  
+  projects: [{
+    name: "Advance Data Science Classroom",
+    description: "Platform democratizing data science education",
+    tech_stack: ["Python", "TensorFlow", "React", "Node.js"],
+    impact: "Empowering students with data science skills"
+  }],
+  
+  contact: {
+    email: "taashish848@gmail.com",
+    linkedin: "aashish-bam-435505351",
+    twitter: "Lyrical62785503",
+    portfolio: "aashishh.vercel.app"
+  }
+};
+
+// Life Philosophy
+function lifeMotto(): string {
+  return `
+    while (alive) {
+      learn();
+      create();
+      inspire();
+      repeat();
     }
+  `;
 }
 ```
 
-<!-- TECH STACK -->
+<!-- Interactive Stats Section -->
 <div align="center">
-  <h2>
-    <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="30px" height="30px">
-    Tech Stack
-  </h2>
-  <img src="https://skillicons.dev/icons?i=python,js,ts,react,next,nodejs,express,mongodb,firebase&theme=dark&perline=9" /><br/>
-  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,docker,git,aws,vercel,figma,vscode&theme=dark&perline=8" />
-
-  <!-- ANIMATED SKILLS -->
-  <p>
-    <img src="https://img.shields.io/badge/Machine%20Learning-FF71CE?style=for-the-badge&logo=python&logoColor=white" />
-    <img src="https://img.shields.io/badge/Deep%20Learning-FF71CE?style=for-the-badge&logo=tensorflow&logoColor=white" />
-    <img src="https://img.shields.io/badge/Full%20Stack-FF71CE?style=for-the-badge&logo=react&logoColor=white" />
-    <img src="https://img.shields.io/badge/UI%20Design-FF71CE?style=for-the-badge&logo=figma&logoColor=white" />
-  </p>
-</div>
-
-<!-- CONTRIBUTION SECTION -->
-<div align="center">
-  <h2>
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDk4Y2JwY2t0NXV3bDNyeWF6ZHF6YnB1d3RnYzF1bGJxYWF1YmN6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/CwTvSiWflgCGKgz5eb/giphy.gif" width="30px" height="30px">
-    GitHub Contributions
-  </h2>
-
-  <!-- Interactive Contribution Calendar -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&custom_title=Contribution%20Graph&theme=react-dark&bg_color=0D1117&color=FF71CE&line=FF71CE&point=FFFFFF&area=true&hide_border=true" width="100%"/>
-
-  <!-- Contribution Stats -->
-  <p>
-    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" />
-    <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=radical&hide_border=true&background=0D1117" />
-  </p>
-
-  <!-- Snake Animation -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
-  </picture>
-</div>
-
-<!-- PROJECTS -->
-<div align="center">
-  <h2>
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDk4Y2JwY2t0NXV3bDNyeWF6ZHF6YnB1d3RnYzF1bGJxYWF1YmN6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/CwTvSiWflgCGKgz5eb/giphy.gif" width="30px" height="30px">
-    Featured Projects
-  </h2>
+  <div style="background: linear-gradient(45deg, #FF71CE, #B17ACC); padding: 3px; border-radius: 10px; margin: 20px 0;">
+    <div style="background: #0D1117; padding: 20px; border-radius: 8px;">
+      <img width="49%" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=FF71CE&icon_color=FF71CE&text_color=FFFFFF" />
+      <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=radical&hide_border=true&background=0D1117&ring=FF71CE&fire=FF71CE&currStreakLabel=FF71CE" />
+    </div>
+  </div>
   
-  <p align="center">
+  <!-- Animated Contribution Graph -->
+  <div class="contribution-calendar">
+    <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&custom_title=Contribution%20Graph&bg_color=0D1117&color=FF71CE&line=FF71CE&point=FFFFFF&area=true&hide_border=true" />
+  </div>
+</div>
+
+<!-- Featured Projects -->
+<div align="center">
+  <h2 style="color: #FF71CE; text-shadow: 0 0 10px #FF71CE;">🚀 Featured Projects</h2>
+  <div style="display: flex; justify-content: center; gap: 10px;">
     <a href="https://github.com/AashishThakuri/advance-data-science">
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=AashishThakuri&repo=advance-data-science&theme=radical&hide_border=true&bg_color=0D1117" />
+      <img src="https://github-readme-stats.vercel.app/api/pin/?username=AashishThakuri&repo=advance-data-science&theme=radical&hide_border=true&bg_color=0D1117&title_color=FF71CE&icon_color=FF71CE" />
     </a>
-  </p>
+  </div>
 </div>
 
-<!-- SPOTIFY -->
+<!-- Connect Section -->
 <div align="center">
-  <h2>
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXM5Z2Q2Ym95ZWx1OWF4NHd6YnBxbGxxd3Zxc2Vha3ZyYnR0cXNzZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/lqFHf5fYMSuKcSOJph/giphy.gif" width="30px" height="30px">
-    Currently Vibing To
-  </h2>
-  
-  ![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=31k53qk6kgxbvg72lf2y6nwz3oay&unique=true)
+  <h2 style="color: #FF71CE; text-shadow: 0 0 10px #FF71CE;">🤝 Let's Connect!</h2>
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <a href="mailto:taashish848@gmail.com">
+      <img src="https://img.shields.io/badge/Gmail-FF71CE?style=for-the-badge&logo=gmail&logoColor=white" />
+    </a>
+    <a href="https://www.linkedin.com/in/aashish-bam-435505351/">
+      <img src="https://img.shields.io/badge/LinkedIn-FF71CE?style=for-the-badge&logo=linkedin&logoColor=white" />
+    </a>
+    <a href="https://x.com/Lyrical62785503">
+      <img src="https://img.shields.io/badge/Twitter-FF71CE?style=for-the-badge&logo=twitter&logoColor=white" />
+    </a>
+    <a href="https://aashishh.vercel.app/">
+      <img src="https://img.shields.io/badge/Portfolio-FF71CE?style=for-the-badge&logo=About.me&logoColor=white" />
+    </a>
+  </div>
 </div>
 
-<!-- TROPHIES -->
+<!-- Profile Views Counter -->
 <div align="center">
-  <h2>
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDk4Y2JwY2t0NXV3bDNyeWF6ZHF6YnB1d3RnYzF1bGJxYWF1YmN6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/LqUq7VY0fOKnZvJVnX/giphy.gif" width="30px" height="30px">
-    GitHub Trophies
-  </h2>
-  
-  <img src="https://github-profile-trophy.vercel.app/?username=AashishThakuri&theme=radical&no-frame=true&no-bg=true&row=1&column=7" width="100%" />
-</div>
-
-<!-- CONNECT -->
-<div align="center">
-  <h2>
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDk4Y2JwY2t0NXV3bDNyeWF6ZHF6YnB1d3RnYzF1bGJxYWF1YmN6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/GhRJb8filling/giphy.gif" width="30px" height="30px">
-    Let's Connect
-  </h2>
-  
-  <a href="mailto:taashish848@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-FF71CE?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/aashish-bam-435505351/">
-    <img src="https://img.shields.io/badge/LinkedIn-FF71CE?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://x.com/Lyrical62785503">
-    <img src="https://img.shields.io/badge/Twitter-FF71CE?style=for-the-badge&logo=twitter&logoColor=white" />
-  </a>
-  <a href="https://aashishh.vercel.app/">
-    <img src="https://img.shields.io/badge/Portfolio-FF71CE?style=for-the-badge&logo=About.me&logoColor=white" />
-  </a>
-</div>
-
-<!-- FOOTER -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=FF71CE&height=100&section=footer" width="100%" />
-  
+  <br/>
   <img src="https://komarev.com/ghpvc/?username=AashishThakuri&color=FF71CE&style=for-the-badge" />
 </div>
+
+<!-- Footer Wave -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FF71CE&height=100&section=footer" />
