@@ -48,7 +48,6 @@ me.daily_routine()
 
 <h2 align="center">🛠️ Tech Universe: A Visual Guide</h2>
 
-<!-- Rest of the content remains exactly the same -->
 <div align="center">
   <!-- Frontend Technologies -->
   <h3>🎨 Frontend Artistry</h3>
@@ -79,13 +78,13 @@ me.daily_routine()
       <td width="50%">
         <h3 align="center">🎓 Advance Data Science Classroom</h3>
         <p align="center">
-          <a href="https://github.com/yourusername/project" target="_blank">
+          <a href="https://github.com/AashishThakuri/advance-data-science-classroom" target="_blank">
             <img src="https://raw.githubusercontent.com/gist/patevs/b007a0e98fb216438d4cbf559fac4166/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif" width="100%" alt="Project Preview"/>
           </a>
           <p align="center">
             A platform democratizing data science education. Built with Python, React, and TensorFlow.
             <br><br>
-            <a href="https://github.com/yourusername/project" target="_blank">
+            <a href="https://github.com/AashishThakuri/advance-data-science-classroom" target="_blank">
               <img src="https://img.shields.io/badge/View_Project-00C7FF?style=for-the-badge&logo=github&logoColor=white"/>
             </a>
           </p>
@@ -98,7 +97,7 @@ me.daily_routine()
           <p align="center">
             Stay tuned for more innovative projects!
             <br><br>
-            <a href="https://github.com/yourusername" target="_blank">
+            <a href="https://github.com/AashishThakuri" target="_blank">
               <img src="https://img.shields.io/badge/Follow_Journey-00C7FF?style=for-the-badge&logo=github&logoColor=white"/>
             </a>
           </p>
