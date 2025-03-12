@@ -1,198 +1,173 @@
-<div align="center">
-
-<!-- Unique 3D Banner -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=venom&height=300&text=AASHISH%20THAKURI&fontSize=60&color=gradient&customColorList=27&animation=fadeIn&fontColor=FFFFFF&stroke=00E8FF&strokeWidth=2&desc=Creative%20Developer%20%7C%20AI%20Architect&descSize=25&rotate=5" />
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=venom&height=300&text=AASHISH%20THAKURI&fontSize=60&color=gradient&customColorList=27&animation=fadeIn&fontColor=000000&stroke=00E8FF&strokeWidth=2&desc=Creative%20Developer%20%7C%20AI%20Architect&descSize=25&rotate=5" />
-  <img src="https://capsule-render.vercel.app/api?type=venom&height=300&text=AASHISH%20THAKURI&fontSize=60&color=gradient&customColorList=27&animation=fadeIn&fontColor=FFFFFF&stroke=00E8FF&strokeWidth=2&desc=Creative%20Developer%20%7C%20AI%20Architect&descSize=25&rotate=5" width="100%" />
-</picture>
-
-<!-- Unique Animated Introduction -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00E8FF&center=true&vCenter=true&width=940&lines=Welcome+to+my+Creative+Tech+Universe+%F0%9F%8C%8C;Building+Innovative+Solutions+with+AI+%F0%9F%A4%96;Crafting+Digital+Experiences+%F0%9F%8E%A8;Let's+Create+Something+Amazing+%E2%9C%A8" alt="Typing SVG" />
-
-<!-- Unique 3D Profile Card -->
-<table align="center">
-<tr>
-<td>
-
-<h2 align="center">
-  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="30px" height="30px">
-  About Me
-</h2>
+<!-- 
+  Welcome to my GitHub Profile! 
+  Feel free to use this as inspiration for your own profile.
+  I've included detailed comments to help you understand and customize each section.
+-->
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width="120px" />
+  <!-- Pro tip: Create an eye-catching header using Capsule Render -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Hello%20World!&fontAlign=75&fontAlignY=40&color=gradient&customColorList=24" width="100%" />
+  
+  <!-- Pro tip: Use Typing SVG to create dynamic text -->
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=4000&pause=1000&color=00E8FF&center=true&vCenter=true&width=435&lines=I'm+Aashish+Thakuri;Full+Stack+Developer;AI+Enthusiast;Creative+Problem+Solver" alt="Typing SVG" />
+  </a>
+
+  <!-- Pro tip: Add a creative banner image -->
+  <img src="https://user-images.githubusercontent.com/74038190/241765440-80728820-e06b-4f96-9c9e-9df46f0cc0a5.gif" width="100%" />
 </div>
 
-```mermaid
-mindmap
-  root((Aashish))
-    Education
-      Kathmandu University
-      Computer Science
-      AI Research
-    Skills
-      Full Stack Dev
-      AI/ML Engineering
-      Cloud Architecture
-      Creative Design
-    Passions
-      Innovation
-      Teaching
-      Problem Solving
-      Music & Poetry
-    Goals
-      Impact Lives
-      Build Solutions
-      Share Knowledge
-      Create Art
+<!-- Pro tip: Use HTML details/summary for collapsible sections -->
+<details open>
+<summary><h2>🚀 Quick Start Guide</h2></summary>
+
+```javascript
+// How to use this profile template:
+// 1. Fork this repository
+// 2. Replace the content with your own
+// 3. Customize colors and styles
+// 4. Add your own creative elements!
+
+const tips = {
+  design: [
+    "Use gradient colors for visual appeal",
+    "Add interactive elements",
+    "Keep it clean and organized",
+    "Include helpful comments"
+  ],
+  content: [
+    "Tell your unique story",
+    "Showcase your best projects",
+    "Share your learning journey",
+    "Help others learn from you"
+  ]
+};
 ```
+</details>
 
-</td>
-</tr>
-</table>
+<!-- Pro tip: Use creative section headers with emojis -->
+<h2 align="center">🎨 About Me: The Creative Journey</h2>
 
-<!-- Unique Skills Visualization -->
-<table align="center">
-<tr>
-<td>
-
-<h2 align="center">
-  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px" height="30px">
-  Tech Arsenal
-</h2>
-
+<!-- Pro tip: Use code blocks to showcase personality -->
 ```python
-class TechStack:
+# Define yourself creatively!
+class CreativeDeveloper:
     def __init__(self):
-        self.languages = {
-            "primary": ["Python 🐍", "JavaScript ⚡", "TypeScript 📘"],
-            "learning": ["Rust 🦀", "Go 🚀"]
-        }
-        self.frontend = {
-            "frameworks": ["React ⚛️", "Next.js 🔲", "Three.js 🎨"],
-            "styling": ["TailwindCSS 🌊", "Framer Motion 🎭"]
-        }
-        self.backend = {
-            "frameworks": ["FastAPI ⚡", "Node.js 🟢", "Express 🚂"],
-            "databases": ["MongoDB 🍃", "PostgreSQL 🐘", "Redis ⚡"]
-        }
-        self.ai_ml = {
-            "frameworks": ["TensorFlow 🧠", "PyTorch 🔥", "Scikit-learn 📊"],
-            "areas": ["Deep Learning 🤖", "Computer Vision 👁️", "NLP 📝"]
-        }
-        self.devops = {
-            "containers": ["Docker 🐳", "Kubernetes ☸️"],
-            "cloud": ["AWS ☁️", "Vercel 🚀", "Firebase 🔥"],
-            "tools": ["Git 📚", "GitHub Actions 🔄", "Terraform 🏗️"]
-        }
+        self.name = "Aashish Thakuri"
+        self.education = "Computer Science @ Kathmandu University"
+        self.passions = ["AI/ML", "Creative Coding", "Teaching"]
+        self.mission = "Democratizing Tech Education"
+        
+    def daily_routine(self):
+        while True:
+            self.learn_something_new()
+            self.build_cool_projects()
+            self.share_knowledge()
+            self.inspire_others()
+            
+    def get_inspiration(self):
+        return """
+        💡 Pro tip for other developers:
+        Your code is your signature in the digital world.
+        Make it elegant, make it meaningful, make it count!
+        """
 
-    def get_superpower(self):
-        return "Turning Coffee into Code ☕ → 💻"
-
-tech = TechStack()
-print(f"Superpower: {tech.get_superpower()}")
+# Initialize your journey
+me = CreativeDeveloper()
+me.daily_routine()  # Start your coding adventure!
 ```
 
-</td>
-</tr>
-</table>
+<h2 align="center">🛠️ Tech Universe: A Visual Guide</h2>
 
-<!-- Unique Stats Section -->
-<h2 align="center">
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30px" height="30px">
-  GitHub Analytics
-</h2>
+<!-- Pro tip: Create visually appealing tech stack sections -->
+<div align="center">
+  <!-- Frontend Technologies -->
+  <h3>🎨 Frontend Artistry</h3>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white"/>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&bg_color=00000000&hide_border=true&text_color=FFFFFF&title_color=00E8FF&icon_color=00E8FF&ring_color=00E8FF" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&bg_color=00000000&hide_border=true&text_color=000000&title_color=00E8FF&icon_color=00E8FF&ring_color=00E8FF" />
-    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&bg_color=00000000&hide_border=true&text_color=FFFFFF&title_color=00E8FF&icon_color=00E8FF&ring_color=00E8FF" />
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&background=00000000&hide_border=true&stroke=00E8FF&ring=00E8FF&fire=00E8FF&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=00E8FF&sideLabels=00E8FF&dates=FFFFFF" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&background=00000000&hide_border=true&stroke=00E8FF&ring=00E8FF&fire=00E8FF&currStreakNum=000000&sideNums=000000&currStreakLabel=00E8FF&sideLabels=00E8FF&dates=000000" />
-    <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&background=00000000&hide_border=true&stroke=00E8FF&ring=00E8FF&fire=00E8FF&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=00E8FF&sideLabels=00E8FF&dates=FFFFFF" />
-  </picture>
-</p>
+  <!-- Backend Technologies -->
+  <h3>⚡ Backend Magic</h3>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&bg_color=00000000&color=FFFFFF&line=00E8FF&point=FFFFFF&area_color=00E8FF&area=true&hide_border=true&custom_title=Contribution%20Graph" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&bg_color=00000000&color=000000&line=00E8FF&point=000000&area_color=00E8FF&area=true&hide_border=true&custom_title=Contribution%20Graph" />
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&bg_color=00000000&color=FFFFFF&line=00E8FF&point=FFFFFF&area_color=00E8FF&area=true&hide_border=true&custom_title=Contribution%20Graph" />
-</picture>
+  <!-- AI/ML Stack -->
+  <h3>🤖 AI/ML Arsenal</h3>
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
+</div>
 
-<!-- Unique Projects Section -->
-<h2 align="center">
-  <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="30px" height="30px">
-  Featured Projects
-</h2>
+<h2 align="center">🌟 Featured Projects: Learning Through Building</h2>
 
-<table align="center">
-<tr>
-<td>
+<!-- Pro tip: Use creative project cards -->
+<div align="center">
+  <table>
+    <tr>
+      <td width="50%">
+        <h3 align="center">🎓 Advance Data Science Classroom</h3>
+        <p align="center">
+          <a href="https://github.com/yourusername/project" target="_blank">
+            <img src="https://raw.githubusercontent.com/gist/patevs/b007a0e98fb216438d4cbf559fac4166/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif" width="100%" alt="Project Preview"/>
+          </a>
+          <p align="center">
+            A platform democratizing data science education. Built with Python, React, and TensorFlow.
+            <br><br>
+            <a href="https://github.com/yourusername/project" target="_blank">
+              <img src="https://img.shields.io/badge/View_Project-00C7FF?style=for-the-badge&logo=github&logoColor=white"/>
+            </a>
+          </p>
+        </p>
+      </td>
+      <td width="50%">
+        <h3 align="center">🚀 More Projects Coming Soon!</h3>
+        <p align="center">
+          <img src="https://raw.githubusercontent.com/gist/patevs/b007a0e98fb216438d4cbf559fac4166/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif" width="100%" alt="Coming Soon"/>
+          <p align="center">
+            Stay tuned for more innovative projects!
+            <br><br>
+            <a href="https://github.com/yourusername" target="_blank">
+              <img src="https://img.shields.io/badge/Follow_Journey-00C7FF?style=for-the-badge&logo=github&logoColor=white"/>
+            </a>
+          </p>
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
 
-```typescript
-interface Project {
-  name: string;
-  description: string;
-  impact: string;
-  techStack: string[];
-  status: "Active" | "Completed" | "In Progress";
-}
+<h2 align="center">📊 GitHub Analytics: Track Your Growth</h2>
 
-const projects: Project[] = [
-  {
-    name: "🎓 Advance Data Science Classroom",
-    description: "Platform democratizing data science education",
-    impact: "Empowering students with hands-on AI/ML skills",
-    techStack: ["Python", "React", "TensorFlow", "AWS"],
-    status: "Active"
-  },
-  {
-    name: "🚀 More Innovations Loading...",
-    description: "Exciting projects in development",
-    impact: "Stay tuned for more creative solutions",
-    techStack: ["Innovation", "Creativity", "Technology"],
-    status: "In Progress"
-  }
-];
+<!-- Pro tip: Create an impressive stats section -->
+<div align="center">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=tokyonight&bg_color=00000000&hide_border=true&icon_color=00E8FF&title_color=00E8FF&text_color=FFFFFF"/>
+  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=tokyonight&background=00000000&hide_border=true&ring=00E8FF&fire=00E8FF&currStreakLabel=00E8FF"/>
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&bg_color=00000000&color=00E8FF&line=00E8FF&point=FFFFFF&area=true&hide_border=true"/>
+</div>
 
-// Let's collaborate and build something amazing! ✨
-```
+<h2 align="center">🤝 Let's Connect and Create Together!</h2>
 
-</td>
-</tr>
-</table>
-
-<!-- Unique Connect Section -->
-<h2 align="center">
-  <img src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/handshake.gif" width="50px">
-  Let's Connect
-</h2>
-
-<p align="center">
+<!-- Pro tip: Add social links with style -->
+<div align="center">
   <a href="mailto:taashish848@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=00E8FF" />
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
   <a href="https://www.linkedin.com/in/aashish-bam-435505351/">
-    <img src="https://img.shields.io/badge/LinkedIn-333333?style=for-the-badge&logo=linkedin&logoColor=00E8FF" />
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
   <a href="https://aashishh.vercel.app/">
-    <img src="https://img.shields.io/badge/Portfolio-333333?style=for-the-badge&logo=About.me&logoColor=00E8FF" />
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white"/>
   </a>
-</p>
-
-<!-- Unique Footer -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=shark&height=120&color=gradient&customColorList=27&section=footer" />
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=shark&height=120&color=gradient&customColorList=27&section=footer" />
-  <img src="https://capsule-render.vercel.app/api?type=shark&height=120&color=gradient&customColorList=27&section=footer" width="100%" />
-</picture>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AashishThakuri&style=for-the-badge&color=00E8FF" alt="Profile Views" />
-</p>
-
 </div>
+
+<!-- Pro tip: Add a visitor counter -->
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=AashishThakuri&style=for-the-badge&color=00E8FF"/>
+</div>
+
+<!-- Pro tip: End with a creative footer -->
+<img src="https://capsule-render.vercel.app/api?type=waving&height=150&section=footer&text=Happy%20Coding!&fontSize=30&fontAlign=80&fontAlignY=80&color=gradient&customColorList=24" width="100%" />
