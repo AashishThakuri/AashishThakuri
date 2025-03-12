@@ -1,56 +1,24 @@
 <!-- 
   Welcome to my GitHub Profile! 
-  Feel free to use this as inspiration for your own profile.
-  I've included detailed comments to help you understand and customize each section.
 -->
 
 <div align="center">
-  <!-- Pro tip: Create an eye-catching header using Capsule Render -->
   <img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Hello%20World!&fontAlign=75&fontAlignY=40&color=gradient&customColorList=24" width="100%" />
   
-  <!-- Pro tip: Use Typing SVG to create dynamic text -->
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=4000&pause=1000&color=00E8FF&center=true&vCenter=true&width=435&lines=I'm+Aashish+Thakuri;Full+Stack+Developer;AI+Enthusiast;Creative+Problem+Solver" alt="Typing SVG" />
   </a>
 
-  <!-- Pro tip: Add a creative banner image -->
   <img src="https://user-images.githubusercontent.com/74038190/241765440-80728820-e06b-4f96-9c9e-9df46f0cc0a5.gif" width="100%" />
 </div>
 
-<!-- Pro tip: Use HTML details/summary for collapsible sections -->
-<details open>
-<summary><h2>🚀 Quick Start Guide</h2></summary>
+<h2 align="center">✨ About Me</h2>
 
-```javascript
-// How to use this profile template:
-// 1. Fork this repository
-// 2. Replace the content with your own
-// 3. Customize colors and styles
-// 4. Add your own creative elements!
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/216649436-05c6a71a-0566-45aa-bc3f-f258ab12e491.gif" width="120px" />
+</div>
 
-const tips = {
-  design: [
-    "Use gradient colors for visual appeal",
-    "Add interactive elements",
-    "Keep it clean and organized",
-    "Include helpful comments"
-  ],
-  content: [
-    "Tell your unique story",
-    "Showcase your best projects",
-    "Share your learning journey",
-    "Help others learn from you"
-  ]
-};
-```
-</details>
-
-<!-- Pro tip: Use creative section headers with emojis -->
-<h2 align="center">🎨 About Me: The Creative Journey</h2>
-
-<!-- Pro tip: Use code blocks to showcase personality -->
 ```python
-# Define yourself creatively!
 class CreativeDeveloper:
     def __init__(self):
         self.name = "Aashish Thakuri"
@@ -67,19 +35,20 @@ class CreativeDeveloper:
             
     def get_inspiration(self):
         return """
-        💡 Pro tip for other developers:
-        Your code is your signature in the digital world.
-        Make it elegant, make it meaningful, make it count!
+        💡 My Philosophy:
+        Code is more than just instructions;
+        it's a form of creative expression.
+        Let's build something amazing together!
         """
 
-# Initialize your journey
+# The journey begins here
 me = CreativeDeveloper()
-me.daily_routine()  # Start your coding adventure!
+me.daily_routine()
 ```
 
 <h2 align="center">🛠️ Tech Universe: A Visual Guide</h2>
 
-<!-- Pro tip: Create visually appealing tech stack sections -->
+<!-- Rest of the content remains exactly the same -->
 <div align="center">
   <!-- Frontend Technologies -->
   <h3>🎨 Frontend Artistry</h3>
@@ -104,7 +73,6 @@ me.daily_routine()  # Start your coding adventure!
 
 <h2 align="center">🌟 Featured Projects: Learning Through Building</h2>
 
-<!-- Pro tip: Use creative project cards -->
 <div align="center">
   <table>
     <tr>
@@ -142,7 +110,6 @@ me.daily_routine()  # Start your coding adventure!
 
 <h2 align="center">📊 GitHub Analytics: Track Your Growth</h2>
 
-<!-- Pro tip: Create an impressive stats section -->
 <div align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=tokyonight&bg_color=00000000&hide_border=true&icon_color=00E8FF&title_color=00E8FF&text_color=FFFFFF"/>
   <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=tokyonight&background=00000000&hide_border=true&ring=00E8FF&fire=00E8FF&currStreakLabel=00E8FF"/>
@@ -151,7 +118,6 @@ me.daily_routine()  # Start your coding adventure!
 
 <h2 align="center">🤝 Let's Connect and Create Together!</h2>
 
-<!-- Pro tip: Add social links with style -->
 <div align="center">
   <a href="mailto:taashish848@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
@@ -164,10 +130,8 @@ me.daily_routine()  # Start your coding adventure!
   </a>
 </div>
 
-<!-- Pro tip: Add a visitor counter -->
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=AashishThakuri&style=for-the-badge&color=00E8FF"/>
 </div>
 
-<!-- Pro tip: End with a creative footer -->
 <img src="https://capsule-render.vercel.app/api?type=waving&height=150&section=footer&text=Happy%20Coding!&fontSize=30&fontAlign=80&fontAlignY=80&color=gradient&customColorList=24" width="100%" />
