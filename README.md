@@ -1,157 +1,123 @@
-<!-- Custom CSS for 3D effects -->
-<link rel="stylesheet" href="assets/css/profile-3d.css">
-
-<!-- Custom 3D Header -->
 <div align="center">
-  <div class="profile-3d-container">
-    <div class="card-3d">
-      <div class="card-front">
-        <img src="https://avatars.githubusercontent.com/u/AashishThakuri" width="150" style="border-radius: 50%; border: 3px solid #FF71CE; box-shadow: 0 0 20px #FF71CE;">
-        <h1 style="color: #FF71CE; text-shadow: 0 0 10px #FF71CE;">Aashish Thakuri</h1>
-        <p style="color: #fff;">Creative Developer & AI Enthusiast</p>
-      </div>
-      <div class="card-back">
-        <h2 style="color: #FF71CE;">About Me</h2>
-        <p style="color: #fff; text-align: center;">
-          🎓 Student at Kathmandu University<br>
-          💻 Full Stack Developer<br>
-          🤖 AI/ML Enthusiast<br>
-          🚀 Founder of Advance Data Science Classroom
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Interactive 3D Skills Display -->
-<div id="skills-3d" style="width: 100%; height: 400px; margin: 20px 0;">
-  <!-- Three.js will render here -->
-</div>
-<script type="module" src="assets/js/profile-3d.js"></script>
-
-<!-- Dynamic Code Section -->
-```typescript
-interface Developer {
-  name: string;
-  title: string;
-  location: string;
-  skills: Skills;
-  projects: Project[];
-  contact: Contact;
-}
-
-interface Skills {
-  languages: string[];
-  frameworks: string[];
-  databases: string[];
-  ai_ml: string[];
-  tools: string[];
-}
-
-interface Project {
-  name: string;
-  description: string;
-  tech_stack: string[];
-  impact: string;
-}
-
-interface Contact {
-  email: string;
-  linkedin: string;
-  twitter: string;
-  portfolio: string;
-}
-
-const aashish: Developer = {
-  name: "Aashish Thakuri",
-  title: "Creative Developer & AI Enthusiast",
-  location: "Kathmandu University, Nepal 🇳🇵",
   
-  skills: {
-    languages: ["Python", "TypeScript", "JavaScript", "Java"],
-    frameworks: ["React", "Next.js", "Node.js", "Express"],
-    databases: ["MongoDB", "PostgreSQL", "Firebase"],
-    ai_ml: ["TensorFlow", "PyTorch", "Scikit-learn"],
-    tools: ["Git", "Docker", "AWS", "Vercel"]
+<!-- ANIMATED HEADER -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=40&pause=1000&color=6C22F7&center=true&vCenter=true&repeat=false&width=500&height=71&lines=Hello+World!+%F0%9F%91%8B)](https://git.io/typing-svg)
+
+<!-- PROFILE BANNER -->
+<a href="https://aashishh.vercel.app">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=6C22F7&height=200&section=header&text=Aashish%20Thakuri&fontSize=60&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Creative%20Developer%20|%20AI%20Enthusiast&descAlignY=55&descSize=20" width="100%" />
+</a>
+
+<!-- CREATIVE ABOUT ME -->
+<img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="900">
+
+<div align="left" style="margin: 20px;">
+
+```javascript
+// About Me: The Developer's Edition 🚀
+const aashish = {
+  state: {
+    available_for_work: true,
+    currently_learning: ["Advanced ML", "System Design", "Cloud Architecture"],
+    ask_me_about: ["Web Dev", "AI/ML", "Tech Innovation", "Creative Coding"],
   },
   
-  projects: [{
-    name: "Advance Data Science Classroom",
-    description: "Platform democratizing data science education",
-    tech_stack: ["Python", "TensorFlow", "React", "Node.js"],
-    impact: "Empowering students with data science skills"
-  }],
+  code: {
+    languages: ["Python", "JavaScript", "TypeScript", "Java"],
+    frontend: ["React", "Next.js", "TailwindCSS", "Three.js"],
+    backend: ["Node.js", "Express", "FastAPI", "Django"],
+    database: ["MongoDB", "PostgreSQL", "Firebase"],
+    ai_ml: ["TensorFlow", "PyTorch", "Scikit-learn"],
+    tools: ["Docker", "Git", "AWS", "Vercel"],
+  },
   
-  contact: {
-    email: "taashish848@gmail.com",
-    linkedin: "aashish-bam-435505351",
-    twitter: "Lyrical62785503",
-    portfolio: "aashishh.vercel.app"
+  current_project: {
+    name: "Advance Data Science Classroom",
+    role: "Founder & Lead Developer",
+    mission: "Democratizing Data Science Education",
+    tech_stack: ["Python", "React", "TensorFlow", "AWS"],
+    impact: "Empowering students with hands-on data science skills"
+  },
+  
+  life: {
+    university: "Kathmandu University",
+    location: "Nepal 🇳🇵",
+    hobbies: ["Singing 🎤", "Poetry ✍️", "Guitar 🎸"],
+    motto: "Create. Innovate. Inspire."
   }
 };
 
-// Life Philosophy
-function lifeMotto(): string {
-  return `
-    while (alive) {
-      learn();
-      create();
-      inspire();
-      repeat();
-    }
-  `;
+// What drives me
+while (alive) {
+  eat();
+  sleep();
+  code();
+  repeat();
 }
 ```
 
-<!-- Interactive Stats Section -->
-<div align="center">
-  <div style="background: linear-gradient(45deg, #FF71CE, #B17ACC); padding: 3px; border-radius: 10px; margin: 20px 0;">
-    <div style="background: #0D1117; padding: 20px; border-radius: 8px;">
-      <img width="49%" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=FF71CE&icon_color=FF71CE&text_color=FFFFFF" />
-      <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=radical&hide_border=true&background=0D1117&ring=FF71CE&fire=FF71CE&currStreakLabel=FF71CE" />
-    </div>
-  </div>
-  
-  <!-- Animated Contribution Graph -->
-  <div class="contribution-calendar">
-    <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&custom_title=Contribution%20Graph&bg_color=0D1117&color=FF71CE&line=FF71CE&point=FFFFFF&area=true&hide_border=true" />
-  </div>
 </div>
 
-<!-- Featured Projects -->
-<div align="center">
-  <h2 style="color: #FF71CE; text-shadow: 0 0 10px #FF71CE;">🚀 Featured Projects</h2>
-  <div style="display: flex; justify-content: center; gap: 10px;">
-    <a href="https://github.com/AashishThakuri/advance-data-science">
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=AashishThakuri&repo=advance-data-science&theme=radical&hide_border=true&bg_color=0D1117&title_color=FF71CE&icon_color=FF71CE" />
-    </a>
-  </div>
+<!-- ANIMATED TOOLS & SKILLS -->
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
+
+<div style="background: #1a1b27; padding: 20px; border-radius: 10px; margin: 20px 0;">
+  <img src="https://skillicons.dev/icons?i=python,js,ts,react,next,nodejs,express,mongodb,firebase&theme=dark&perline=9" /><br/>
+  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,docker,git,aws,vercel,figma,vscode&theme=dark&perline=8" />
 </div>
 
-<!-- Connect Section -->
-<div align="center">
-  <h2 style="color: #FF71CE; text-shadow: 0 0 10px #FF71CE;">🤝 Let's Connect!</h2>
-  <div style="display: flex; justify-content: center; gap: 10px;">
-    <a href="mailto:taashish848@gmail.com">
-      <img src="https://img.shields.io/badge/Gmail-FF71CE?style=for-the-badge&logo=gmail&logoColor=white" />
-    </a>
-    <a href="https://www.linkedin.com/in/aashish-bam-435505351/">
-      <img src="https://img.shields.io/badge/LinkedIn-FF71CE?style=for-the-badge&logo=linkedin&logoColor=white" />
-    </a>
-    <a href="https://x.com/Lyrical62785503">
-      <img src="https://img.shields.io/badge/Twitter-FF71CE?style=for-the-badge&logo=twitter&logoColor=white" />
-    </a>
-    <a href="https://aashishh.vercel.app/">
-      <img src="https://img.shields.io/badge/Portfolio-FF71CE?style=for-the-badge&logo=About.me&logoColor=white" />
-    </a>
-  </div>
+<!-- ANIMATED PROJECTS -->
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="900">
+
+<div style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
+  <a href="https://github.com/AashishThakuri/advance-data-science">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=AashishThakuri&repo=advance-data-science&theme=tokyonight&hide_border=true" />
+  </a>
 </div>
 
-<!-- Profile Views Counter -->
+<!-- ANIMATED STATS -->
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="900">
+
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+  <img width="400" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" />
+  <img width="400" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=tokyonight&hide_border=true" />
+</div>
+
+<img width="800" src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&theme=tokyo-night&hide_border=true&area=true" />
+
+<!-- ANIMATED CONTRIBUTION -->
+<img src="https://user-images.githubusercontent.com/74038190/212284119-fbfd76e5-9c4a-4b55-8e46-fb5e509de620.gif" width="900">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
+</picture>
+
+<!-- ANIMATED CONNECT -->
+<img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" width="900">
+
+<div style="margin: 20px 0;">
+  <a href="mailto:taashish848@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/aashish-bam-435505351/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://x.com/Lyrical62785503">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  </a>
+  <a href="https://aashishh.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-6C22F7?style=for-the-badge&logo=About.me&logoColor=white" />
+  </a>
+</div>
+
+<!-- ANIMATED FOOTER -->
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="900">
+
 <div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=6C22F7&height=100&section=footer" width="100%" />
   <br/>
-  <img src="https://komarev.com/ghpvc/?username=AashishThakuri&color=FF71CE&style=for-the-badge" />
+  <img src="https://komarev.com/ghpvc/?username=AashishThakuri&color=6C22F7&style=for-the-badge" />
 </div>
-
-<!-- Footer Wave -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FF71CE&height=100&section=footer" />
+</div>
