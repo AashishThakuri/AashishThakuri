@@ -1,97 +1,99 @@
-# <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header&text=Aashish%20Thakuri&fontSize=50&fontAlignY=35&animation=twinkling&desc=Innovator%20|%20Tech%20Enthusiast%20|%20Creative%20Developer&descAlignY=50" width="100%" />
-
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&pause=1000&color=3DABF5&center=true&vCenter=true&width=435&lines=🎓+KU+Student;🚀+Tech+Innovator;🎸+Creative+Coder;🌟+Open+Source+Enthusiast" alt="Typing SVG" />
-  </a>
-</div>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/main/assets/images/grid-snake.svg" alt="snake" />
-</div>
-
-</div>
-
-## 🌟 About Me
-
-```javascript
-const aashish = {
-    education: "Kathmandu University",
-    role: "Student & Tech Innovator",
-    passions: ["AI", "Web Development", "Data Science"],
-    achievements: {
-        founder: "Advance Data Science Classroom",
-        impact: "Making data science accessible to KU students",
-        mission: "Empowering students through technology"
-    },
-    creativity: ["Singing", "Poetry", "Guitar"],
-    currentFocus: "Building innovative solutions that matter"
-};
-```
-
-<div align="center">
-  <img src="https://github-stats-alpha.vercel.app/api?username=AashishThakuri&cc=000&tc=fff&ic=fff&bc=000" alt="GitHub Stats" />
-</div>
-
-## 💻 Tech Arsenal & Tools
-
 <div align="center">
   
-```mermaid
-mindmap
-  root((Tech Stack))
-    Frontend
-      HTML5/CSS3
-      JavaScript
-      TypeScript
-      React
-      Next.js
-    Backend
-      Node.js
-      Firebase
-      MongoDB
-    Data Science
-      Python
-      NumPy
-      Pandas
-      OpenCV
-    DevOps
-      Git
-      Vercel
-      Docker
-```
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=6AD3F7&center=true&vCenter=true&width=435&lines=%F0%9F%91%8B+Hi+there!+I'm+Aashish;%F0%9F%8E%93+KU+Student;%F0%9F%9A%80+Tech+Innovator;%F0%9F%8E%B8+Creative+Soul)](https://git.io/typing-svg)
 
-![Tech Stack](https://skillicons.dev/icons?i=html,python,js,ts,react,next,firebase,vercel,nodejs,mongodb,git,docker&theme=dark)
+<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=300&color=gradient&text=Aashish%20Thakuri&textBg=false&animation=fadeIn&fontColor=FFFFFF&fontSize=70&stroke=6AD3F7&strokeWidth=2" />
 
 </div>
 
-## 📈 Contribution Graph
+<h2 align="center">
+    <img src="https://readme-typing-svg.demolab.com?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Creative+Coder+🚀;Tech+Enthusiast+💻;Innovation+Driven+🌟" />
+</h2>
+
+<img align="right" alt="Coding" width="400" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif">
+
+## 💫 About Me
+
+```typescript
+class CreativeDeveloper {
+    name: string = "Aashish Thakuri";
+    education: string = "Kathmandu University";
+    role: string = "Student & Tech Innovator";
+    location: string = "Nepal 🇳🇵";
+    
+    founder: Project = {
+        name: "Advance Data Science Classroom",
+        mission: "Making Data Science Accessible",
+        impact: "Empowering KU Students"
+    };
+    
+    passions: string[] = [
+        "Web Development 🌐",
+        "AI & Machine Learning 🤖",
+        "Data Science 📊",
+        "Creative Coding 💻"
+    ];
+    
+    creativity: string[] = [
+        "Singing 🎤",
+        "Poetry ✍️",
+        "Guitar 🎸"
+    ];
+    
+    getCurrentFocus(): string {
+        return "Building innovative solutions that matter";
+    }
+}
+```
+
+<br/>
+
+## 🛠️ Tech Stack & Tools
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,next,python,nodejs,express,mongodb,firebase,git&perline=6&theme=dark" />
+  
+  <img src="https://skillicons.dev/icons?i=vercel,docker,tensorflow,pytorch,opencv,figma&perline=6&theme=dark" />
+</div>
+
+<br/>
+
+## 📊 GitHub Stats
+
+<div align="center">
+  <img width="390" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=tokyonight&rank_icon=github&border_radius=10" alt="readme stats" />
+  <img width="390" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=tokyonight&border_radius=10" alt="streak stats"/>
+  <br/>
+  <img width="325" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AashishThakuri&layout=compact&theme=tokyonight&border_radius=10" alt="top langs" />
+</div>
+
+<br/>
+
+## 🐍 Contribution Graph
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="dist/snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="dist/snake.svg" />
+    <img alt="github-snake" src="dist/snake.svg" />
   </picture>
 </div>
 
-## 🏆 GitHub Stats & Achievements
+<br/>
+
+## 🏆 GitHub Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AashishThakuri&theme=discord&no-frame=true&column=7" alt="Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=AashishThakuri&theme=discord&no-frame=false&no-bg=false&margin-w=4&row=1" alt="GitHub Trophies"/>
 </div>
 
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=tokyonight&hide_border=true" alt="Streak" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AashishThakuri&theme=tokyonight&hide_border=true&layout=compact" alt="Top Languages" />
-</div>
+<br/>
 
-## 🌐 Connect With Me
+## 🌐 Let's Connect!
 
 <div align="center">
   <a href="mailto:taashish848@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" />
   </a>
   <a href="https://www.linkedin.com/in/aashish-bam-435505351/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
@@ -100,25 +102,19 @@ mindmap
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
   </a>
   <a href="https://aashishh.vercel.app/">
-    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" />
   </a>
 </div>
 
-<div align="center">
-  <h3>💭 Quote of the Day</h3>
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Quote" />
-</div>
-
----
+<br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&animation=fadeIn"/>
-  
-  <img src="https://komarev.com/ghpvc/?username=AashishThakuri&style=flat-square&color=blue" alt="Profile Views" />
-  
-  **Thanks for visiting! Let's build something amazing together! 🚀**
+  <h3>💭 Random Dev Quote</h3>
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote"/>
 </div>
 
-<!-- Hidden Section for 3D Render -->
-<div id="header-3d" style="position: absolute; top: 0; left: 0; z-index: -1;"></div>
-<script type="module" src="assets/js/3d-header.js"></script>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer&animation=twinkling"/>
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=AashishThakuri&style=for-the-badge&color=blue" alt="Profile Views"/>
+</div>
