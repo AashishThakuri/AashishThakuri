@@ -9,65 +9,87 @@
   <img src="https://user-images.githubusercontent.com/74038190/241765440-80728820-e06b-4f96-9c9e-9df46f0cc0a5.gif" width="100%" />
 </div>
 
-<!-- New Creative About Me Section -->
+<!-- Innovative About Me Section -->
 <div align="center">
-  <h2>
-    <img src="https://media4.giphy.com/media/MIGbtLZoVjbl0bYbAd/giphy.gif?cid=ecf05e472t2h0i8d7dcjaoau9iqtchhr899hxmpxzzgc7lyw&rid=giphy.gif" width="30"> 
-    A Bit About Me
-    <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="30">
-  </h2>
+<h2>
+  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="50">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=2000&pause=1000&color=00E8FF&center=true&vCenter=true&repeat=false&width=435&lines=System.out.println(%22Me%22)" />
+  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="50">
+</h2>
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/216649436-05c6a71a-0566-45aa-bc3f-f258ab12e491.gif" width="150" />
 </div>
 
+```js
+// SYSTEM ARCHITECTURE: Aashish Thakuri
+// STATUS: Online and Coding
+// LAST UPDATE: Building something amazing...
+
+class CreativeDeveloper extends Human {
+    constructor() {
+        super();
+        this.name = "Aashish Thakuri";
+        this.title = "Creative Developer & AI Architect";
+        this.location = "Kathmandu University 🇳🇵";
+        this.workingOn = "Democratizing Tech Education";
+        this.interests = new Set([
+            "🤖 Artificial Intelligence",
+            "🎨 Creative Coding",
+            "🌐 Full Stack Development",
+            "🎵 Music & Poetry"
+        ]);
+    }
+
+    get currentStatus() {
+        return {
+            availableForHire: true,
+            learning: "Advanced AI/ML Concepts",
+            building: "Innovative Solutions",
+            goal: "Make Tech Education Accessible"
+        };
+    }
+
+    get skills() {
+        return {
+            languages: ["Python", "JavaScript", "TypeScript"],
+            frameworks: ["React", "Next.js", "FastAPI"],
+            databases: ["MongoDB", "PostgreSQL"],
+            tools: ["Docker", "Git", "AWS"],
+            aiMl: ["TensorFlow", "PyTorch", "Scikit-learn"]
+        };
+    }
+
+    async think() {
+        while(true) {
+            await this.learnSomethingNew();
+            await this.buildCoolStuff();
+            await this.shareKnowledge();
+            await this.makeImpact();
+            await this.drinkCoffee(); // Essential! ☕
+        }
+    }
+}
+
+// Initialize developer instance
+const aashish = new CreativeDeveloper();
+aashish.think().then(() => {
+    console.log("Building a better future through code! 🚀");
+});
+
+/* OUTPUT:
+ * 🎯 Mission: Democratizing Tech Education
+ * 🌟 Status: Online and Creating
+ * 💡 Mode: Always Learning
+ * 🚀 Goal: Making a Difference
+ */
+```
+
 <div align="center">
-  <img src="https://media.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif" width="100px" height="100px">
+  <img src="https://user-images.githubusercontent.com/74038190/216654116-d0e8d227-7977-4edc-8d36-63461bda9503.gif" width="100" />
+  <br>
+  <strong>Fun Fact:</strong> I turn coffee into code and dreams into reality! ✨
 </div>
-
-```ascii
-+------------------------------------------------------------------------------------------------+
-|                                                                                                |
-|  🎮 PLAYER STATS                            🌟 SPECIAL ABILITIES                               |
-|  ==================                         ===================                                 |
-|  Name: Aashish Thakuri                     ⚡ Rapid Problem Solving                           |
-|  Class: Creative Developer                  🔮 AI/ML Mastery                                  |
-|  Level: Constantly Upgrading                🎨 Creative Coding                                |
-|  Location: Kathmandu University            🚀 Full Stack Development                          |
-|                                                                                                |
-|  🎯 CURRENT MISSION                         💫 ACHIEVEMENTS                                    |
-|  ==================                         ===================                                 |
-|  "Democratizing Tech Education"             🏆 Built Innovative Solutions                      |
-|  through creative coding and                🌟 Inspired Fellow Developers                      |
-|  innovative solutions.                      ⭐ Mastered Multiple Tech Stacks                   |
-|                                                                                                |
-|  ⚔️ DAILY QUESTS                           🛡️ EQUIPPED SKILLS                                 |
-|  ==================                         ===================                                 |
-|  → Learn Something New                      Primary: Python, JavaScript                        |
-|  → Build Cool Projects                      Secondary: React, Node.js                          |
-|  → Share Knowledge                          Special: TensorFlow, PyTorch                       |
-|  → Inspire Others                           Ultimate: Creative Problem Solving                 |
-|                                                                                                |
-+------------------------------------------------------------------------------------------------+
-
-     [██████████████████████████░░]  
-         Level 99 Creative Coder
-```
-
-```python
-def my_story():
-    return """
-    🌟 Started as a curious coder,
-    🚀 Evolved into a tech innovator,
-    💡 Now building the future of tech education,
-    ✨ While inspiring others along the way!
-    
-    My mission? Turning complex concepts into
-    simple, beautiful, and accessible solutions.
-    
-    Remember: Every line of code is a story,
-    and I'm here to make it an epic one! 🎮
-    """
-
-# Output: my_story()
-```
 
 <!-- Rest of the content remains exactly the same -->
 [REST OF THE CONTENT REMAINS UNCHANGED]
