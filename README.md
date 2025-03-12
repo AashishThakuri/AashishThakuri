@@ -66,15 +66,11 @@
 ## 🐍 Contribution Graph
 
 <div align="center">
-  <img src="https://github.com/AashishThakuri/AashishThakuri/blob/output/github-contribution-grid-snake.svg" alt="Snake Animation" />
-</div>
-
-## 🎵 Currently Vibing To
-
-<div align="center">
-  
-  [![Spotify](https://novatorem-spotify-seven.vercel.app/api/spotify)](https://open.spotify.com/user/AashishThakuri)
-  
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
+  </picture>
 </div>
 
 ## ⚡ Recent Activity
