@@ -1,198 +1,169 @@
-<!-- Load 3D Profile Styles -->
-<link rel="stylesheet" href="assets/css/3d-profile.css">
-
-<!-- 3D Intro Banner -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&height=300&text=Aashish%20Thakuri&fontSize=90&color=0:00ff87,100:60efff&stroke=00ff87&strokeWidth=3" />
-</div>
+  
+<!-- 3D Banner with Perspective Effect -->
+<img src="https://capsule-render.vercel.app/api?type=waving&height=300&text=AASHISH%20THAKURI&fontAlign=50&fontAlignY=35&desc=Crafting%20Digital%20Experiences&descAlign=50&descAlignY=60&color=gradient&customColorList=24" width="100%" />
 
 <!-- 3D Profile Card -->
-<div class="profile-3d">
-  <div class="neon-border">
-    <div class="card-3d">
-      <!-- Front of the Card -->
-      <div class="card-front">
-        <img src="https://avatars.githubusercontent.com/u/AashishThakuri" width="150" style="border-radius: 50%; border: 3px solid #00ff87; box-shadow: 0 0 30px #60efff;">
-        <div class="glow" style="margin-top: 20px; font-size: 24px; color: #00ff87;">
-          System.out.println("Hello World! 👋");
-        </div>
-      </div>
-      <!-- Back of the Card -->
-      <div class="card-back">
-        <div style="color: #00ff87; text-align: left;">
-          <pre>
-while (alive) {
-  eat();
-  sleep();
-  code();
-  repeat();
-}
-          </pre>
-        </div>
-      </div>
-    </div>
-  </div>
+<div>
+  <a href="https://aashishh.vercel.app">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=70F7D7&center=true&vCenter=true&multiline=true&width=600&height=100&lines=Creative+Developer+%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB;AI+Architect+%F0%9F%A4%96;Digital+Craftsman+%F0%9F%8E%A8" alt="Typing SVG" />
+  </a>
 </div>
 
-<!-- 3D Skills Visualization -->
-<div id="skills-3d" style="width: 100%; height: 400px; margin: 20px 0;"></div>
-<script type="module" src="assets/js/3d-profile.js"></script>
+<!-- 3D About Me Box -->
+<table>
+  <tr>
+    <td>
+      <div align="center">
+        <img width="100" src="https://user-images.githubusercontent.com/74038190/216649436-05c6a71a-0566-45aa-bc3f-f258ab12e491.gif" />
+        <br/>
+        <strong>About Me</strong>
+      </div>
+      <div align="left">
+        
+```python
+class CreativeEngineer:
+    def __init__(self):
+        self.name = "Aashish Thakuri"
+        self.education = "Kathmandu University"
+        self.role = "Full Stack Developer & AI Architect"
+        self.languages = ["Python", "JavaScript", "TypeScript"]
+        self.interests = ["AI/ML", "Creative Coding", "Innovation"]
+        self.current_project = "Advance Data Science Classroom"
+        
+    def daily_routine(self):
+        while True:
+            self.learn_something_new()
+            self.create_innovative_solutions()
+            self.share_knowledge()
+            self.make_impact()
+            
+    def get_inspiration(self):
+        return "Code is poetry, let's write something beautiful! ✨"
 
-<!-- Creative About Me -->
+me = CreativeEngineer()
+me.daily_routine()
+```
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- 3D Tech Stack -->
 <div align="center">
-  <div class="neon-border">
-    <div style="background: #000; padding: 20px; border-radius: 15px;">
-      <div class="floating">
-        <!-- Terminal Style About Me -->
-        ```bash
-[root@aashish ~]# cat about-me.sh
-#!/bin/bash
-
-# Define the developer
-DEVELOPER=(
-  "Name: Aashish Thakuri"
-  "Role: Creative Developer & AI Architect"
-  "Location: Kathmandu University, Nepal 🇳🇵"
-  "Status: Crafting Digital Dreams ✨"
-)
-
-# Core competencies
-SKILLS=(
-  "🚀 Full Stack Development"
-  "🤖 AI/ML Engineering"
-  "☁️ Cloud Architecture"
-  "🎨 Creative Problem Solving"
-)
-
-# Current missions
-MISSIONS=(
-  "📚 Democratizing Tech Education"
-  "🌟 Building Innovative Solutions"
-  "🔮 Exploring AI Frontiers"
-  "🎸 Making Music & Poetry"
-)
-
-# Execute life.py
-python3 life.py --mode="Create & Inspire" --debug=false
-        ```
-      </div>
-    </div>
-  </div>
+  <img width="100" src="https://user-images.githubusercontent.com/74038190/216655813-c9147cb2-cfee-4955-b591-52cac08f1f60.gif" />
+  <br/>
+  <strong>Tech Universe</strong>
 </div>
 
-<!-- Animated Tech Stack -->
-<div align="center" class="floating" style="margin: 40px 0;">
-  <div class="neon-border">
-    <div style="background: #000; padding: 20px; border-radius: 15px;">
-      <pre style="color: #00ff87;">
-TECH_STACK = {
-    'Languages': [
-        '⚡ Python',
-        '⚡ JavaScript',
-        '⚡ TypeScript',
-        '⚡ Java'
-    ],
-    'Frontend': [
-        '🎨 React.js',
-        '🚀 Next.js',
-        '💫 TailwindCSS',
-        '✨ Three.js'
-    ],
-    'Backend': [
-        '🔥 Node.js',
-        '🐍 FastAPI',
-        '⚡ Express',
-        '🌟 Django'
-    ],
-    'AI/ML': [
-        '🧠 TensorFlow',
-        '🔮 PyTorch',
-        '📊 Scikit-learn',
-        '🤖 OpenAI'
-    ],
-    'DevOps': [
-        '🐳 Docker',
-        '☁️ AWS',
-        '🔄 CI/CD',
-        '🌐 Kubernetes'
-    ]
-}
-      </pre>
-    </div>
-  </div>
-</div>
-
-<!-- 3D Stats Cards -->
-<div align="center" class="floating">
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-    <img height="200px" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=dark&bg_color=000000&title_color=00ff87&icon_color=60efff&text_color=ffffff&border_color=00ff87"/>
-    <img height="200px" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=dark&background=000000&ring=00ff87&fire=60efff&currStreakLabel=00ff87"/>
-  </div>
+<table>
+  <tr>
+    <td>
+      <div align="left">
+        
+```javascript
+const techStack = {
+  frontend: {
+    frameworks: ["⚛️ React", "⚡ Next.js", "💨 TailwindCSS"],
+    libraries: ["📊 D3.js", "🎨 Three.js", "✨ Framer Motion"],
+  },
   
-  <!-- 3D Activity Graph -->
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&bg_color=000000&color=00ff87&line=60efff&point=ffffff&area=true&hide_border=true"/>
-</div>
+  backend: {
+    languages: ["🐍 Python", "💻 Node.js", "☕ Java"],
+    frameworks: ["🚀 FastAPI", "🛠️ Express", "🎯 Django"],
+    databases: ["🍃 MongoDB", "🐘 PostgreSQL", "🔥 Firebase"],
+  },
+  
+  ai_ml: {
+    frameworks: ["🧠 TensorFlow", "🔥 PyTorch", "📊 Scikit-learn"],
+    areas: ["🤖 Deep Learning", "🎯 Computer Vision", "📝 NLP"],
+  },
+  
+  devops: {
+    tools: ["🐳 Docker", "☸️ Kubernetes", "🔄 CI/CD"],
+    cloud: ["☁️ AWS", "🚀 Vercel", "🔥 Firebase"],
+  },
+};
 
-<!-- Project Showcase -->
-<div align="center" class="floating" style="margin: 40px 0;">
-  <div class="neon-border">
-    <div style="background: #000; padding: 20px; border-radius: 15px;">
-      <pre style="color: #00ff87;">
-class Project {
-  constructor(name, stack, impact) {
-    this.name = name;
-    this.stack = stack;
-    this.impact = impact;
-  }
-
-  async deploy() {
-    await this.innovate();
-    await this.inspire();
-    return "Making a difference! 🚀";
-  }
-}
-
-const advanceDataScience = new Project(
-  "Advance Data Science Classroom",
-  ["Python", "React", "TensorFlow", "AWS"],
-  "Democratizing Data Science Education"
-);
-
-// More innovative projects loading...
-      </pre>
-    </div>
-  </div>
-</div>
-
-<!-- Connect Section -->
-<div align="center" class="floating">
-  <div class="neon-border">
-    <div style="background: #000; padding: 20px; border-radius: 15px;">
-      <pre style="color: #00ff87;">
-function connect() {
-  return {
-    email: "taashish848@gmail.com",
-    linkedin: "aashish-bam-435505351",
-    portfolio: "aashishh.vercel.app"
-  }
-}
-      </pre>
-      <div style="margin-top: 20px;">
-        <a href="mailto:taashish848@gmail.com">
-          <img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=00ff87"/>
-        </a>
-        <a href="https://www.linkedin.com/in/aashish-bam-435505351/">
-          <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=00ff87"/>
-        </a>
-        <a href="https://aashishh.vercel.app/">
-          <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=00ff87"/>
-        </a>
+// Always learning and adding more! 🚀
+```
       </div>
-    </div>
-  </div>
+    </td>
+  </tr>
+</table>
+
+<!-- 3D Stats Section -->
+<div align="center">
+  <img width="100" src="https://user-images.githubusercontent.com/74038190/216656977-ef584e23-4dc1-4357-8a1f-16ce7e515a18.gif" />
+  <br/>
+  <strong>GitHub Analytics</strong>
 </div>
 
-<!-- Footer -->
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=tokyonight&bg_color=00000000&hide_border=true&title_color=70F7D7&text_color=FFFFFF&icon_color=70F7D7" />
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=tokyonight&background=00000000&hide_border=true&ring=70F7D7&fire=70F7D7&currStreakLabel=70F7D7" />
+</p>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&theme=react-dark&bg_color=00000000&color=70F7D7&line=70F7D7&point=70F7D7&area=true&hide_border=true" />
+
+<!-- 3D Projects Section -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&height=100&color=0:00ff87,100:60efff&section=footer"/>
+  <img width="100" src="https://user-images.githubusercontent.com/74038190/216655810-e5868949-af89-4402-99de-7565a4d2871e.gif" />
+  <br/>
+  <strong>Featured Projects</strong>
+</div>
+
+<table>
+  <tr>
+    <td>
+      <div align="left">
+        
+```typescript
+interface Project {
+  name: string;
+  description: string;
+  stack: string[];
+  impact: string;
+}
+
+const projects: Project[] = [
+  {
+    name: "Advance Data Science Classroom",
+    description: "Platform democratizing data science education",
+    stack: ["Python", "React", "TensorFlow", "AWS"],
+    impact: "Empowering students with hands-on AI/ML skills"
+  },
+  // More innovative projects coming soon! 🚀
+];
+
+// Let's build something amazing together! ✨
+```
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- 3D Connect Section -->
+<div align="center">
+  <img width="100" src="https://user-images.githubusercontent.com/74038190/216656944-f8c1b44e-493b-487f-87be-6cfe6a1a3374.gif" />
+  <br/>
+  <strong>Let's Connect!</strong>
+  <br/>
+  <br/>
+  <a href="mailto:taashish848@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-70F7D7?style=for-the-badge&logo=gmail&logoColor=black" />
+  </a>
+  <a href="https://www.linkedin.com/in/aashish-bam-435505351/">
+    <img src="https://img.shields.io/badge/LinkedIn-70F7D7?style=for-the-badge&logo=linkedin&logoColor=black" />
+  </a>
+  <a href="https://aashishh.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-70F7D7?style=for-the-badge&logo=About.me&logoColor=black" />
+  </a>
+</div>
+
+<!-- 3D Footer -->
+<img src="https://capsule-render.vercel.app/api?type=waving&height=150&section=footer&text=Visitor%20Count&fontSize=30&fontAlign=80&fontAlignY=80&color=gradient&customColorList=24" width="100%" />
+
+<div align="center">
+  <img src="https://profile-counter.glitch.me/AashishThakuri/count.svg" />
 </div>
