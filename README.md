@@ -1,7 +1,5 @@
 <!-- HEADER -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" />
-  
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=FF71CE&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B+I'm+Aashish+Thakuri;Creative+Full+Stack+Developer;AI+%26+ML+Enthusiast;Always+Learning+New+Things" alt="Typing SVG" />
   </a>
@@ -54,19 +52,6 @@ class AashishThakuri {
 }
 ```
 
-<!-- ANIMATION CARDS -->
-<div align="center">
-  <p>
-    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" />
-    <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=radical&hide_border=true&background=0D1117" />
-  </p>
-</div>
-
-<!-- CONTRIBUTION GRAPH -->
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&custom_title=Aashish's%20GitHub%20Activity%20Graph&bg_color=0D1117&color=FF71CE&line=FF71CE&point=FFFFFF&area=true&hide_border=true" width="100%"/>
-</div>
-
 <!-- TECH STACK -->
 <div align="center">
   <h2>
@@ -85,14 +70,28 @@ class AashishThakuri {
   </p>
 </div>
 
-<!-- SPOTIFY -->
+<!-- CONTRIBUTION SECTION -->
 <div align="center">
   <h2>
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXM5Z2Q2Ym95ZWx1OWF4NHd6YnBxbGxxd3Zxc2Vha3ZyYnR0cXNzZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/lqFHf5fYMSuKcSOJph/giphy.gif" width="30px" height="30px">
-    Currently Vibing To
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDk4Y2JwY2t0NXV3bDNyeWF6ZHF6YnB1d3RnYzF1bGJxYWF1YmN6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/CwTvSiWflgCGKgz5eb/giphy.gif" width="30px" height="30px">
+    GitHub Contributions
   </h2>
-  
-  ![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=31k53qk6kgxbvg72lf2y6nwz3oay&unique=true)
+
+  <!-- Interactive Contribution Calendar -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&custom_title=Contribution%20Graph&theme=react-dark&bg_color=0D1117&color=FF71CE&line=FF71CE&point=FFFFFF&area=true&hide_border=true" width="100%"/>
+
+  <!-- Contribution Stats -->
+  <p>
+    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" />
+    <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=radical&hide_border=true&background=0D1117" />
+  </p>
+
+  <!-- Snake Animation -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
+  </picture>
 </div>
 
 <!-- PROJECTS -->
@@ -107,6 +106,16 @@ class AashishThakuri {
       <img src="https://github-readme-stats.vercel.app/api/pin/?username=AashishThakuri&repo=advance-data-science&theme=radical&hide_border=true&bg_color=0D1117" />
     </a>
   </p>
+</div>
+
+<!-- SPOTIFY -->
+<div align="center">
+  <h2>
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXM5Z2Q2Ym95ZWx1OWF4NHd6YnBxbGxxd3Zxc2Vha3ZyYnR0cXNzZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/lqFHf5fYMSuKcSOJph/giphy.gif" width="30px" height="30px">
+    Currently Vibing To
+  </h2>
+  
+  ![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=31k53qk6kgxbvg72lf2y6nwz3oay&unique=true)
 </div>
 
 <!-- TROPHIES -->
