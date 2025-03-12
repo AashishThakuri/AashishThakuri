@@ -1,123 +1,131 @@
+<!-- Matrix-style Header -->
 <div align="center">
-  
-<!-- ANIMATED HEADER -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=40&pause=1000&color=6C22F7&center=true&vCenter=true&repeat=false&width=500&height=71&lines=Hello+World!+%F0%9F%91%8B)](https://git.io/typing-svg)
+  <img src="https://capsule-render.vercel.app/api?type=cylinder&color=0:00FF00,100:003300&height=150&section=header&text=AASHISH%20THAKURI&fontSize=70&animation=fadeIn&fontColor=00FF00&stroke=00FF00&strokeWidth=3" width="100%" />
+</div>
 
-<!-- PROFILE BANNER -->
-<a href="https://aashishh.vercel.app">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=6C22F7&height=200&section=header&text=Aashish%20Thakuri&fontSize=60&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Creative%20Developer%20|%20AI%20Enthusiast&descAlignY=55&descSize=20" width="100%" />
-</a>
-
-<!-- CREATIVE ABOUT ME -->
-<img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="900">
-
-<div align="left" style="margin: 20px;">
-
-```javascript
-// About Me: The Developer's Edition 🚀
-const aashish = {
-  state: {
-    available_for_work: true,
-    currently_learning: ["Advanced ML", "System Design", "Cloud Architecture"],
-    ask_me_about: ["Web Dev", "AI/ML", "Tech Innovation", "Creative Coding"],
-  },
-  
-  code: {
-    languages: ["Python", "JavaScript", "TypeScript", "Java"],
-    frontend: ["React", "Next.js", "TailwindCSS", "Three.js"],
-    backend: ["Node.js", "Express", "FastAPI", "Django"],
-    database: ["MongoDB", "PostgreSQL", "Firebase"],
-    ai_ml: ["TensorFlow", "PyTorch", "Scikit-learn"],
-    tools: ["Docker", "Git", "AWS", "Vercel"],
-  },
-  
-  current_project: {
-    name: "Advance Data Science Classroom",
-    role: "Founder & Lead Developer",
-    mission: "Democratizing Data Science Education",
-    tech_stack: ["Python", "React", "TensorFlow", "AWS"],
-    impact: "Empowering students with hands-on data science skills"
-  },
-  
-  life: {
-    university: "Kathmandu University",
-    location: "Nepal 🇳🇵",
-    hobbies: ["Singing 🎤", "Poetry ✍️", "Guitar 🎸"],
-    motto: "Create. Innovate. Inspire."
-  }
-};
-
-// What drives me
-while (alive) {
-  eat();
-  sleep();
-  code();
-  repeat();
-}
+<!-- Matrix Code Rain Effect -->
+```diff
+@@           [ SYSTEM INITIALIZATION ]           @@
+@@        [ LOADING DEVELOPER PROFILE ]         @@
++         [ STATUS: AUTHENTICATION OK ]          +
++         [ ACCESS LEVEL: ADMINISTRATOR ]        +
+-         [ SECURITY: MAXIMUM ENCRYPTION ]       -
+!         [ SYSTEM: FULLY OPERATIONAL ]         !
 ```
 
+<!-- 3D Tech Card -->
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <div style="background: linear-gradient(45deg, #000000, #001100); border-radius: 10px; padding: 20px;">
+          <pre style="color: #00FF00; text-shadow: 0 0 10px #00FF00;">
+╔══════════════════════════════════════╗
+║        DEVELOPER CREDENTIALS         ║
+╠══════════════════════════════════════╣
+║ CODENAME: Aashish Thakuri           ║
+║ ROLE: Full Stack Developer          ║
+║ LOCATION: Nepal [27.7172° N]        ║
+║ MISSION: Innovate & Create          ║
+║ STATUS: Debugging Reality...        ║
+╚══════════════════════════════════════╝
+          </pre>
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>
 
-<!-- ANIMATED TOOLS & SKILLS -->
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
-
-<div style="background: #1a1b27; padding: 20px; border-radius: 10px; margin: 20px 0;">
-  <img src="https://skillicons.dev/icons?i=python,js,ts,react,next,nodejs,express,mongodb,firebase&theme=dark&perline=9" /><br/>
-  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,docker,git,aws,vercel,figma,vscode&theme=dark&perline=8" />
+<!-- Neural Network Style Skills -->
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=python,js,ts,react,next" /><br/>
+  <pre style="color: #00FF00;">
+     ┌─[ Neural Network ]
+     ├─◈ AI/ML
+     │  ├─◈ TensorFlow
+     │  ├─◈ PyTorch
+     │  └─◈ Scikit-learn
+     │
+     ├─[ System Architecture ]
+     │  ├─◈ Frontend: React, Next.js
+     │  ├─◈ Backend: Node.js, FastAPI
+     │  └─◈ Database: MongoDB, PostgreSQL
+     │
+     └─[ DevOps Pipeline ]
+        ├─◈ Docker
+        ├─◈ AWS
+        └─◈ CI/CD
+  </pre>
 </div>
 
-<!-- ANIMATED PROJECTS -->
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="900">
-
-<div style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
-  <a href="https://github.com/AashishThakuri/advance-data-science">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=AashishThakuri&repo=advance-data-science&theme=tokyonight&hide_border=true" />
-  </a>
+<!-- Binary Matrix Stats -->
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=000000&icon_color=00FF00&text_color=00FF00&title_color=00FF00&ring_color=00FF00" />
 </div>
 
-<!-- ANIMATED STATS -->
-<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="900">
-
-<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-  <img width="400" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" />
-  <img width="400" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=tokyonight&hide_border=true" />
+<!-- Digital Circuit Contribution Graph -->
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&bg_color=000000&color=00FF00&line=00FF00&point=FFFFFF&area=true&hide_border=true" />
 </div>
 
-<img width="800" src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&theme=tokyo-night&hide_border=true&area=true" />
+<!-- Project Showcase as Terminal Windows -->
+<div align="center">
+  <pre style="color: #00FF00;">
+┌─[ Projects ]────────────────────────┐
+│                                    │
+│ ┌─[ Advance Data Science ]────────┐ │
+│ │ Status: Active Development      │ │
+│ │ Stack: Python, React, TensorFlow│ │
+│ │ Mission: Democratize AI/ML      │ │
+│ └──────────────────────────────────┘ │
+│                                    │
+└────────────────────────────────────┘
+  </pre>
+</div>
 
-<!-- ANIMATED CONTRIBUTION -->
-<img src="https://user-images.githubusercontent.com/74038190/212284119-fbfd76e5-9c4a-4b55-8e46-fb5e509de620.gif" width="900">
+<!-- Digital Connection Ports -->
+<div align="center">
+  <pre style="color: #00FF00;">
+┌─[ Connection Ports ]───────────────┐
+│                                   │
+│ [📧] Email: taashish848@gmail.com │
+│ [💼] LinkedIn: aashish-bam        │
+│ [🌐] Portfolio: aashishh.vercel   │
+│                                   │
+└───────────────────────────────────┘
+  </pre>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
-</picture>
-
-<!-- ANIMATED CONNECT -->
-<img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" width="900">
-
-<div style="margin: 20px 0;">
+  <!-- Matrix-style Social Links -->
   <a href="mailto:taashish848@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/Gmail-00FF00?style=for-the-badge&logo=gmail&logoColor=black" />
   </a>
   <a href="https://www.linkedin.com/in/aashish-bam-435505351/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://x.com/Lyrical62785503">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+    <img src="https://img.shields.io/badge/LinkedIn-00FF00?style=for-the-badge&logo=linkedin&logoColor=black" />
   </a>
   <a href="https://aashishh.vercel.app/">
-    <img src="https://img.shields.io/badge/Portfolio-6C22F7?style=for-the-badge&logo=About.me&logoColor=white" />
+    <img src="https://img.shields.io/badge/Portfolio-00FF00?style=for-the-badge&logo=About.me&logoColor=black" />
   </a>
 </div>
 
-<!-- ANIMATED FOOTER -->
-<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="900">
-
+<!-- Matrix Code Animation -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=6C22F7&height=100&section=footer" width="100%" />
-  <br/>
-  <img src="https://komarev.com/ghpvc/?username=AashishThakuri&color=6C22F7&style=for-the-badge" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FF00,100:003300&height=40&section=footer&text=ACCESS%20GRANTED&fontSize=20&animation=fadeIn&fontColor=00FF00" width="100%" />
+  
+  <!-- Visitor Counter -->
+  <img src="https://profile-counter.glitch.me/AashishThakuri/count.svg" alt="Visitor Count" style="background-color: #000000;" />
 </div>
-</div>
+
+<!-- Hidden Matrix Code -->
+<!--
+  ╔═══════════════════════════════════════════════════════════════╗
+  ║                                                               ║
+  ║   [ SYSTEM LOG ]                                             ║
+  ║   - Initialized: 2025.03.12                                  ║
+  ║   - Last Update: ${new Date().toISOString()}                ║
+  ║   - Status: Online                                           ║
+  ║                                                              ║
+  ║   [ MISSION STATEMENT ]                                      ║
+  ║   Create. Code. Innovate. Debug Reality.                     ║
+  ║                                                              ║
+  ╚═══════════════════════════════════════════════════════════════╝
+-->
