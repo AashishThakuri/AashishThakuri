@@ -1,0 +1,29 @@
+name: Interactive Contribution Graph
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"  # Runs every 12 hours
+  workflow_dispatch:  # Allows manual trigger
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Generate Interactive Graph
+        uses: Ashutosh00710/github-readme-activity-graph@v3.0.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          username: "AashishThakuri"
+          bg-color: "0D1117"
+          color: "FF71CE"
+          line: "FF71CE"
+          point: "FFFFFF"
+          area: "true"
+          hide-border: "true"
+          custom-title: "My Coding Activity"
