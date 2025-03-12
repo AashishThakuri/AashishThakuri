@@ -1,98 +1,100 @@
-<!-- Header with Matrix-style animation -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:3DDC84,100:1A73E8&height=120&section=header&text=AASHISH%20THAKURI&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=55&desc=Software%20Developer%20|%20AI%20Enthusiast%20|%20Creative%20Coder&descSize=20&descAlignY=75" />
-</div>
-
-<!-- Matrix-style typing animation -->
-<h1 align="center">
+  <!-- Animated Header with Glitch Effect -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=30&duration=3000&pause=1000&color=3DDC84&center=true&vCenter=true&repeat=false&width=600&lines=console.log(%22Hello%2C+World!%22);print(%22Welcome+to+my+Profile%22);System.out.println(%22Let's+Code!%22)" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=40&pause=1000&color=6C22F7&center=true&vCenter=true&repeat=false&width=500&height=71&lines=System.out.print(%22Hi!%22)" alt="Typing SVG" />
   </a>
-</h1>
-
-<!-- Developer Stats Dashboard -->
-<div align="center">
-  <img width="49%" src="https://github-readme-stats-sigma-five.vercel.app/api?username=AashishThakuri&show_icons=true&theme=dark&bg_color=0d1117&hide_border=true&icon_color=3DDC84&title_color=3DDC84&text_color=ffffff" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com?user=AashishThakuri&theme=dark&background=0d1117&hide_border=true&ring=3DDC84&fire=3DDC84&currStreakLabel=3DDC84" />
 </div>
 
-<!-- Code Activity Graph -->
 <div align="center">
-  <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&theme=react-dark&bg_color=0d1117&color=3DDC84&line=1A73E8&point=3DDC84&area=true&hide_border=true" />
+  <!-- Developer Frustration GIF -->
+  <img width="400" src="https://media1.giphy.com/media/bPCwGUF2sKjyE/giphy.gif?cid=ecf05e47q90cuxwo3k0dvtngtazn5gmvq8e85jpp8k8dj4pw&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
 </div>
 
-<!-- About Me Code Section -->
-```typescript
-class SoftwareDeveloper {
-    name: string = "Aashish Thakuri";
-    title: string = "Student & Tech Innovator";
-    location: string = "Kathmandu University, Nepal 🇳🇵";
-    
-    education = {
-        university: "Kathmandu University",
-        major: "Computer Science",
-        focus: ["AI/ML", "Web Development", "Data Science"]
-    };
-    
-    projects = {
-        current: "Advance Data Science Classroom",
-        role: "Founder",
-        mission: "Democratizing Data Science Education",
-        impact: "Empowering KU Students with Data Skills"
-    };
-    
-    skills = {
-        languages: ["Python", "JavaScript", "TypeScript", "Java"],
-        frontend: ["React", "Next.js", "HTML5", "CSS3"],
-        backend: ["Node.js", "Express", "MongoDB", "Firebase"],
-        ai_ml: ["TensorFlow", "PyTorch", "OpenCV", "Pandas"],
-        tools: ["Git", "Docker", "VS Code", "Figma"]
-    };
-    
-    interests = {
-        technical: ["AI Research", "Web3", "Cloud Computing"],
-        creative: ["Singing 🎤", "Poetry ✍️", "Guitar 🎸"]
-    };
+<!-- 3D Skills Visualization -->
+<div id="skills-3d" style="height: 400px; background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%); border-radius: 10px; margin: 20px 0;">
+  <script type="module" src="assets/js/3d-skills.js"></script>
+</div>
 
-    async getMotivation(): Promise<string> {
-        return "Building technology that makes a difference";
+<!-- Creative About Me Section -->
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&duration=3000&pause=1000&color=6C22F7&center=true&vCenter=true&width=435&lines=const+developer+%3D+%7B...me+%7D" />
+</div>
+
+```js
+const developer = {
+  name: "Aashish Thakuri",
+  title: "Creative Developer & AI Enthusiast",
+  location: "Kathmandu University 🎓",
+  
+  currentProject: {
+    name: "Advance Data Science Classroom",
+    role: "Founder & Lead Developer",
+    mission: "Democratizing Data Science Education",
+    impact: "Empowering Future Data Scientists"
+  },
+  
+  skills: {
+    languages: ["Python", "JavaScript", "TypeScript"],
+    frontend: ["React", "Next.js", "Three.js", "TailwindCSS"],
+    backend: ["Node.js", "Express", "MongoDB", "Firebase"],
+    ai_ml: ["TensorFlow", "PyTorch", "OpenCV", "Pandas"],
+    creative: ["3D Modeling", "UI/UX Design", "Animation"]
+  },
+  
+  passions: [
+    "Building Immersive Web Experiences 🌐",
+    "Exploring AI Frontiers 🤖",
+    "Creating Educational Content 📚",
+    "Music Production 🎵"
+  ],
+
+  // What drives me
+  philosophy: `
+    while (alive) {
+      learn();
+      create();
+      inspire();
+      repeat();
     }
-}
+  `
+};
 ```
 
+<!-- Contribution Calendar -->
+<h2 align="center">🚀 Contribution Calendar</h2>
+<div align="center">
+  <img src="https://github-calendar.vercel.app/api?username=AashishThakuri&theme=dracula&hide_border=true" />
+</div>
+
+<!-- GitHub Stats with Custom Theme -->
+<div align="center">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=6C22F7&icon_color=6C22F7" />
+  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=midnight-purple&hide_border=true&background=0D1117&ring=6C22F7&fire=6C22F7&currStreakLabel=6C22F7" />
+</div>
+
+<!-- Activity Graph -->
+<div align="center">
+  <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&theme=high-contrast&bg_color=0D1117&color=6C22F7&line=6C22F7&point=FFFFFF&area=true&hide_border=true" />
+</div>
+
 <!-- Tech Stack -->
-<h2 align="center">💻 Technology Stack</h2>
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,ts,react,next,nodejs,express,mongodb,firebase,git&perline=5&theme=dark" />
-  <br/>
-  <img src="https://skillicons.dev/icons?i=tensorflow,docker,vercel,figma,vscode&perline=5&theme=dark" />
+  <h2>💻 Tech Stack & Tools</h2>
+  <img src="https://skillicons.dev/icons?i=python,js,ts,react,next,threejs,nodejs,express,mongodb,firebase&theme=dark" /><br/>
+  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,docker,git,figma,vscode&theme=dark" />
 </div>
 
-<!-- GitHub Contribution Snake -->
-<h2 align="center">🐍 Contribution Graph</h2>
+<!-- Current Projects -->
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" />
-  </picture>
-</div>
-
-<!-- Most Used Languages -->
-<h2 align="center">📊 Most Used Languages</h2>
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AashishThakuri&theme=dark&bg_color=0d1117&hide_border=true&layout=compact&langs_count=8&title_color=3DDC84" />
-</div>
-
-<!-- GitHub Trophies -->
-<h2 align="center">🏆 GitHub Trophies</h2>
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AashishThakuri&theme=darkhub&no-frame=true&margin-w=15&column=7" />
+  <h2>🔭 Current Projects</h2>
+  <a href="https://github.com/AashishThakuri/advance-data-science">
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=AashishThakuri&repo=advance-data-science&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=6C22F7&icon_color=6C22F7" />
+  </a>
 </div>
 
 <!-- Connect Section -->
-<h2 align="center">🤝 Let's Connect!</h2>
 <div align="center">
+  <h2>🤝 Let's Connect!</h2>
   <a href="mailto:taashish848@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
@@ -103,17 +105,15 @@ class SoftwareDeveloper {
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
   </a>
   <a href="https://aashishh.vercel.app/">
-    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+    <img src="https://img.shields.io/badge/Portfolio-6C22F7?style=for-the-badge&logo=About.me&logoColor=white" />
   </a>
 </div>
 
-<!-- Profile Views Counter -->
+<!-- Profile Views -->
 <div align="center">
   <br/>
-  <img src="https://komarev.com/ghpvc/?username=AashishThakuri&style=for-the-badge&color=3DDC84" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=AashishThakuri&style=for-the-badge&color=6C22F7" alt="Profile Views" />
 </div>
 
-<!-- Footer -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" />
-</div>
+<!-- Footer Wave -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6C22F7&height=120&section=footer" />
