@@ -9,113 +9,114 @@
   <img src="https://user-images.githubusercontent.com/74038190/241765440-80728820-e06b-4f96-9c9e-9df46f0cc0a5.gif" width="100%" />
 </div>
 
-<!-- Unique About Me Section -->
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=00E8FF&center=true&vCenter=true&width=435&lines=%3C+About+Me+%2F%3E" alt="About Me" />
-</div>
-
-<div align="center">
-  <img src="https://user-images.190/216649436-05c6a71a-0566-45aa-bc3f-f258ab12e491.gif" width="150" />
-</div>
-
-<div align="center">
-<table>
-<tr>
-<td>
-<div align="center">
-
-```text
-⚡ Quick Facts
-
-🎓 Computer Science @ Kathmandu University
-🌟 Passionate about AI & Creative Coding
-🚀 Building the future of tech education
-💡 Turning ideas into elegant solutions
-```
-
-</div>
-</td>
-<td>
-<div align="center">
-
-```text
-🎯 Current Focus
-
-🤖 Advanced AI/ML Projects
-📚 Democratizing Tech Education
-🎨 Creative Development
-✨ Inspiring Others
-```
-
-</div>
-</td>
-</tr>
-</table>
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212747903-e9bdf048-2dc8-41f9-b973-0e72ff07bfba.gif" width="400">
-</div>
-
-```javascript
-// Life Philosophy
-const aashish = {
-    mission: "Democratizing Tech Education",
-    passion: "Building Innovative Solutions",
-    approach: "Creative Problem Solving",
-    motto: "Code with Purpose, Create with Passion"
-};
-
-// Daily Routine
-while (alive) {
-    learn();
-    create();
-    inspire();
-    repeat();
-}
-```
-
+<!-- Innovative About Me Section -->
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-4785-b5e1-380e1c1c2d62.gif" width="200">
-</div>
-
-<table align="center">
-<tr>
-<td>
-
-```python
-# Skills & Expertise
-class Developer:
-    def __init__(self):
-        self.name = "Aashish"
-        self.role = "Full Stack & AI"
-        self.language = ["Python", "JS"]
-        self.interests = ["AI", "Web Dev"]
-        
-    def say_hi(self):
-        print("Let's create something amazing!")
+  <br><br>
+  
+```text
+                     🚀 SYSTEM BOOT SEQUENCE INITIATED 🚀
+    ═══════════════════════════════════════════════════════════════
+    
+    > Initializing developer profile...
+    > Loading creative modules...
+    > Activating AI capabilities...
+    > Establishing connection to innovation matrix...
+    
+    DEVELOPER STATUS: ONLINE ✨
+    ═══════════════════════════════════════════════════════════════
 ```
 
-</td>
-<td>
+<img src="https://user-images.githubusercontent.com/74038190/212747903-e9bdf048-2dc8-41f9-b973-0e72ff07bfba.gif" width="400">
 
 ```javascript
-// Current Status
-{
-  "learning": "Advanced AI/ML",
-  "working": "Tech Education Platform",
-  "exploring": "Creative Coding",
-  "status": "Always Coding ⚡"
+/** 
+ * @dev Profile Configuration
+ * @notice This is who I am
+ */
+const profile = {
+    name: "Aashish Thakuri",
+    title: "Creative Developer & AI Architect",
+    location: "Kathmandu University 🇳🇵",
+    system: {
+        os: "Brain.exe",
+        version: "2.0.25",
+        status: "Always Learning"
+    }
+};
+
+/** 
+ * @dev Core Values & Mission
+ * @notice This is what drives me
+ */
+class CoreValues {
+    static mission = "Democratizing Tech Education";
+    static vision = "Innovation through Creation";
+    static values = [
+        "Building the Future 🚀",
+        "Sharing Knowledge 📚",
+        "Creating Impact ⚡",
+        "Inspiring Others ✨"
+    ];
+}
+
+/** 
+ * @dev Daily Operations
+ * @notice This is what I do
+ */
+async function dailyRoutine() {
+    while(true) {
+        await learn("New Technologies");
+        await build("Innovative Solutions");
+        await share("Knowledge & Experience");
+        await inspire("Fellow Developers");
+        await coffee.drink(); // Essential!
+    }
 }
 ```
 
-</td>
-</tr>
-</table>
+<img src="https://user-images.githubusercontent.com/74038190/226190894-18e959ba-d458-4a94-ac44-790190f2a947.gif" width="400">
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/226190894-18e959ba-d458-4a94-ac44-790190f2a947.gif" width="350">
-  <br>
-  <strong>Let's turn ideas into reality! 💡</strong>
+```text
+    SYSTEM CAPABILITIES
+    ══════════════════
+    
+    [■■■■■] AI/ML Engineering
+    [■■■■■] Full Stack Development
+    [■■■■■] Creative Problem Solving
+    [■■■■□] Quantum Computing
+    [■■■■■] Innovation & Design
+    
+    CURRENT OBJECTIVES
+    ═════════════════
+    
+    🎯 Primary: Building Advanced Educational Platforms
+    🔄 Secondary: Exploring AI Frontiers
+    ⚡ Ongoing: Creating Innovative Solutions
+    
+    STATUS: Actively seeking new challenges and opportunities
+```
+
+<img src="https://user-images.githubusercontent.com/74038190/212749171-b84692a8-2b04-4e3b-93ca-ac14705da224.gif" width="400">
+
+```python
+# Core Belief System
+def my_philosophy():
+    return """
+    💫 Every line of code is an opportunity to create
+    🌟 Every bug is a chance to learn
+    ⚡ Every project is a story waiting to be told
+    ✨ Every challenge is an adventure
+    
+    Let's build something extraordinary together!
+    """
+
+# Initialize the journey
+if __name__ == "__main__":
+    print(my_philosophy())
+```
+
+<img src="https://user-images.githubusercontent.com/74038190/212748842-9fcbad5b-6173-4175-8a61-521f3dbb7514.gif" width="400">
 </div>
 
 <!-- Rest of the content remains exactly the same -->
