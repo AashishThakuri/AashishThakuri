@@ -22,7 +22,7 @@
 class DigitalCraftsman:
     def __init__(self):
         self.name = "Aashish Thakuri"
-        self.role = "Full Stack Developer & AI Architect"
+        self.role = "Coder and AI Enthusiast"
         self.base = "Kathmandu University, Nepal 🇳🇵"
         self.philosophy = {
             "code": "Elegance in simplicity",
@@ -192,11 +192,11 @@ me.craft_solutions()  # The adventure begins!
       <td width="50%">
         <h3 align="center">🎓 Advance Data Science Classroom</h3>
         <p align="center">
-          <a href="https://github.com/AashishThakuri/advance-data-science-classroom" target="_blank">
+          <a href="https://kuclassroom.vercel.app/" target="_blank">
             <img src="https://raw.githubusercontent.com/gist/patevs/b007a0e98fb216438d4cbf559fac4166/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif" width="100%" alt="Project Preview"/>
           </a>
           <p align="center">
-            A platform democratizing data science education. Built with Python, React, and TensorFlow.
+            KU-Classroom is a platform democratizing data science education. Built with HTML,CSS,REACT,Supabase
             <br><br>
             <a href="https://github.com/AashishThakuri/advance-data-science-classroom" target="_blank">
               <img src="https://img.shields.io/badge/View_Project-00C7FF?style=for-the-badge&logo=github&logoColor=white"/>
@@ -205,13 +205,13 @@ me.craft_solutions()  # The adventure begins!
         </p>
       </td>
       <td width="50%">
-        <h3 align="center">🚀 More Projects Coming Soon!</h3>
+        <h3 align="center">My First Portfolio</h3>
         <p align="center">
           <img src="https://raw.githubusercontent.com/gist/patevs/b007a0e98fb216438d4cbf559fac4166/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif" width="100%" alt="Coming Soon"/>
           <p align="center">
             Stay tuned for more innovative projects!
             <br><br>
-            <a href="https://github.com/AashishThakuri" target="_blank">
+            <a href="https://lyricalportfolio.netlify.app/" target="_blank">
               <img src="https://img.shields.io/badge/Follow_Journey-00C7FF?style=for-the-badge&logo=github&logoColor=white"/>
             </a>
           </p>
@@ -222,6 +222,9 @@ me.craft_solutions()  # The adventure begins!
 </div>
 
 <h2 align="center">📊 GitHub Analytics: Track Your Growth</h2>
+
+<!-- START_SECTION:activity -->
+<!-- END_SECTION:activity -->
 
 <div align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=tokyonight&bg_color=00000000&hide_border=true&icon_color=00E8FF&title_color=00E8FF&text_color=FFFFFF"/>

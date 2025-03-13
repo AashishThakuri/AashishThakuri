@@ -1,4 +1,4 @@
-# Keep everything before Tech Arsenal section unchanged
+
 <div align="center">
 <table>
   <tr>
@@ -122,4 +122,3 @@
 </div>
 </div>
 
-# Keep everything after Tech Arsenal section unchanged
