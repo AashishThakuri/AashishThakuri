@@ -22,7 +22,8 @@
 class DigitalCraftsman:
     def __init__(self):
         self.name = "Aashish Thakuri"
-        self.role = "Coder and AI Enthusiast"
+        self.role = "Full Stack Developer & AI Architect"
+        self.student = "Data-Science Student"
         self.base = "Kathmandu University, Nepal 🇳🇵"
         self.philosophy = {
             "code": "Elegance in simplicity",
@@ -223,8 +224,10 @@ me.craft_solutions()  # The adventure begins!
 
 <h2 align="center">📊 GitHub Analytics: Track Your Growth</h2>
 
-<!-- START_SECTION:activity -->
-<!-- END_SECTION:activity -->
+<h3 align="center">🔥 Recent Activity</h3>
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 
 <div align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=tokyonight&bg_color=00000000&hide_border=true&icon_color=00E8FF&title_color=00E8FF&text_color=FFFFFF"/>
