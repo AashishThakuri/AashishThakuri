@@ -9,9 +9,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: Update Profile README with recent activity
-
+    permissions:
+      contents: write
+      
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 100
+          ref: main
       - uses: jamesgeorge007/github-activity-readme@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          MAX_LINES: 10
