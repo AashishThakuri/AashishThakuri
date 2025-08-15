@@ -1,0 +1,27 @@
+name: Generate Contribution Skyline
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight
+  workflow_dispatch:
+
+jobs:
+  skyline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Generate Skyline
+        uses: aymnkh/skyline-action@v1.0.0
+        with:
+          username: 'AashishThakuri'
+          output: 'skyline.svg'
+
+      - name: Commit and push skyline
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add skyline.svg
+          git commit -m "feat: update contribution skyline" || exit 0
+          git push
