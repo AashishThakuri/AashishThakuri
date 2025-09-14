@@ -122,27 +122,27 @@ I'm a passionate Full-Stack Developer from Nepal with a love for building beauti
 
 </div>
 
+### 🌌 Contribution Galaxy
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/contribution-galaxy.svg" alt="Contribution Galaxy Animation"/>
+
+</div>
+
+### 🎮 Pac-Man Contribution Game
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/pacman-contribution.svg" alt="Pac-Man Contribution Game"/>
+
+</div>
+
 ### 🚀 Interactive Code Matrix
 
 <div align="center">
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=CFA98E&background=0D1117&center=true&vCenter=true&width=600&height=100&lines=Full-Stack+Developer;Problem+Solver;Code+Architect;Innovation+Driver" alt="Typing Animation"/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&bg_color=0d1117&color=CFA98E&line=E6B59A&point=F1D3BF&area=true&hide_border=true&custom_title=Code%20Matrix%20Activity" alt="Code Matrix"/>
-
-</div>
-
-### 🎯 Dynamic Developer Metrics
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AashishThakuri&theme=github_dark" alt="Profile Details"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AashishThakuri&theme=github_dark" alt="Repos per Language"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AashishThakuri&theme=github_dark" alt="Most Commit Language"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AashishThakuri&theme=github_dark" alt="Stats"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=AashishThakuri&theme=github_dark&utcOffset=5.75" alt="Productive Time"/>
 
 </div>
 

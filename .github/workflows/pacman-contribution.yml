@@ -1,0 +1,255 @@
+name: Generate Pac-Man Contribution Animation
+
+on:
+  schedule:
+    - cron: "0 */8 * * *"  # Every 8 hours
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Generate Pac-Man Contribution Game SVG
+        run: |
+          mkdir -p dist
+          cat > dist/pacman-contribution.svg << 'EOF'
+          <svg width="900" height="500" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="gameBackground" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" style="stop-color:#0D1117;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#21262D;stop-opacity:1" />
+              </radialGradient>
+              
+              <radialGradient id="pacmanGlow" cx="30%" cy="30%" r="70%">
+                <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+                <stop offset="70%" style="stop-color:#FFA500;stop-opacity:0.8" />
+                <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:0" />
+              </radialGradient>
+              
+              <radialGradient id="ghostGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:0.8" />
+                <stop offset="100%" style="stop-color:#FF1493;stop-opacity:0" />
+              </radialGradient>
+              
+              <filter id="neonGlow">
+                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                <feMerge> 
+                  <feMergeNode in="coloredBlur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+              
+              <filter id="dotGlow">
+                <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                <feMerge> 
+                  <feMergeNode in="coloredBlur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+            
+            <!-- Game Background -->
+            <rect width="900" height="500" fill="url(#gameBackground)" stroke="#CFA98E" stroke-width="3" rx="15"/>
+            
+            <!-- Game Title -->
+            <text x="450" y="40" text-anchor="middle" fill="#FFD700" font-family="Arial Black, sans-serif" font-size="24" font-weight="bold" filter="url(#neonGlow)">
+              🎮 PAC-MAN CONTRIBUTION GAME 🎮
+              <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+            </text>
+            
+            <!-- Contribution Grid (Pac-Man Maze) -->
+            <g id="contributionMaze" transform="translate(50,80)">
+              <!-- Maze Walls -->
+              <rect x="0" y="0" width="800" height="350" fill="none" stroke="#CFA98E" stroke-width="2" rx="10"/>
+              
+              <!-- Contribution Dots Grid -->
+              <g id="contributionDots">
+                <!-- Row 1 -->
+                <circle cx="50" cy="50" r="3" fill="#CFA98E" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="2;4;2" dur="3s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="100" cy="50" r="4" fill="#E6B59A" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="3;5;3" dur="2.5s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="150" cy="50" r="2" fill="#F1D3BF" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="1.5;3;1.5" dur="3.5s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="200" cy="50" r="5" fill="#CFA98E" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="4;6;4" dur="2.8s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="250" cy="50" r="3" fill="#E6B59A" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="2.5;4;2.5" dur="3.2s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="300" cy="50" r="4" fill="#F1D3BF" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="3;5;3" dur="2.7s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="350" cy="50" r="2.5" fill="#CFA98E" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="2;3.5;2" dur="3.8s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="400" cy="50" r="6" fill="#E6B59A" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="5;7;5" dur="2.3s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="450" cy="50" r="3.5" fill="#F1D3BF" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="3;4.5;3" dur="3.6s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="500" cy="50" r="4.5" fill="#CFA98E" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="4;5.5;4" dur="2.9s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="550" cy="50" r="2.8" fill="#E6B59A" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="2.3;3.8;2.3" dur="3.4s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="600" cy="50" r="5.2" fill="#F1D3BF" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="4.5;6;4.5" dur="2.6s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="650" cy="50" r="3.2" fill="#CFA98E" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="2.8;4;2.8" dur="3.7s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="700" cy="50" r="4.8" fill="#E6B59A" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="4.2;5.8;4.2" dur="2.4s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="750" cy="50" r="3.6" fill="#F1D3BF" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="3.2;4.6;3.2" dur="3.1s" repeatCount="indefinite"/>
+                </circle>
+                
+                <!-- Additional rows with varying patterns -->
+                <!-- Row 2 -->
+                <circle cx="75" cy="100" r="2.5" fill="#E6B59A" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="2;3.5;2" dur="3.3s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="175" cy="100" r="4.2" fill="#CFA98E" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="3.5;5;3.5" dur="2.8s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="275" cy="100" r="3.8" fill="#F1D3BF" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="3.2;4.8;3.2" dur="3.5s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="375" cy="100" r="5.5" fill="#E6B59A" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="5;6.5;5" dur="2.2s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="475" cy="100" r="2.2" fill="#CFA98E" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="1.8;3;1.8" dur="3.9s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="575" cy="100" r="4.6" fill="#F1D3BF" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="4;5.6;4" dur="2.7s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="675" cy="100" r="3.4" fill="#E6B59A" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="3;4.4;3" dur="3.2s" repeatCount="indefinite"/>
+                </circle>
+                
+                <!-- Row 3 -->
+                <circle cx="125" cy="150" r="5.8" fill="#CFA98E" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="5.2;6.8;5.2" dur="2.1s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="225" cy="150" r="2.8" fill="#F1D3BF" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="2.4;3.6;2.4" dur="3.6s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="325" cy="150" r="4.4" fill="#E6B59A" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="3.8;5.2;3.8" dur="2.9s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="425" cy="150" r="3.1" fill="#CFA98E" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="2.7;3.9;2.7" dur="3.4s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="525" cy="150" r="5.3" fill="#F1D3BF" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="4.7;6.1;4.7" dur="2.5s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="625" cy="150" r="2.6" fill="#E6B59A" filter="url(#dotGlow)">
+                  <animate attributeName="r" values="2.2;3.4;2.2" dur="3.7s" repeatCount="indefinite"/>
+                </circle>
+              </g>
+            </g>
+            
+            <!-- Animated Pac-Man -->
+            <g id="pacman" transform="translate(100,200)">
+              <circle cx="0" cy="0" r="20" fill="url(#pacmanGlow)" filter="url(#neonGlow)">
+                <animate attributeName="cx" values="0;700;0" dur="15s" repeatCount="indefinite"/>
+              </circle>
+              
+              <!-- Pac-Man Mouth Animation -->
+              <path d="M 0,0 L 15,0 A 20,20 0 0,1 10,15 Z" fill="#0D1117">
+                <animate attributeName="d" values="M 0,0 L 15,0 A 20,20 0 0,1 10,15 Z;M 0,0 L 20,0 A 20,20 0 0,1 0,20 Z;M 0,0 L 15,0 A 20,20 0 0,1 10,15 Z" dur="0.5s" repeatCount="indefinite"/>
+                <animateTransform attributeName="transform" type="translate" values="0,0;700,0;0,0" dur="15s" repeatCount="indefinite"/>
+              </path>
+            </g>
+            
+            <!-- Animated Ghosts -->
+            <g id="ghost1" transform="translate(300,200)">
+              <path d="M 0,20 A 15,15 0 0,1 30,20 L 30,5 A 15,15 0 0,1 0,5 Z M 0,20 L 5,15 L 10,20 L 15,15 L 20,20 L 25,15 L 30,20" 
+                    fill="url(#ghostGlow)" filter="url(#neonGlow)">
+                <animate attributeName="fill" values="#FF69B4;#00FFFF;#FF69B4" dur="3s" repeatCount="indefinite"/>
+                <animateTransform attributeName="transform" type="translate" values="0,0;-200,0;400,0;0,0" dur="12s" repeatCount="indefinite"/>
+              </path>
+              
+              <!-- Ghost Eyes -->
+              <circle cx="8" cy="8" r="3" fill="#FFFFFF"/>
+              <circle cx="22" cy="8" r="3" fill="#FFFFFF"/>
+              <circle cx="8" cy="8" r="1.5" fill="#000000"/>
+              <circle cx="22" cy="8" r="1.5" fill="#000000"/>
+            </g>
+            
+            <g id="ghost2" transform="translate(500,200)">
+              <path d="M 0,20 A 15,15 0 0,1 30,20 L 30,5 A 15,15 0 0,1 0,5 Z M 0,20 L 5,15 L 10,20 L 15,15 L 20,20 L 25,15 L 30,20" 
+                    fill="#00FF00" filter="url(#neonGlow)">
+                <animate attributeName="fill" values="#00FF00;#FF4500;#00FF00" dur="2.5s" repeatCount="indefinite"/>
+                <animateTransform attributeName="transform" type="translate" values="0,0;200,0;-400,0;0,0" dur="10s" repeatCount="indefinite"/>
+              </path>
+              
+              <!-- Ghost Eyes -->
+              <circle cx="8" cy="8" r="3" fill="#FFFFFF"/>
+              <circle cx="22" cy="8" r="3" fill="#FFFFFF"/>
+              <circle cx="8" cy="8" r="1.5" fill="#000000"/>
+              <circle cx="22" cy="8" r="1.5" fill="#000000"/>
+            </g>
+            
+            <!-- Score Display -->
+            <text x="50" y="470" fill="#FFD700" font-family="Arial Black, sans-serif" font-size="16" filter="url(#neonGlow)">
+              SCORE: 
+              <tspan fill="#CFA98E">∞</tspan>
+              <animate attributeName="opacity" values="0.8;1;0.8" dur="1.5s" repeatCount="indefinite"/>
+            </text>
+            
+            <!-- Level Display -->
+            <text x="400" y="470" fill="#FFD700" font-family="Arial Black, sans-serif" font-size="16" filter="url(#neonGlow)">
+              LEVEL: 
+              <tspan fill="#E6B59A">CODING MASTER</tspan>
+              <animate attributeName="opacity" values="0.8;1;0.8" dur="1.8s" repeatCount="indefinite"/>
+            </text>
+            
+            <!-- Lives Display -->
+            <text x="700" y="470" fill="#FFD700" font-family="Arial Black, sans-serif" font-size="16" filter="url(#neonGlow)">
+              LIVES: 
+              <tspan fill="#F1D3BF">💛💛💛</tspan>
+              <animate attributeName="opacity" values="0.8;1;0.8" dur="2.2s" repeatCount="indefinite"/>
+            </text>
+            
+            <!-- Power Pellets -->
+            <circle cx="120" cy="250" r="8" fill="#FFD700" filter="url(#neonGlow)">
+              <animate attributeName="r" values="6;10;6" dur="1s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.7;1;0.7" dur="1s" repeatCount="indefinite"/>
+            </circle>
+            
+            <circle cx="780" cy="250" r="8" fill="#FFD700" filter="url(#neonGlow)">
+              <animate attributeName="r" values="6;10;6" dur="1.2s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.7;1;0.7" dur="1.2s" repeatCount="indefinite"/>
+            </circle>
+          </svg>
+          EOF
+          
+      - name: Publish to GitHub Pages branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
