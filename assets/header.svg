@@ -40,17 +40,36 @@
     <animateTransform attributeName="transform" type="translate" dur="6s" values="0 0; 0 -2; 0 0; 0 2; 0 0" repeatCount="indefinite"/>
   </g>
 
-  <!-- Subtle twinkles -->
-  <g opacity="0.35">
-    <polygon points="580,110 584,118 592,122 584,126 580,134 576,126 568,122 576,118" fill="#8C6B55">
-      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
-    </polygon>
-    <polygon points="700,150 703,156 709,159 703,162 700,168 697,162 691,159 697,156" fill="#8C6B55">
-      <animate attributeName="opacity" values="0;1;0" dur="4s" begin="1s" repeatCount="indefinite"/>
-    </polygon>
-    <polygon points="480,160 483,165 488,168 483,171 480,176 477,171 472,168 477,165" fill="#8C6B55">
-      <animate attributeName="opacity" values="0;1;0" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
-    </polygon>
+  <!-- Floating particles -->
+  <g opacity="0.4">
+    <circle cx="200" cy="80" r="3" fill="#D4A574">
+      <animateTransform attributeName="transform" type="translate" dur="8s" values="0,0; 20,-10; 0,0" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="90" r="2" fill="#C49968">
+      <animateTransform attributeName="transform" type="translate" dur="6s" values="0,0; -15,8; 0,0" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="180" r="2.5" fill="#B8845A">
+      <animateTransform attributeName="transform" type="translate" dur="10s" values="0,0; 25,5; 0,0" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="980" cy="170" r="3.5" fill="#D4A574">
+      <animateTransform attributeName="transform" type="translate" dur="7s" values="0,0; -18,-12; 0,0" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Morphing shapes -->
+  <g opacity="0.25">
+    <path d="M150,120 Q170,100 190,120 Q170,140 150,120" fill="#E6B59A">
+      <animate attributeName="d" dur="6s" values="M150,120 Q170,100 190,120 Q170,140 150,120;M150,120 Q160,110 190,120 Q180,130 150,120;M150,120 Q170,100 190,120 Q170,140 150,120" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" dur="12s" values="0 170 120; 360 170 120" repeatCount="indefinite"/>
+    </path>
+    <path d="M1090,140 Q1110,120 1130,140 Q1110,160 1090,140" fill="#CFA98E">
+      <animate attributeName="d" dur="8s" values="M1090,140 Q1110,120 1130,140 Q1110,160 1090,140;M1090,140 Q1100,130 1130,140 Q1120,150 1090,140;M1090,140 Q1110,120 1130,140 Q1110,160 1090,140" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" dur="15s" values="360 1110 140; 0 1110 140" repeatCount="indefinite"/>
+    </path>
   </g>
 
   <!-- Stickers removed: external GIFs are blocked in SVG by many viewers -->

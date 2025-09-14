@@ -21,15 +21,49 @@
   <rect x="10" y="10" width="1260" height="160" rx="14" fill="url(#paperF)"/>
   <rect x="10" y="10" width="1260" height="160" rx="14" fill="none" stroke="#1f2328" stroke-width="6"/>
 
-  <!-- Animated top dash line -->
-  <path d="M30 36 H1250" stroke="#1f2328" stroke-width="6" stroke-linecap="round" stroke-dasharray="14 14">
-    <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="6s" repeatCount="indefinite" />
+  <!-- Animated wave lines -->
+  <path d="M30 36 Q160 26, 290 36 T610 36 T930 36 T1250 36" stroke="#1f2328" stroke-width="4" fill="none" opacity="0.6">
+    <animate attributeName="d" dur="8s" values="M30 36 Q160 26, 290 36 T610 36 T930 36 T1250 36;M30 36 Q160 46, 290 36 T610 36 T930 36 T1250 36;M30 36 Q160 26, 290 36 T610 36 T930 36 T1250 36" repeatCount="indefinite"/>
+  </path>
+  <path d="M30 42 Q200 32, 400 42 T800 42 T1250 42" stroke="#CFA98E" stroke-width="3" fill="none" opacity="0.4">
+    <animate attributeName="d" dur="6s" values="M30 42 Q200 32, 400 42 T800 42 T1250 42;M30 42 Q200 52, 400 42 T800 42 T1250 42;M30 42 Q200 32, 400 42 T800 42 T1250 42" repeatCount="indefinite"/>
   </path>
 
-  <!-- Footer text -->
-  <text x="640" y="88" text-anchor="middle" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="22" fill="#1f2328">Thanks for visiting — let's build something useful</text>
-  <text x="640" y="122" text-anchor="middle" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-weight="600" font-size="16" fill="#4c3b2f">© 2025 Aashish Thakuri</text>
+  <!-- Floating geometric shapes -->
+  <g opacity="0.3">
+    <rect x="80" y="60" width="8" height="8" fill="#D4A574" rx="2">
+      <animateTransform attributeName="transform" type="translate" dur="12s" values="0,0; 30,20; 0,0" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" dur="8s" values="0 84 64; 360 84 64" repeatCount="indefinite" additive="sum"/>
+    </rect>
+    <polygon points="1180,70 1190,85 1175,85" fill="#C49968">
+      <animateTransform attributeName="transform" type="translate" dur="10s" values="0,0; -25,15; 0,0" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="4s" repeatCount="indefinite"/>
+    </polygon>
+    <circle cx="150" cy="130" r="4" fill="#B8845A">
+      <animateTransform attributeName="transform" type="translate" dur="14s" values="0,0; 40,-10; 0,0" repeatCount="indefinite"/>
+      <animate attributeName="r" values="4;6;4" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <ellipse cx="1100" cy="120" rx="6" ry="3" fill="#E6B59A">
+      <animateTransform attributeName="transform" type="translate" dur="9s" values="0,0; -20,25; 0,0" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" dur="6s" values="0 1100 120; 180 1100 120; 0 1100 120" repeatCount="indefinite" additive="sum"/>
+    </ellipse>
+  </g>
 
-  <!-- Stickers removed: external GIFs are blocked in many SVG viewers -->
+  <!-- Footer text with subtle animation -->
+  <g>
+    <text x="640" y="88" text-anchor="middle" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="22" fill="#1f2328">Thanks for visiting — let's build something useful</text>
+    <text x="640" y="122" text-anchor="middle" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-weight="600" font-size="16" fill="#4c3b2f">© 2025 Aashish Thakuri</text>
+    <animateTransform attributeName="transform" type="translate" dur="8s" values="0 0; 0 -1; 0 0; 0 1; 0 0" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Decorative corner elements -->
+  <g opacity="0.2">
+    <path d="M25 25 L45 25 L35 35 Z" fill="#8C6B55">
+      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M1255 25 L1235 25 L1245 35 Z" fill="#8C6B55">
+      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="7s" begin="3.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
 
 </svg>

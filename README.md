@@ -3,10 +3,11 @@
 <img src="assets/header.svg" width="100%" alt="Aashish Thakuri Header" />
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" width="120" alt="coding gif"/>
-  <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="90" alt="wave gif"/>
-  <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/handShake.gif" width="100" alt="handshake gif"/>
-  <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/Developer.gif" width="120" alt="dev gif"/>
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="100" alt="coding"/>
+  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="100" alt="cat coding"/>
+  <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="100" alt="rocket"/>
+  <img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="100" alt="brain"/>
+  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="100" alt="earth"/>
  </p>
 
 ### Hi there 👋, I'm Aashish Thakuri
@@ -137,8 +138,8 @@ I'm a passionate Full-Stack Developer from Nepal with a love for building beauti
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/handShake.gif" width="90" alt="handshake gif"/>
-  <img src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" width="120" alt="coding gif"/>
+  <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100" alt="magic"/>
+  <img src="https://media.giphy.com/media/26BRrSvJUa0crqw4E/giphy.gif" width="100" alt="thank you"/>
 </p>
 
 <img src="assets/footer.svg" width="100%" alt="Footer" />
