@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280" height="140" viewBox="0 0 1280 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E9C2A8"/>
+      <stop offset="100%" stop-color="#E6B59A"/>
+    </linearGradient>
+    <pattern id="paperF" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="12" height="12" fill="transparent"/>
+      <rect x="0" y="0" width="12" height="1" fill="rgba(0,0,0,0.06)"/>
+    </pattern>
+  </defs>
+
+  <!-- Frame -->
+  <rect x="10" y="10" width="1260" height="120" rx="14" fill="url(#bgGradF)"/>
+  <rect x="10" y="10" width="1260" height="120" rx="14" fill="url(#paperF)"/>
+  <rect x="10" y="10" width="1260" height="120" rx="14" fill="none" stroke="#1f2328" stroke-width="6"/>
+
+  <!-- Footer text -->
+  <text x="640" y="65" text-anchor="middle" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="22" fill="#1f2328">Thanks for visiting — let's build something useful</text>
+  <text x="640" y="95" text-anchor="middle" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-weight="600" font-size="16" fill="#4c3b2f">© 2025 Aashish Thakuri</text>
+</svg>

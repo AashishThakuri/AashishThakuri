@@ -3,475 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aashish Thakuri - Enhanced Profile Preview</title>
+    <title>Aashish Thakuri — Framed Retro Preview</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@400;600;700&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
         body {
-            background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #21262d 100%);
-            color: #c9d1d9;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: #F3E3D6; /* warm paper */
+            color: #1f2328;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             text-align: center;
-            padding: 0;
-            min-height: 100vh;
-            position: relative;
-            overflow-x: hidden;
-        }
-
-        /* Animated Background */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(88, 166, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255, 87, 34, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 80%, rgba(76, 175, 80, 0.1) 0%, transparent 50%);
-            animation: backgroundMove 20s ease-in-out infinite;
-            z-index: -1;
-        }
-
-        @keyframes backgroundMove {
-            0%, 100% { transform: translateX(0) translateY(0); }
-            33% { transform: translateX(-20px) translateY(-10px); }
-            66% { transform: translateX(20px) translateY(10px); }
+            padding: 20px;
+            /* subtle texture */
+            background-image:
+              radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+              repeating-linear-gradient(45deg, rgba(0,0,0,0.02) 0 3px, transparent 3px 6px);
+            background-size: 4px 4px, 10px 10px;
         }
 
         .profile-container {
-            max-width: 1200px;
+            max-width: 960px;
             margin: 0 auto;
-            padding: 20px;
-            position: relative;
-            z-index: 1;
         }
 
-        .section {
-            margin-bottom: 60px;
-            position: relative;
-        }
+        .section { margin-bottom: 40px; }
 
-        /* Enhanced Headers */
-        h2, h3 {
-            font-size: 2em;
-            margin-bottom: 30px;
-            background: linear-gradient(135deg, #58a6ff, #ff5722);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-align: center;
-            font-weight: 700;
-            position: relative;
+        /* framed card */
+        .frame {
+            border: 6px solid #1f2328;
+            border-radius: 16px;
+            background: linear-gradient(#F7EBDD, #F1D8C7);
+            box-shadow: 0 6px 0 #A1836B;
+            padding: 18px;
         }
 
         h3 {
-            font-size: 1.8em;
-            margin-bottom: 25px;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            border-bottom: 4px solid #1f2328;
+            padding-bottom: 10px;
+            text-align: left;
+            font-weight: 700;
         }
 
-        /* Animated Cards */
-        .animated-card {
-            background: rgba(22, 27, 34, 0.8);
-            border: 2px solid #30363d;
-            border-radius: 15px;
-            padding: 30px;
-            margin: 20px 0;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
+        .intro-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: left;
+            margin-bottom: 20px;
         }
 
-        .animated-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
+        .social-links a {
+            margin: 0 10px;
+        }
+
+        .tech-stack table {
             width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(88, 166, 255, 0.2), transparent);
-            transition: left 0.5s;
+            border-collapse: collapse;
         }
 
-        .animated-card:hover::before {
-            left: 100%;
+        .tech-stack td {
+            padding: 15px;
+            vertical-align: top;
+            transition: transform 0.2s;
         }
 
-        .animated-card:hover {
-            transform: translateY(-5px);
-            border-color: #58a6ff;
-            box-shadow: 0 10px 30px rgba(88, 166, 255, 0.3);
+        .tech-stack td:hover {
+            transform: scale(1.05);
         }
 
-        /* Tech Stack Enhancements */
-        .tech-stack {
-            position: relative;
+        .tech-stack img {
+            max-width: 65px;
+            height: auto;
         }
 
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .tech-item {
-            background: rgba(22, 27, 34, 0.9);
-            border: 2px solid #30363d;
-            border-radius: 15px;
-            padding: 20px;
-            text-align: center;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .tech-item::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            background: radial-gradient(circle, rgba(88, 166, 255, 0.2) 0%, transparent 70%);
-            transition: all 0.3s ease;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-        }
-
-        .tech-item:hover::before {
-            width: 200px;
-            height: 200px;
-        }
-
-        .tech-item:hover {
-            transform: translateY(-10px) scale(1.05);
-            border-color: #58a6ff;
-            box-shadow: 0 15px 40px rgba(88, 166, 255, 0.4);
-        }
-
-        .tech-item img {
-            width: 65px;
-            height: 65px;
-            transition: all 0.3s ease;
-            position: relative;
-            z-index: 2;
-        }
-
-        .tech-item:hover img {
-            transform: rotate(360deg) scale(1.1);
-        }
-
-        .tech-item strong {
-            display: block;
-            margin-top: 10px;
-            font-size: 0.9em;
-            color: #c9d1d9;
-            position: relative;
-            z-index: 2;
-        }
-
-        /* Social Links */
-        .social-links {
+        .stats-container {
             display: flex;
-            justify-content: center;
-            gap: 15px;
             flex-wrap: wrap;
-            margin: 30px 0;
+            justify-content: center;
+            gap: 20px;
         }
 
-        .social-links img {
-            transition: all 0.3s ease;
-            border-radius: 8px;
-        }
+        .stats-container img { max-width: 100%; }
 
-        .social-links img:hover {
-            transform: translateY(-3px) scale(1.1);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        /* subtle moving dots along header */
+        .header-wrap { position: relative; }
+        .header-wrap::after {
+            content: "";
+            position: absolute; left: 12px; right: 12px; bottom: -8px; height: 6px;
+            background: repeating-linear-gradient(90deg, #1f2328 0 12px, transparent 12px 20px);
+            animation: slideDots 8s linear infinite;
         }
-
-        /* Stats Section */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-
-        .stats-card {
-            background: rgba(22, 27, 34, 0.8);
-            border: 2px solid #30363d;
-            border-radius: 15px;
-            padding: 20px;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .stats-card:hover {
-            transform: translateY(-5px);
-            border-color: #58a6ff;
-            box-shadow: 0 15px 40px rgba(88, 166, 255, 0.3);
-        }
-
-        .stats-card img {
-            width: 100%;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .stats-card:hover img {
-            transform: scale(1.02);
-        }
-
-        /* Typing Animation */
-        .typing-animation {
-            margin: 30px 0;
-        }
-
-        /* Visitor Counter */
-        .visitor-counter {
-            margin: 20px 0;
-        }
-
-        .visitor-counter img {
-            transition: all 0.3s ease;
-        }
-
-        .visitor-counter img:hover {
-            transform: scale(1.1);
-        }
-
-        /* Animated Dividers */
-        .animated-divider {
-            margin: 40px 0;
-            opacity: 0.8;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .profile-container {
-                padding: 10px;
-            }
-            
-            .tech-grid {
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-                gap: 15px;
-            }
-            
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            h2, h3 {
-                font-size: 1.5em;
-            }
-        }
-
-        /* Loading Animation */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
+        @keyframes slideDots { from { background-position-x: 0; } to { background-position-x: 200px; } }
 
     </style>
 </head>
 <body>
     <div class="profile-container">
-        <!-- Enhanced Header Banner -->
-        <div class="section fade-in">
-            <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,6,17,11&height=300&section=header&text=🌐%20AASHISH%20THAKURI&fontSize=50&fontColor=fff&fontAlign=50&fontAlignY=40&desc=⚡%20Full-Stack%20Developer%20|%20Web%20Enthusiast%20⚡&descAlign=50&descAlignY=65&descSize=18&animation=fadeIn" alt="Header Banner" style="width: 100%;"/>
+        <!-- Header Banner (Framed, Textured) -->
+        <div class="section header-wrap">
+            <img src="assets/header.svg" alt="Header Banner" style="width: 100%;"/>
         </div>
 
-        <!-- Typing Animation -->
-        <div class="section typing-animation fade-in">
-            <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&height=100&lines=Hi+there+👋%2C+I'm+Aashish+Thakuri;Full-Stack+Developer+from+Nepal+🇳🇵;Building+beautiful+web+applications+✨;Turning+ideas+into+elegant+solutions+💡" alt="Typing Animation"/>
-        </div>
-
-        <!-- Enhanced Social Links -->
-        <div class="section fade-in">
+        <!-- Introduction -->
+        <div class="section frame">
+            <h3>Hi there 👋, I'm Aashish Thakuri</h3>
+            <p class="intro-text">
+                I'm a passionate Full-Stack Developer from Nepal with a love for building beautiful and functional web applications. I enjoy turning complex problems into simple, elegant solutions.
+            </p>
             <div class="social-links">
                 <a href="https://linkedin.com/in/yourprofile" target="_blank">
-                    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5" alt="LinkedIn"/>
+                    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
                 </a>
                 <a href="https://twitter.com/yourhandle" target="_blank">
-                    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=1DA1F2" alt="Twitter"/>
+                    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/>
                 </a>
                 <a href="mailto:your.email@example.com">
-                    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836" alt="Gmail"/>
-                </a>
-                <a href="https://yourportfolio.com" target="_blank">
-                    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white&labelColor=FF5722" alt="Portfolio"/>
+                    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
                 </a>
             </div>
-            
-            <div class="visitor-counter">
-                <img src="https://komarev.com/ghpvc/?username=AashishThakuri&label=Profile%20Views&color=58a6ff&style=for-the-badge" alt="Profile Views" />
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="section tech-stack frame">
+            <h3>💻 Tech Stack</h3>
+            <table>
+                <tr>
+                    <td align="center" width="96">
+                        <a href="javascript:void(0)">
+                            <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" />
+                        </a>
+                        <br>Python
+                    </td>
+                    <td align="center" width="96">
+                        <a href="javascript:void(0)">
+                            <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="65" height="65" />
+                        </a>
+                        <br>JavaScript
+                    </td>
+                    <td align="center" width="96">
+                        <a href="javascript:void(0)">
+                            <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="65" height="65" />
+                        </a>
+                        <br>AWS
+                    </td>
+                    <td align="center" width="96">
+                        <a href="javascript:void(0)">
+                            <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
+                        </a>
+                        <br>Docker
+                    </td>
+                    <td align="center" width="96">
+                        <a href="javascript:void(0)">
+                            <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="Kubernetes" width="65" height="65" />
+                        </a>
+                        <br>Kubernetes
+                    </td>
+                    <td align="center" width="96">
+                        <a href="javascript:void(0)">
+                            <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
+                        </a>
+                        <br>GitHub
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" width="96">
+                        <a href="javascript:void(0)">
+                            <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="65" height="65" />
+                        </a>
+                        <br>React
+                    </td>
+                    <td align="center" width="96">
+                        <a href="javascript:void(0)">
+                            <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="RestAPI" width="65" height="65" />
+                        </a>
+                        <br>REST API
+                    </td>
+                    <td align="center" width="96">
+                        <a href="javascript:void(0)">
+                            <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="Nginx" width="65" height="65" />
+                        </a>
+                        <br>Nginx
+                    </td>
+                    <td align="center" width="96">
+                        <a href="javascript:void(0)">
+                            <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" width="65" height="65" />
+                        </a>
+                        <br>MySQL
+                    </td>
+                    <td align="center" width="96">
+                        <a href="javascript:void(0)">
+                            <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" width="65" height="65" />
+                        </a>
+                        <br>TypeScript
+                    </td>
+                    <td align="center" width="96">
+                        <a href="javascript:void(0)">
+                            <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="C#" width="65" height="65" />
+                        </a>
+                        <br>C#
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- GitHub Stats -->
+        <div class="section frame">
+            <h3>📊 GitHub Stats</h3>
+            <div class="stats-container">
+                <img src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&hide_border=true&bg_color=0d1117&title_color=F1D3BF&text_color=ffffff&icon_color=CFA98E" alt="Aashish's GitHub Stats"/>
+                <img src="https://streak-stats.demolab.com?user=AashishThakuri&theme=dark&hide_border=true&background=0D1117&ring=CFA98E&fire=E6B59A&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=F1D3BF&sideLabels=FFFFFF&dates=8B949E" alt="Streak"/>
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AashishThakuri&layout=compact&hide_border=true&bg_color=0d1117&title_color=F1D3BF&text_color=ffffff" alt="Top Languages"/>
             </div>
         </div>
 
-        <!-- Animated Divider -->
-        <div class="animated-divider">
-            <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Animated Divider">
+        <!-- Contributions Snake -->
+        <div class="section frame">
+            <h3>🐍 Contributions Snake</h3>
+            <picture>
+                <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/snake-dark.svg" />
+                <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/snake.svg" style="width:100%"/>
+            </picture>
         </div>
 
-        <!-- Enhanced Tech Stack -->
-        <div class="section tech-stack fade-in">
-            <h2>🛠️ Tech Stack</h2>
-            <div class="animated-card">
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" />
-                        <strong>Python</strong>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" />
-                        <strong>JavaScript</strong>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" />
-                        <strong>AWS</strong>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" />
-                        <strong>Docker</strong>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="Kubernetes" />
-                        <strong>Kubernetes</strong>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" />
-                        <strong>GitHub</strong>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" />
-                        <strong>React</strong>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="RestAPI" />
-                        <strong>REST API</strong>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="Nginx" />
-                        <strong>Nginx</strong>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" />
-                        <strong>MySQL</strong>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" />
-                        <strong>TypeScript</strong>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="C#" />
-                        <strong>C#</strong>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Animated Divider -->
-        <div class="animated-divider">
-            <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Animated Divider">
-        </div>
-
-        <!-- Enhanced GitHub Stats -->
-        <div class="section fade-in">
-            <h2>📊 GitHub Analytics & Activity</h2>
-            
-            <!-- Snake Animation Placeholder -->
-            <div class="animated-card">
-                <img src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg" alt="Snake Animation" style="width: 100%; max-width: 900px;">
-            </div>
-
-            <!-- GitHub Streak -->
-            <div class="animated-card">
-                <h3>🔥 GitHub Streak & Stats</h3>
-                <img src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=tokyonight&hide_border=true&stroke=0000&background=0D1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak Stats" style="width: 100%; max-width: 500px;"/>
-            </div>
-
-            <!-- Stats Grid -->
-            <div class="stats-grid">
-                <div class="stats-card">
-                    <img src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
-                </div>
-                <div class="stats-card">
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AashishThakuri&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" alt="Top Languages"/>
-                </div>
-            </div>
-
-            <!-- GitHub Trophies -->
-            <div class="animated-card">
-                <h3>🏆 GitHub Trophies</h3>
-                <img src="https://github-profile-trophy.vercel.app/?username=AashishThakuri&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" alt="GitHub Trophies" style="width: 100%;"/>
-            </div>
-        </div>
-
-        <!-- Enhanced Footer Banner -->
-        <div class="section fade-in">
-            <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,6,17,11&height=200&section=footer&text=💻%20Thanks%20for%20visiting!&fontSize=30&fontColor=fff&fontAlign=50&fontAlignY=40&desc=🚀%20Let's%20build%20something%20amazing%20together!&descAlign=50&descAlignY=65&descSize=16&animation=fadeIn" alt="Footer Banner" style="width: 100%;"/>
-        </div>
-
-        <!-- Final Animated Divider -->
-        <div class="animated-divider">
-            <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Final Divider">
+        <!-- Footer Banner -->
+        <div class="section">
+            <img src="assets/footer.svg" alt="Footer Banner" style="width: 100%;"/>
         </div>
     </div>
-
-    <script>
-        // Add fade-in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all sections
-        document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.fade-in');
-            sections.forEach(section => {
-                section.style.opacity = '0';
-                section.style.transform = 'translateY(30px)';
-                section.style.transition = 'all 0.8s ease-out';
-                observer.observe(section);
-            });
-
-            // Add stagger effect to tech items
-            const techItems = document.querySelectorAll('.tech-item');
-            techItems.forEach((item, index) => {
-                item.style.animationDelay = `${index * 0.1}s`;
-            });
-        });
-    </script>
 </body>
 </html>

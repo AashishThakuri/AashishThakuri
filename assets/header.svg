@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280" height="260" viewBox="0 0 1280 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F3D9C2"/>
+      <stop offset="100%" stop-color="#E9C2A8"/>
+    </linearGradient>
+    <pattern id="paper" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="12" height="12" fill="transparent"/>
+      <rect x="0" y="0" width="12" height="1" fill="rgba(0,0,0,0.06)"/>
+    </pattern>
+  </defs>
+
+  <!-- Frame -->
+  <rect x="10" y="10" width="1260" height="240" rx="14" fill="url(#bgGrad)"/>
+  <rect x="10" y="10" width="1260" height="240" rx="14" fill="url(#paper)"/>
+  <rect x="10" y="10" width="1260" height="240" rx="14" fill="none" stroke="#1f2328" stroke-width="6"/>
+
+  <!-- Title bar -->
+  <rect x="10" y="10" width="1260" height="46" rx="14" fill="#F1D3BF" stroke="#1f2328" stroke-width="6"/>
+  <circle cx="40" cy="33" r="8" fill="#ff5f57" stroke="#1f2328" stroke-width="3"/>
+  <circle cx="68" cy="33" r="8" fill="#febc2e" stroke="#1f2328" stroke-width="3"/>
+  <circle cx="96" cy="33" r="8" fill="#28c840" stroke="#1f2328" stroke-width="3"/>
+
+  <!-- Title text -->
+  <text x="640" y="95" text-anchor="middle" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="52" fill="#1f2328">Aashish Thakuri</text>
+  <text x="640" y="135" text-anchor="middle" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-weight="600" font-size="22" fill="#4c3b2f">Full‑Stack Developer • Web Enthusiast</text>
+
+  <!-- Bottom ribbon (animated) -->
+  <path d="M40 200 C 380 160, 900 240, 1240 200" stroke="#CFA98E" stroke-width="8" fill="none" opacity="0.65" stroke-linecap="round" stroke-dasharray="260 40">
+    <animate attributeName="stroke-dashoffset" from="0" to="-600" dur="8s" repeatCount="indefinite" />
+  </path>
+</svg>
