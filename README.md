@@ -126,8 +126,8 @@ I'm a passionate Full-Stack Developer from Nepal with a love for building beauti
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/snake-dark.svg" />
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-snake-dark.svg" />
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-snake.svg" />
 </picture>
 </div>
 
