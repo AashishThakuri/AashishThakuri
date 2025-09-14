@@ -122,19 +122,23 @@ I'm a passionate Full-Stack Developer from Nepal with a love for building beauti
 
 </div>
 
-### 🌌 Contribution Galaxy
+### 🐍 Contribution Snake Animation
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/contribution-galaxy.svg" alt="Contribution Galaxy Animation"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/contribution-animation-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/contribution-animation.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/contribution-animation.svg">
+</picture>
 
 </div>
 
-### 🎮 Pac-Man Contribution Game
+### 🌊 Contribution Wave
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/pacman-contribution.svg" alt="Pac-Man Contribution Game"/>
+<img src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/wave-contribution.svg" alt="Contribution Wave Animation"/>
 
 </div>
 
