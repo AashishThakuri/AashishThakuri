@@ -16,8 +16,8 @@ jobs:
     steps:
       - name: Checkout repo (for workspace)
         uses: actions/checkout@v4
-      - name: Generate snake images (SVG + GIF)
-        uses: Platane/snk@v3
+      - name: generate-snake-game-from-github-contribution-grid
+        uses: Platane/snk@v3.3.0
         with:
           github_user_name: AashishThakuri
           outputs: |
