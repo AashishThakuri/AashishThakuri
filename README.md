@@ -6,9 +6,11 @@
   <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="400" alt="coding animation"/>
 </p>
 
-### Hi there 👋, I'm Aashish Thakuri
+### ⚡ I'm Aashish Thakuri
 
-I'm a passionate Full-Stack Developer from Nepal with a love for building beautiful and functional web applications. I enjoy turning complex problems into simple, elegant solutions.
+*"I believe great software isn't just about solving problems—it's about creating experiences that feel like magic while remaining invisible in their complexity."*
+
+I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools and is eager to learn theoretically about artificial intelligence. I enjoy coding, writing, and turning complex problems into elegant solutions that make technology feel effortless.
 
 <p align="center">
   <a href="https://linkedin.com/in/yourprofile" target="_blank">
