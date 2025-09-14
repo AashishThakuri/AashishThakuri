@@ -1,0 +1,115 @@
+name: Generate Contribution Wave Animation
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # Every 6 hours
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Generate contribution wave SVG
+        uses: Ashutosh00710/github-readme-activity-graph@master
+        with:
+          username: AashishThakuri
+          bg_color: 0d1117
+          color: CFA98E
+          line: E6B59A
+          point: F1D3BF
+          area: true
+          hide_border: true
+          custom_title: "Interactive Contribution Wave"
+          
+      - name: Create animated contribution visualization
+        run: |
+          mkdir -p dist
+          cat > dist/wave-animation.svg << 'EOF'
+          <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#CFA98E;stop-opacity:1">
+                  <animate attributeName="stop-color" values="#CFA98E;#E6B59A;#F1D3BF;#CFA98E" dur="4s" repeatCount="indefinite"/>
+                </stop>
+                <stop offset="50%" style="stop-color:#E6B59A;stop-opacity:0.8">
+                  <animate attributeName="stop-color" values="#E6B59A;#F1D3BF;#CFA98E;#E6B59A" dur="4s" repeatCount="indefinite"/>
+                </stop>
+                <stop offset="100%" style="stop-color:#F1D3BF;stop-opacity:1">
+                  <animate attributeName="stop-color" values="#F1D3BF;#CFA98E;#E6B59A;#F1D3BF" dur="4s" repeatCount="indefinite"/>
+                </stop>
+              </linearGradient>
+              
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                <feMerge> 
+                  <feMergeNode in="coloredBlur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+            
+            <rect width="800" height="400" fill="#0d1117"/>
+            
+            <!-- Animated contribution squares -->
+            <g id="contributions">
+              <!-- Week 1 -->
+              <rect x="50" y="50" width="15" height="15" fill="url(#waveGrad)" filter="url(#glow)">
+                <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+              </rect>
+              <rect x="50" y="70" width="15" height="15" fill="url(#waveGrad)" filter="url(#glow)">
+                <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+              </rect>
+              <rect x="50" y="90" width="15" height="15" fill="url(#waveGrad)" filter="url(#glow)">
+                <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+              </rect>
+              
+              <!-- More weeks with staggered animations -->
+              <rect x="70" y="50" width="15" height="15" fill="url(#waveGrad)" filter="url(#glow)">
+                <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" begin="0.5s" repeatCount="indefinite"/>
+              </rect>
+              <rect x="70" y="70" width="15" height="15" fill="url(#waveGrad)" filter="url(#glow)">
+                <animate attributeName="opacity" values="0.6;1;0.6" dur="2.7s" begin="0.5s" repeatCount="indefinite"/>
+              </rect>
+              
+              <!-- Floating particles -->
+              <circle cx="200" cy="100" r="3" fill="#CFA98E" opacity="0.6">
+                <animateTransform attributeName="transform" type="translate" dur="8s" values="0,0; 50,-20; 0,0" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0.3;0.9;0.3" dur="4s" repeatCount="indefinite"/>
+              </circle>
+              
+              <circle cx="300" cy="150" r="2" fill="#E6B59A" opacity="0.7">
+                <animateTransform attributeName="transform" type="translate" dur="6s" values="0,0; -30,15; 0,0" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+              </circle>
+            </g>
+            
+            <!-- Wave effect -->
+            <path d="M0,200 Q200,150 400,200 T800,200" stroke="url(#waveGrad)" stroke-width="3" fill="none" opacity="0.8">
+              <animate attributeName="d" dur="6s" values="M0,200 Q200,150 400,200 T800,200;M0,200 Q200,250 400,200 T800,200;M0,200 Q200,150 400,200 T800,200" repeatCount="indefinite"/>
+            </path>
+            
+            <!-- Title -->
+            <text x="400" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#F1D3BF">
+              Interactive Contribution Wave
+              <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+            </text>
+          </svg>
+          EOF
+          
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -122,19 +122,25 @@ I'm a passionate Full-Stack Developer from Nepal with a love for building beauti
 
 </div>
 
-### 🎯 Dynamic Contribution Visualization
+### 🌊 Interactive Contribution Wave
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=AashishThakuri&theme=darkhub&no-frame=true&no-bg=true&margin-w=4&column=7" alt="GitHub Trophies"/>
+<img src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/wave-animation.svg" alt="Interactive Contribution Wave"/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AashishThakuri&theme=github_dark" alt="Detailed Profile"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&bg_color=0d1117&color=CFA98E&line=E6B59A&point=F1D3BF&area=true&hide_border=true&custom_title=Contribution%20Activity" alt="Contribution Graph"/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AashishThakuri&theme=github_dark" alt="Repos per Language"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AashishThakuri&theme=github_dark" alt="Most Commit Language"/>
+</div>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AashishThakuri&theme=github_dark" alt="Stats"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=AashishThakuri&theme=github_dark&utcOffset=5.75" alt="Productive Time"/>
+### 🎮 Coding Journey Visualization
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=200&section=header&text=Coding%20Journey&fontSize=50&fontColor=ffffff&animation=twinkling" alt="Coding Journey Header"/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=AashishThakuri&theme=dark&hide_border=true&background=0D1117&ring=CFA98E&fire=E6B59A&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=F1D3BF&sideLabels=FFFFFF&dates=8B949E&stroke=CFA98E" alt="Streak Animation"/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=100&section=footer&animation=fadeIn" alt="Wave Footer"/>
 
 </div>
 
