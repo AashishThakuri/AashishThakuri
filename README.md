@@ -109,19 +109,6 @@ I'm a passionate Full-Stack Developer from Nepal with a love for building beauti
 
 ---
 
-### 📊 GitHub Stats & Activity
-
-<div align="center">
-
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&hide_border=true&bg_color=0d1117&title_color=F1D3BF&text_color=C9D1D9&icon_color=CFA98E" alt="Stats"/>
-  <img height="160" src="https://streak-stats.demolab.com?user=AashishThakuri&theme=dark&hide_border=true&background=0D1117&ring=CFA98E&fire=E6B59A&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=F1D3BF&sideLabels=C9D1D9&dates=8B949E" alt="Streak"/>
-
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&bg_color=0d1117&color=C9D1D9&line=CFA98E&point=F1D3BF&area=true&hide_border=true" alt="Activity Graph"/>
-
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AashishThakuri&layout=compact&hide_border=true&bg_color=0d1117&title_color=F1D3BF&text_color=C9D1D9" alt="Top Languages"/>
-
-</div>
-
 ### 🚀 Interactive Code Matrix
 
 <div align="center">
