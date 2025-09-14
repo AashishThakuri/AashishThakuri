@@ -3,12 +3,8 @@
 <img src="assets/header.svg" width="100%" alt="Aashish Thakuri Header" />
 
 <p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="100" alt="coding"/>
-  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="100" alt="cat coding"/>
-  <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="100" alt="rocket"/>
-  <img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="100" alt="brain"/>
-  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="100" alt="earth"/>
- </p>
+  <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="400" alt="coding animation"/>
+</p>
 
 ### Hi there 👋, I'm Aashish Thakuri
 
@@ -137,10 +133,6 @@ I'm a passionate Full-Stack Developer from Nepal with a love for building beauti
 
 ---
 
-<p align="center">
-  <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100" alt="magic"/>
-  <img src="https://media.giphy.com/media/26BRrSvJUa0crqw4E/giphy.gif" width="100" alt="thank you"/>
-</p>
 
 <img src="assets/footer.svg" width="100%" alt="Footer" />
 
