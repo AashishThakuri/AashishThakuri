@@ -122,14 +122,20 @@ I'm a passionate Full-Stack Developer from Nepal with a love for building beauti
 
 </div>
 
-### 🐍 Contributions Snake
+### 🎯 Dynamic Contribution Visualization
 
 <div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-snake.svg" />
-</picture>
+
+<img src="https://github-profile-trophy.vercel.app/?username=AashishThakuri&theme=darkhub&no-frame=true&no-bg=true&margin-w=4&column=7" alt="GitHub Trophies"/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AashishThakuri&theme=github_dark" alt="Detailed Profile"/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AashishThakuri&theme=github_dark" alt="Repos per Language"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AashishThakuri&theme=github_dark" alt="Most Commit Language"/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AashishThakuri&theme=github_dark" alt="Stats"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=AashishThakuri&theme=github_dark&utcOffset=5.75" alt="Productive Time"/>
+
 </div>
 
 ---
