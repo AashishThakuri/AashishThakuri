@@ -13,30 +13,22 @@
 I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools and is eager to learn theoretically about artificial intelligence. I enjoy coding, writing, and turning complex problems into elegant solutions that make technology feel effortless.
 
 <div align="center">
-  <table>
-    <tr>
-      <td align="center" style="padding: 10px;">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">
-          <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0A66C2" alt="LinkedIn" height="35"/>
-        </a>
-      </td>
-      <td align="center" style="padding: 10px;">
-        <a href="https://twitter.com/yourhandle" target="_blank">
-          <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white&labelColor=1DA1F2" alt="Twitter" height="35"/>
-        </a>
-      </td>
-      <td align="center" style="padding: 10px;">
-        <a href="mailto:your.email@example.com">
-          <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=EA4335" alt="Gmail" height="35"/>
-        </a>
-      </td>
-      <td align="center" style="padding: 10px;">
-        <a href="https://github.com/AashishThakuri" target="_blank">
-          <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white&labelColor=181717" alt="GitHub" height="35"/>
-        </a>
-      </td>
-    </tr>
-  </table>
+  <a href="https://linkedin.com/in/yourprofile" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A66C2" alt="LinkedIn"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://twitter.com/yourhandle" target="_blank">
+    <img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=1DA1F2" alt="Twitter"/>
+  </a>&nbsp;&nbsp;
+  <a href="mailto:your.email@example.com">
+    <img src="https://img.shields.io/badge/-Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=EA4335" alt="Gmail"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://github.com/AashishThakuri" target="_blank">
+    <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717" alt="GitHub"/>
+  </a>
+</div>
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"/>
 </div>
 
 ---
