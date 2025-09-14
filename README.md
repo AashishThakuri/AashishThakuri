@@ -125,7 +125,7 @@ I'm a passionate Full-Stack Developer from Nepal with a love for building beauti
 ### 🐍 Contributions Snake
 
 <div align="center">
-![Snake animation](https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-snake.svg)
+![Snake animation](https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/output/github-contribution-grid-snake.svg)
 </div>
 
 ---
