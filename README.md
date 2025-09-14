@@ -1,26 +1,13 @@
 <div align="center">
 
-<table border="3" cellpadding="10" cellspacing="0" width="100%" bgcolor="#F7EBDD">
-  <tr bgcolor="#F1D3BF">
-    <td align="left">
-      <font color="#ff5f57">●</font>
-      <font color="#febc2e">●</font>
-      <font color="#28c840">●</font>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" bgcolor="#F7EBDD">
-      <font face="Inter, 'Segoe UI', Arial, sans-serif" size="6" color="#1f2328"><b>Aashish Thakuri</b></font><br/>
-      <font face="Inter, 'Segoe UI', Arial, sans-serif" size="3" color="#4c3b2f">Full‑Stack Developer • Web Enthusiast</font>
-      <div>
-        <img src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" width="120" alt="coding gif"/>
-        <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="90" alt="wave gif"/>
-        <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/handShake.gif" width="100" alt="handshake gif"/>
-        <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/Developer.gif" width="120" alt="dev gif"/>
-      </div>
-    </td>
-  </tr>
-</table>
+<img src="assets/header.svg" width="100%" alt="Aashish Thakuri Header" />
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" width="120" alt="coding gif"/>
+  <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="90" alt="wave gif"/>
+  <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/handShake.gif" width="100" alt="handshake gif"/>
+  <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/Developer.gif" width="120" alt="dev gif"/>
+ </p>
 
 ### Hi there 👋, I'm Aashish Thakuri
 
@@ -149,17 +136,11 @@ I'm a passionate Full-Stack Developer from Nepal with a love for building beauti
 
 ---
 
-<table border="3" cellpadding="16" cellspacing="0" width="100%" bgcolor="#E9C2A8">
-  <tr>
-    <td align="center" bgcolor="#F7EBDD">
-      <font face="Inter, 'Segoe UI', Arial, sans-serif" size="4" color="#1f2328"><b>Thanks for visiting — let's build something useful</b></font><br/>
-      <font face="Inter, 'Segoe UI', Arial, sans-serif" size="2" color="#4c3b2f">© 2025 Aashish Thakuri</font>
-      <div>
-        <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/handShake.gif" width="90" alt="handshake gif"/>
-        <img src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" width="120" alt="coding gif"/>
-      </div>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/handShake.gif" width="90" alt="handshake gif"/>
+  <img src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" width="120" alt="coding gif"/>
+</p>
+
+<img src="assets/footer.svg" width="100%" alt="Footer" />
 
 </div>
