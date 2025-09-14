@@ -6,7 +6,7 @@
   <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="400" alt="coding animation"/>
 </p>
 
-### 💀 I'm Aashish Thakuri
+### <img src="https://cdn.lordicon.com/bgebyztw.gif" width="30" height="30"/> I'm Aashish Thakuri
 
 *"I believe great software isn't just about solving problems—it's about creating experiences that feel like magic while remaining invisible in their complexity."*
 
