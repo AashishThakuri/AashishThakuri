@@ -78,9 +78,9 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/r-icon.svg" alt="R Programming" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
       </a>
-      <br>R Programming
+      <br>GitHub
     </td>
   </tr>
   <tr>
@@ -92,9 +92,9 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/pytorch-icon.svg" alt="PyTorch" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="REST API" width="65" height="65" />
       </a>
-      <br>PyTorch
+      <br>REST API
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
@@ -110,9 +110,9 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/ai-icon.svg" alt="AI" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
       </a>
-      <br>AI
+      <br>Docker
     </td>
   </tr>
  </table>
