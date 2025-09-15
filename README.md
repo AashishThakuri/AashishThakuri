@@ -114,19 +114,17 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
       </a>
       <br>Nginx
     </td>
-  </tr>
-  <tr>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/firebase-icon.svg" alt="Firebase" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
       </a>
-      <br>Firebase
+      <br>Docker
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/nodejs-icon.svg" alt="Node.js" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/git-icon.svg" alt="Git" width="65" height="65" />
       </a>
-      <br>Node.js
+      <br>Git
     </td>
   </tr>
  </table>
