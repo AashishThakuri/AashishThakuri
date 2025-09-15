@@ -126,7 +126,7 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
 
 ---
 
-### 🚀 Interactive Code Matrix
+### <img src="assets/rocket-white.svg" width="20" height="20" alt="Rocket"/> Interactive Code Matrix
 
 <div align="center">
 
