@@ -60,27 +60,27 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="65" height="65" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="65" height="65" />
       </a>
-      <br>AWS
+      <br>Node.js
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" width="65" height="65" />
       </a>
-      <br>Docker
+      <br>Firebase
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="Kubernetes" width="65" height="65" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS" width="65" height="65" />
       </a>
-      <br>Kubernetes
+      <br>Tailwind CSS
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" width="65" height="65" />
       </a>
-      <br>GitHub
+      <br>R
     </td>
   </tr>
   <tr>
@@ -92,15 +92,15 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="RestAPI" width="65" height="65" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" width="65" height="65" />
       </a>
-      <br>REST API
+      <br>PyTorch
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="Nginx" width="65" height="65" />
+        <img src="assets/ai.svg" alt="AI" width="65" height="65" />
       </a>
-      <br>Nginx
+      <br>AI
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
@@ -116,9 +116,9 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="C#" width="65" height="65" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" width="65" height="65" />
       </a>
-      <br>C#
+      <br>TensorFlow
     </td>
   </tr>
  </table>
