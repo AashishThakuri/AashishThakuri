@@ -78,9 +78,9 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/r-icon.svg" alt="R" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/r-icon.svg" alt="R Programming" width="65" height="65" />
       </a>
-      <br>R
+      <br>R Programming
     </td>
   </tr>
   <tr>
@@ -98,12 +98,6 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/openai-icon.svg" alt="AI" width="65" height="65" />
-      </a>
-      <br>AI
-    </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
         <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" width="65" height="65" />
       </a>
       <br>MySQL
@@ -116,9 +110,9 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/tensorflow-icon.svg" alt="TensorFlow" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/ai-icon.svg" alt="AI" width="65" height="65" />
       </a>
-      <br>TensorFlow
+      <br>AI
     </td>
   </tr>
  </table>
