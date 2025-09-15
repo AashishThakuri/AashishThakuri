@@ -116,9 +116,9 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="C#" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/swift-icon.svg" alt="Swift" width="65" height="65" />
       </a>
-      <br>C#
+      <br>Swift
     </td>
   </tr>
  </table>
