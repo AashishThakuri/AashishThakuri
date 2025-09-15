@@ -120,12 +120,6 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
       </a>
       <br>Docker
     </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/git-icon.svg" alt="Git" width="65" height="65" />
-      </a>
-      <br>Git
-    </td>
   </tr>
  </table>
 </div>
