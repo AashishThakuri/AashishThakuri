@@ -36,7 +36,7 @@
   <!-- Title text -->
   <g id="titleGroup">
     <text x="640" y="130" text-anchor="middle" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="52" fill="#1f2328">Aashish Thakuri</text>
-    <text x="640" y="165" text-anchor="middle" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-weight="600" font-size="22" fill="#4c3b2f">Full‑Stack Developer • AI Enthusiast</text>
+    <text x="640" y="165" text-anchor="middle" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-weight="600" font-size="22" fill="#4c3b2f">Full‑Stack Developer • Web Enthusiast</text>
     <animateTransform attributeName="transform" type="translate" dur="6s" values="0 0; 0 -2; 0 0; 0 2; 0 0" repeatCount="indefinite"/>
   </g>
 

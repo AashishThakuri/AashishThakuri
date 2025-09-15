@@ -41,7 +41,7 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
 
 ---
 
-### ⚙️ Tech Stack
+### Tech Stack
 
 <div align="center">
 <table align="center" style="border:3px solid #30363d;border-radius:12px;background:#0d1117;padding:8px">
@@ -60,27 +60,27 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/django-icon.svg" alt="Django" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="65" height="65" />
       </a>
-      <br>Django
+      <br>AWS
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/graphql-icon.svg" alt="GraphQL" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
       </a>
-      <br>GraphQL
-    </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/sass-icon.svg" alt="Sass" width="65" height="65" />
-      </a>
-      <br>Sass
+      <br>Docker
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
         <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="Kubernetes" width="65" height="65" />
       </a>
       <br>Kubernetes
+    </td>
+    <td align="center" width="96">
+      <a href="javascript:void(0)">
+        <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
+      </a>
+      <br>GitHub
     </td>
   </tr>
   <tr>
@@ -92,9 +92,15 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="RestAPI" width="65" height="65" />
       </a>
-      <br>AWS
+      <br>REST API
+    </td>
+    <td align="center" width="96">
+      <a href="javascript:void(0)">
+        <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="Nginx" width="65" height="65" />
+      </a>
+      <br>Nginx
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
@@ -110,15 +116,9 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="Nginx" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="C#" width="65" height="65" />
       </a>
-      <br>Nginx
-    </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
-      </a>
-      <br>Docker
+      <br>C#
     </td>
   </tr>
  </table>
@@ -126,7 +126,7 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
 
 ---
 
-### <img src="assets/rocket-white.svg" width="20" height="20" alt="Rocket"/> Interactive Code Matrix
+### Interactive Code Matrix
 
 <div align="center">
 
@@ -136,7 +136,7 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
 
 </div>
 
-### 🎯 Dynamic Developer Metrics
+### Dynamic Developer Metrics
 
 <div align="center">
 
