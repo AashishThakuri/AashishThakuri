@@ -60,21 +60,21 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/nodejs-icon.svg" alt="Node.js" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/django-icon.svg" alt="Django" width="65" height="65" />
       </a>
-      <br>Node.js
+      <br>Django
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/firebase-icon.svg" alt="Firebase" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/graphql-icon.svg" alt="GraphQL" width="65" height="65" />
       </a>
-      <br>Firebase
+      <br>GraphQL
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/tailwindcss-icon.svg" alt="Tailwind CSS" width="65" height="65" />
+        <img src="https://techstack-generator.vercel.app/sass-icon.svg" alt="Sass" width="65" height="65" />
       </a>
-      <br>Tailwind CSS
+      <br>Sass
     </td>
     <td align="center" width="96">
       <a href="javascript:void(0)">
