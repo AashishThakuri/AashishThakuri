@@ -126,7 +126,7 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
 
 ---
 
-### 🖤 Interactive Code Matrix
+### 🚀 Interactive Code Matrix
 
 <div align="center">
 
