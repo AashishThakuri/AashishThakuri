@@ -41,7 +41,7 @@ I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools
 
 ---
 
-### 💻 Tech Stack
+### ⚙️ Tech Stack
 
 <div align="center">
 <table align="center" style="border:3px solid #30363d;border-radius:12px;background:#0d1117;padding:8px">
