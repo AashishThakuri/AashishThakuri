@@ -8,7 +8,7 @@
 
 ### Hi, I'm Aashish Thakuri
 
-*"I believe great software isn't just about solving problems—it's about creating experiences that feel like magic while remaining invisible in their complexity."*
+*"I believe great software isn't just about solving problems, it's about creating experiences that feel like magic while remaining invisible in their complexity."*
 
 I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools and is eager to learn theoretically about artificial intelligence. I enjoy coding, writing, and turning complex problems into elegant solutions that make technology feel effortless.
 
