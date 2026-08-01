@@ -1,0 +1,84 @@
+name: Advance live SEIR profile lab
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+    inputs:
+      action:
+        description: Transmission decision for the next day
+        required: true
+        type: choice
+        options:
+          - continue
+          - reduce-25
+          - reduce-50
+          - reduce-75
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: live-seir-profile-lab
+  cancel-in-progress: false
+
+jobs:
+  advance:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      startsWith(github.event.issue.title, '[LAB] ')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Select visitor decision
+        id: decision
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          MANUAL_ACTION: ${{ inputs.action }}
+        run: |
+          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+            action="$MANUAL_ACTION"
+          else
+            case "$ISSUE_TITLE" in
+              "[LAB] continue") action="continue" ;;
+              "[LAB] reduce-25") action="reduce-25" ;;
+              "[LAB] reduce-50") action="reduce-50" ;;
+              "[LAB] reduce-75") action="reduce-75" ;;
+              *) echo "Unsupported laboratory command"; exit 1 ;;
+            esac
+          fi
+          echo "action=$action" >> "$GITHUB_OUTPUT"
+
+      - name: Advance RK4 simulation
+        env:
+          VISITOR: ${{ github.actor }}
+          LAB_ACTION: ${{ steps.decision.outputs.action }}
+        run: python profile_lab.py --action "$LAB_ACTION" --actor "$VISITOR"
+
+      - name: Commit new laboratory state
+        shell: bash
+        run: |
+          git config user.name "aashish-profile-lab[bot]"
+          git config user.email "aashish-profile-lab[bot]@users.noreply.github.com"
+          git add README.md assets/live-seir-lab.svg lab/state.json
+          git commit -m "Advance live SEIR lab for @${{ github.actor }} [skip ci]"
+          git push origin HEAD:main
+
+      - name: Close processed visitor issue
+        if: github.event_name == 'issues'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        shell: bash
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "Command accepted. RK4 advanced the profile simulation by one day and the live SVG has been regenerated."
+          gh issue close "$ISSUE_NUMBER" --reason completed
