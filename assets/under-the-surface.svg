@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title description">
+  <title id="title">The interface is only the surface</title>
+  <desc id="description">A cinematic animated mechanical identity for Aashish Thakuri, full-stack developer from Nepal.</desc>
+
+  <defs>
+    <pattern id="paper-noise" width="11" height="11" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="2" r="0.55" fill="#f4efe4" opacity="0.08"/>
+      <circle cx="8" cy="7" r="0.45" fill="#f4efe4" opacity="0.05"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect x="1" y="1" width="1198" height="458" rx="6"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    text { letter-spacing: 0; }
+    .sans { font-family: "Segoe UI", Arial, sans-serif; }
+    .serif { font-family: Georgia, "Times New Roman", serif; }
+    .mono { font-family: "Cascadia Mono", Consolas, monospace; }
+    .gear-slow, .gear-medium, .gear-fast, .balance, .orbit, .pulse-line {
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .gear-slow { animation: clockwise 34s linear infinite; }
+    .gear-medium { animation: counterclockwise 18s linear infinite; }
+    .gear-fast { animation: clockwise 11s linear infinite; }
+    .orbit { animation: counterclockwise 42s linear infinite; }
+    .balance { animation: swing 2.8s ease-in-out infinite; }
+    .pulse-line { animation: breathe 3.6s ease-in-out infinite; }
+    .index-mark { animation: mark 7s steps(1) infinite; }
+
+    @keyframes clockwise { to { transform: rotate(360deg); } }
+    @keyframes counterclockwise { to { transform: rotate(-360deg); } }
+    @keyframes swing {
+      0%, 100% { transform: rotate(-13deg); }
+      50% { transform: rotate(13deg); }
+    }
+    @keyframes breathe {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 0.95; }
+    }
+    @keyframes mark {
+      0%, 24% { opacity: 0.25; }
+      25%, 49% { opacity: 0.55; }
+      50%, 74% { opacity: 0.8; }
+      75%, 100% { opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .gear-slow, .gear-medium, .gear-fast, .balance, .orbit, .pulse-line, .index-mark {
+        animation: none;
+      }
+    }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="460" fill="#090909"/>
+    <rect width="1200" height="460" fill="url(#paper-noise)"/>
+
+    <line x1="42" y1="56" x2="1158" y2="56" stroke="#3a3731"/>
+    <line x1="42" y1="404" x2="1158" y2="404" stroke="#3a3731"/>
+    <line x1="687" y1="80" x2="687" y2="378" stroke="#302e2a"/>
+
+    <text x="43" y="35" class="mono" fill="#b7afa1" font-size="12">AASHISH THAKURI / MECHANISM 001</text>
+    <text x="1157" y="35" class="mono" fill="#786f62" font-size="11" text-anchor="end">KATHMANDU, NEPAL / 27.7172 N</text>
+
+    <g transform="translate(44 103)">
+      <text x="0" y="0" class="sans" fill="#b7afa1" font-size="13">FULL-STACK DEVELOPER</text>
+
+      <text x="0" y="71" class="serif" fill="#f4efe4" font-size="57">THE INTERFACE</text>
+      <text x="0" y="136" class="serif" fill="#f4efe4" font-size="57">IS ONLY</text>
+      <text x="0" y="201" class="serif" fill="#c6a76b" font-size="57" font-style="italic">THE SURFACE.</text>
+
+      <line x1="2" y1="226" x2="503" y2="226" stroke="#c6a76b" stroke-width="2"/>
+      <rect class="index-mark" x="510" y="222" width="12" height="10" fill="#c6a76b"/>
+
+      <text x="0" y="270" class="sans" fill="#d6d0c5" font-size="18">I stay for the mechanism underneath.</text>
+      <text x="0" y="304" class="sans" fill="#827b70" font-size="14">PRODUCT / VISION / DATA / APPLIED INTELLIGENCE</text>
+    </g>
+
+    <g transform="translate(916 228)">
+      <g class="orbit">
+        <circle r="171" fill="none" stroke="#4a443a" stroke-width="1" stroke-dasharray="2 10"/>
+        <circle cx="0" cy="-171" r="4" fill="#c6a76b"/>
+        <circle cx="171" cy="0" r="3" fill="#f4efe4"/>
+        <circle cx="0" cy="171" r="3" fill="#786f62"/>
+        <circle cx="-171" cy="0" r="3" fill="#f4efe4"/>
+      </g>
+
+      <g class="gear-slow">
+        <g fill="#171613" stroke="#c6a76b" stroke-width="1.2">
+          <rect x="-8" y="-157" width="16" height="21" rx="2"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(15)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(30)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(45)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(60)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(75)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(90)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(105)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(120)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(135)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(150)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(165)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(180)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(195)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(210)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(225)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(240)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(255)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(270)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(285)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(300)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(315)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(330)"/>
+          <rect x="-8" y="-157" width="16" height="21" rx="2" transform="rotate(345)"/>
+        </g>
+        <circle r="137" fill="#0d0d0c" stroke="#c6a76b" stroke-width="2"/>
+        <circle r="119" fill="none" stroke="#5f5544" stroke-width="1" stroke-dasharray="28 8 3 8"/>
+        <path d="M 0 -114 L 27 -27 L 114 0 L 27 27 L 0 114 L -27 27 L -114 0 L -27 -27 Z" fill="#12110f" stroke="#6e6250"/>
+      </g>
+
+      <g transform="translate(-68 39)">
+        <g class="gear-medium">
+          <circle r="67" fill="#11100e" stroke="#d8d1c5" stroke-width="1.5"/>
+          <circle r="54" fill="none" stroke="#777064" stroke-width="8" stroke-dasharray="7 10"/>
+          <circle r="28" fill="#090909" stroke="#c6a76b" stroke-width="2"/>
+          <path d="M -49 0 H 49 M 0 -49 V 49 M -35 -35 L 35 35 M 35 -35 L -35 35" stroke="#514b42" stroke-width="3"/>
+          <circle r="8" fill="#c6a76b"/>
+        </g>
+      </g>
+
+      <g transform="translate(67 -56)">
+        <g class="gear-fast">
+          <circle r="49" fill="#11100e" stroke="#c6a76b" stroke-width="1.5"/>
+          <circle r="39" fill="none" stroke="#6e6250" stroke-width="6" stroke-dasharray="4 8"/>
+          <path d="M -31 0 H 31 M 0 -31 V 31" stroke="#d8d1c5" stroke-width="2"/>
+          <circle r="7" fill="#f4efe4"/>
+        </g>
+      </g>
+
+      <g transform="translate(82 75)">
+        <g class="balance">
+          <line x1="0" y1="-28" x2="0" y2="58" stroke="#c6a76b" stroke-width="2"/>
+          <circle cy="-28" r="7" fill="#0d0d0c" stroke="#f4efe4"/>
+          <circle cy="58" r="21" fill="#0d0d0c" stroke="#c6a76b" stroke-width="2"/>
+          <circle cy="58" r="8" fill="#c6a76b"/>
+        </g>
+      </g>
+
+      <circle r="137" fill="none" class="pulse-line" stroke="#f4efe4" stroke-width="1"/>
+      <circle r="5" fill="#090909" stroke="#f4efe4" stroke-width="2"/>
+    </g>
+
+    <g class="mono" font-size="10" fill="#827b70">
+      <text x="734" y="99">01 / INTERFACE</text>
+      <text x="1030" y="117">02 / LOGIC</text>
+      <text x="1062" y="350">03 / DATA</text>
+      <text x="715" y="367">04 / INTELLIGENCE</text>
+    </g>
+
+    <text x="43" y="432" class="mono" fill="#827b70" font-size="11">INPUT: AN UNFINISHED IDEA</text>
+    <text x="600" y="432" class="mono" fill="#c6a76b" font-size="11" text-anchor="middle">PROCESS: OPEN THE MECHANISM</text>
+    <text x="1157" y="432" class="mono" fill="#827b70" font-size="11" text-anchor="end">OUTPUT: SOMETHING PEOPLE CAN USE</text>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="458" rx="6" fill="none" stroke="#3a3731" stroke-width="2"/>
+</svg>

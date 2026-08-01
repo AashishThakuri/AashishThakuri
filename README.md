@@ -1,51 +1,32 @@
 <p align="center">
-  <img src="./assets/signal-room.svg" width="100%" alt="Aashish Thakuri Signal Room: motion, trust, and ideas becoming responsive software systems">
+  <img src="./assets/under-the-surface.svg" width="100%" alt="The interface is only the surface: an animated mechanical identity for Aashish Thakuri">
 </p>
 
-I build software that turns difficult inputs into clear responses. Pick a signal below and follow it to the code.
+I am a full-stack developer from Nepal. I build the parts people touch and the mechanisms they never have to think about.
 
-## Enter The Signal Room
+## Selected Mechanisms
 
-<details>
-<summary><strong>01 / MOTION TO RESPONSE</strong></summary>
+**[Motion becomes input](https://github.com/AashishThakuri/hand-gesture-live-visuals)**<br>
+Hand tracking controls a live visual instrument through twelve real-time effects.
 
-### [Hand Gesture Live Visuals](https://github.com/AashishThakuri/hand-gesture-live-visuals)
+**[Signals become trust](https://github.com/AashishThakuri/EsewaHackathon_TeamLyrical_ChallengeSix_Submission)**<br>
+Device and behavior signals shape an adaptive account-recovery path.
 
-Twelve real-time visual effects controlled through hand movement. The camera becomes the input device.
+**[Objects become experiences](https://github.com/AashishThakuri/3D---Interactive-Watch-Vault-)**<br>
+A product is explored through motion, depth, and three-dimensional interaction.
 
-`Python` `OpenCV` `MediaPipe`
+## Materials
 
-</details>
-
-<details>
-<summary><strong>02 / SIGNALS TO TRUST</strong></summary>
-
-### [RiskLock](https://github.com/AashishThakuri/EsewaHackathon_TeamLyrical_ChallengeSix_Submission)
-
-Adaptive account recovery that turns device and behavior signals into the right verification path.
-
-`FastAPI` `React` `MySQL` `Applied AI`
-
-</details>
-
-<details>
-<summary><strong>03 / IDEA TO SYSTEM</strong></summary>
-
-I build complete products across interface, API, data, and interaction. The stack changes; the rule does not: make the mechanism understandable and the experience simple.
-
-`Python` `JavaScript` `TypeScript` `React` `FastAPI` `Computer Vision` `Data`
-
-</details>
+`Python` `JavaScript` `TypeScript` `React` `FastAPI` `MySQL` `OpenCV` `MediaPipe`
 
 <p align="center">
-  <sub>Kathmandu, Nepal / building for anywhere</sub>
+  <sub>Kathmandu, Nepal / curious about what moves underneath</sub>
 </p>
 
 <!--
-You found the quiet channel.
+The interface ended. You kept looking.
 
-The visible interface is only the surface.
-The source is where the decisions live.
+That is the whole idea.
 
 https://github.com/AashishThakuri?tab=repositories&type=source
 -->
