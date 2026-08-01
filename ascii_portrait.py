@@ -53,7 +53,7 @@ def background_streams(digest):
     rng = random.Random(int(digest[:16], 16))
     symbols = ["01", "{}", "[]", "//", "::", "if", "fn", "&&", "||", "<>"]
     streams = []
-    for index in range(56):
+    for index in range(10):
         x = rng.randint(18, SVG_WIDTH - 30)
         duration = rng.randint(11, 25)
         begin = -rng.randint(0, duration)
@@ -81,42 +81,8 @@ def portrait_text(rows):
     return "".join(text_rows)
 
 
-def portrait_echo_definitions():
-    """Create narrow portrait windows used for smooth terminal displacement."""
-
-    widths = [96, 128, 82, 142, 104, 154, 90, 136, 110]
-    starts = [770, 888, 1038, 1156, 1320, 1448, 1624, 1740, 1880]
-    return "\n".join(
-        f'<clipPath id="portrait-slice-{index}"><rect x="{x}" y="18" '
-        f'width="{width}" height="{SVG_HEIGHT - 36}"/></clipPath>'
-        for index, (x, width) in enumerate(zip(starts, widths))
-    )
-
-
-def portrait_echoes():
-    """Animate displaced portrait slices without flashes or scan lines."""
-
-    echoes = []
-    for index in range(9):
-        direction = 1 if index % 2 == 0 else -1
-        distance = 8 + (index % 4) * 3
-        lift = 2 + index % 3
-        duration = 6.4 + index * 0.71
-        begin = -(index * 1.13)
-        echoes.append(
-            f'''<g clip-path="url(#portrait-slice-{index})" opacity="0.24">
-  <use href="#portrait-source">
-    <animateTransform attributeName="transform" type="translate"
-      values="0 0;{direction * distance} {-lift};0 {lift};{-direction * distance * 0.55:.2f} 0;0 0"
-      dur="{duration:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>
-  </use>
-</g>'''
-        )
-    return "\n".join(echoes)
-
-
 def animated_skill_icons(digest):
-    """Render recognizable technology marks with staggered kinetic motion."""
+    """Render recognizable technology marks with lightweight smooth motion."""
 
     rng = random.Random(int(digest[16:32], 16))
     skills = [
@@ -146,7 +112,7 @@ def animated_skill_icons(digest):
         row = index // 5
         x = 50 + column * 136
         y = 825 + row * 144
-        duration = rng.uniform(3.8, 6.4)
+        duration = rng.uniform(6.5, 9.5)
         begin = -rng.uniform(0, duration)
         orbit_direction = 360 if index % 2 == 0 else -360
         icon_path = SKILL_ICON_PATHS[slug]
@@ -154,19 +120,9 @@ def animated_skill_icons(digest):
             f'''<g transform="translate({x} {y})" aria-label="{label} skill icon">
   <g>
     <rect x="0" y="0" width="122" height="122" rx="3" class="skill-frame"
-      stroke-dasharray="11 7">
-      <animate attributeName="stroke-dashoffset" values="0;-54" dur="{duration:.2f}s"
-        begin="{begin:.2f}s" repeatCount="indefinite"/>
-    </rect>
-    <g>
-      <g transform="translate(40.5 15) scale(1.7)">
-        <path d="{icon_path}" class="brand-path"/>
-      </g>
-      <animateTransform attributeName="transform" type="rotate"
-        values="-5 61 36;6 61 36;-3 61 36;4 61 36;-5 61 36"
-        dur="{duration * 0.86:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.62;1;0.78;1;0.62"
-        dur="{duration * 0.72:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>
+      stroke-dasharray="11 7"/>
+    <g transform="translate(40.5 15) scale(1.7)">
+      <path d="{icon_path}" class="brand-path"/>
     </g>
     <g>
       <circle cx="61" cy="8" r="2.7" class="icon-orbit-dot"/>
@@ -177,10 +133,9 @@ def animated_skill_icons(digest):
     <line x1="17" y1="78" x2="105" y2="78" class="skill-rule"/>
     <text x="61" y="104" text-anchor="middle" class="skill-label">{label}</text>
     <animateTransform attributeName="transform" type="translate"
-      values="0 0;0 -9;4 -2;0 4;-3 -1;0 0" dur="{duration:.2f}s"
+      values="0 0;0 -5;0 0" keyTimes="0;0.5;1" calcMode="spline"
+      keySplines="0.42 0 0.58 1;0.42 0 0.58 1" dur="{duration:.2f}s"
       begin="{begin:.2f}s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.68;1;0.82;1;0.68"
-      dur="{duration * 1.16:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>
   </g>
 </g>'''
         )
@@ -201,21 +156,21 @@ def portrait_particles(digest):
     ]
     particles = []
 
-    for index in range(82):
+    for index in range(12):
         left, top, right, bottom = regions[index % len(regions)]
         x = rng.randint(left, right)
         y = rng.randint(top, bottom)
         dx = rng.randint(-90, 110)
         dy = rng.randint(150, 390)
         bend = rng.randint(-90, 90)
-        duration = rng.uniform(4.5, 10.5)
+        duration = rng.uniform(9.0, 15.0)
         begin = -rng.uniform(0, duration)
         symbol = symbols[index % len(symbols)]
         particles.append(
             f'''<text x="{x}" y="{y}" class="portrait-particle" opacity="0">{html.escape(symbol)}
   <animateMotion path="M 0 0 C {bend} {dy * 0.32:.1f}, {dx - bend} {dy * 0.68:.1f}, {dx} {dy}"
     dur="{duration:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0;0.82;0.44;0"
+  <animate attributeName="opacity" values="0;0.58;0.32;0"
     keyTimes="0;0.18;0.76;1" dur="{duration:.2f}s" begin="{begin:.2f}s"
     repeatCount="indefinite"/>
 </text>'''
@@ -270,33 +225,13 @@ def render_svg(rows, digest):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{SVG_WIDTH}" height="{SVG_HEIGHT}" viewBox="0 0 {SVG_WIDTH} {SVG_HEIGHT}" role="img" aria-labelledby="title desc" xml:space="preserve">
 <title id="title">Aashish Thakuri terminal profile</title>
 <desc id="desc">An expanded developer profile with animated skill symbols beside a living high-density character portrait reconstructed entirely from terminal glyphs.</desc>
-<defs>
-  <g id="portrait-source">
-    {portrait_text(rows)}
-  </g>
-  {portrait_echo_definitions()}
-  <linearGradient id="portrait-sheen" gradientUnits="userSpaceOnUse"
-    x1="{PORTRAIT_LEFT - 430}" y1="0" x2="{PORTRAIT_LEFT - 40}" y2="0">
-    <stop offset="0" stop-color="#000000"/>
-    <stop offset="0.5" stop-color="#ffffff"/>
-    <stop offset="1" stop-color="#000000"/>
-    <animate attributeName="x1" values="{PORTRAIT_LEFT - 430};{SVG_WIDTH + 80}"
-      dur="13s" begin="-3.4s" repeatCount="indefinite"/>
-    <animate attributeName="x2" values="{PORTRAIT_LEFT - 40};{SVG_WIDTH + 470}"
-      dur="13s" begin="-3.4s" repeatCount="indefinite"/>
-  </linearGradient>
-  <mask id="portrait-sheen-mask">
-    <rect x="{PORTRAIT_LEFT - 20}" y="0" width="{PORTRAIT_WIDTH + 40}"
-      height="{SVG_HEIGHT}" fill="url(#portrait-sheen)"/>
-  </mask>
-</defs>
 <style>
   @font-face {{ font-family: "Profile Sans"; src: url(data:font/woff2;base64,{inter_data}) format("woff2"); font-weight: 100 900; }}
   @font-face {{ font-family: "Profile Serif"; src: url(data:font/woff2;base64,{playfair_data}) format("woff2"); font-weight: 400 900; }}
   text {{ font-family: "Cascadia Mono", Consolas, "Courier New", monospace; letter-spacing: 0; white-space: pre; }}
   .portrait {{ fill: #f0f0ec; font-size: {PORTRAIT_FONT_SIZE}px; font-weight: 700; }}
   .stream {{ fill: #777772; font-size: 9px; opacity: 0.13; }}
-  .portrait-particle {{ fill: #f2f2ed; font-size: 16px; font-weight: 700; }}
+  .portrait-particle {{ fill: #f2f2ed; font-size: 14px; font-weight: 700; }}
   .prompt {{ fill: #aaa9a3; font-size: 17px; }}
   .name {{ font-family: "Profile Serif", Georgia, serif; fill: #f5f5f0; font-size: 106px; font-weight: 700; }}
   .role {{ font-family: "Profile Sans", Arial, sans-serif; fill: #f0f0eb; font-size: 30px; font-weight: 800; }}
@@ -323,21 +258,8 @@ def render_svg(rows, digest):
 {animated_skill_icons(digest)}
 </g>
 <g aria-label="portrait reconstructed from terminal characters">
-  <g aria-label="the complete character portrait breathing as one continuous field">
-    <animateTransform attributeName="transform" type="translate"
-      values="0 0;10 -7;2 3;-8 5;0 0" dur="14s" repeatCount="indefinite"/>
-    <g aria-label="portrait rotating almost imperceptibly around its center">
-      <animateTransform attributeName="transform" type="rotate"
-        values="-0.28 1365 1160;0.34 1365 1160;-0.2 1365 1160;-0.28 1365 1160"
-        dur="13s" begin="-4.2s" repeatCount="indefinite"/>
-      <use href="#portrait-source"/>
-      <g mask="url(#portrait-sheen-mask)" opacity="0.38" aria-label="soft character light moving through the portrait">
-        <use href="#portrait-source"/>
-      </g>
-      <g aria-label="smoothly displaced terminal slices moving through the portrait">
-        {portrait_echoes()}
-      </g>
-    </g>
+  <g aria-label="the complete high-density terminal portrait">
+    {portrait_text(rows)}
   </g>
   <g aria-label="terminal fragments moving around the living portrait">
     {portrait_particles(digest)}
