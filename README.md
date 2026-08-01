@@ -1,71 +1,53 @@
-<div align="center">
+<p align="center">
+  <img src="./assets/aashish-manual.svg" width="100%" alt="Aashish Thakuri profile manual with an ASCII portrait">
+</p>
 
-<img src="assets/ascii-terminal.svg" width="100%" alt="Terminal ASCII render of Aashish Thakuri">
+## `DESCRIPTION`
 
-</div>
+I am Aashish Thakuri, a developer from Nepal. I build at the intersection of full-stack software, data, AI tools, and visual explanation.
+
+I prefer projects with a visible mechanism: the input is clear, the process can be inspected, and the result can be explained without hiding behind jargon.
+
+## `SELECTED BUILDS`
+
+### [`01  Covid-19-SEIR-Model`](https://github.com/AashishThakuri/Covid-19-SEIR-Model)
+
+An initial-value SEIR simulation of two Nepal COVID-19 waves. It fits ten time-varying transmission segments per wave, advances the differential equations with RK4, compares the result with Johns Hopkins data, and tests 25%, 50%, and 75% transmission reductions.
+
+`Python` `NumPy` `Pandas` `SciPy` `Matplotlib` `RK4`
+
+### [`02  hand-gesture-live-visuals`](https://github.com/AashishThakuri/hand-gesture-live-visuals)
+
+A live visual instrument that turns MediaPipe hand tracking into twelve real-time OpenCV effects. The interface is controlled by movement instead of buttons.
+
+`Python` `OpenCV` `MediaPipe` `real-time vision`
+
+### [`03  RiskLock`](https://github.com/AashishThakuri/EsewaHackathon_TeamLyrical_ChallengeSix_Submission)
+
+An adaptive account-recovery prototype that evaluates device and behavior signals, then opens only the verification steps required by the detected risk.
+
+`Qwen3 + LoRA` `FastAPI` `React + Vite` `MySQL`
+
+## `WORKING SET`
 
 ```text
-+------------------------------------------------------------------------------+
-| aashish@github:~/profile                                                      |
-+------------------------------------------------------------------------------+
-| MODE        : build until the idea becomes real                               |
-| LOCATION    : Nepal                                                           |
-| STACK       : Python / JavaScript / React / FastAPI / MySQL                   |
-| CURRENT     : SEIR RK4 simulation, data modelling, visual explanation         |
-| PRINCIPLE   : make it work, make it explainable, make it hard to ignore       |
-+------------------------------------------------------------------------------+
+systems     Python / FastAPI / MySQL
+interface   JavaScript / TypeScript / React
+data        Pandas / NumPy / SciPy / Matplotlib
+vision      OpenCV / MediaPipe
+method      understand -> model -> build -> test -> explain
+```
+
+## `BUILD CONTRACT`
+
+```text
+input    a difficult idea with unclear edges
+process  reduce it to a model, then make the model observable
+output   a working system another person can inspect and understand
 ```
 
 ```text
-$ cat ./identity.txt
-
-I am Aashish Thakuri.
-I build practical software, AI-assisted tools, data experiments, and visual
-systems that make difficult ideas easier to defend.
-
-I like code that behaves like a machine:
-clear input, visible process, honest output.
+EXIT STATUS
+0  the system works and the reasoning is visible
+1  keep debugging
 ```
-
-```text
-$ ls ./active-signal
-
-Covid-19-SEIR-Model/
-|-- two Nepal COVID-19 waves
-|-- 10 fitted beta segments per wave
-|-- SEIR differential equations
-|-- RK4 numerical method
-|-- beta reduction scenarios
-`-- interactive teaching simulator
-```
-
-[Open the SEIR RK4 project](https://github.com/AashishThakuri/Covid-19-SEIR-Model)
-
-```text
-$ ./toolbelt --short
-
-python       data work, modelling, automation
-javascript   frontend logic and browser tools
-react        usable interfaces
-fastapi      backend APIs
-mysql        structured storage
-git          version control and clean delivery
-```
-
-```text
-$ ./rules
-
-01  start with the real problem
-02  ship the smallest working system first
-03  make every graph and README part of the product
-04  explain the math like tomorrow is defense day
-05  keep learning loudly, but commit cleanly
-```
-
-<div align="center">
-
-![GitHub followers](https://img.shields.io/github/followers/AashishThakuri?style=flat-square&color=22c55e&label=followers)
-![Profile views](https://komarev.com/ghpvc/?username=AashishThakuri&style=flat-square&color=06b6d4)
-![Main project](https://img.shields.io/badge/main_project-SEIR_RK4_Model-8b5cf6?style=flat-square)
-
-</div>
