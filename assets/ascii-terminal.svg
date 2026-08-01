@@ -1,0 +1,76 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="screen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#07111f"/><stop offset="1" stop-color="#020617"/></linearGradient>
+<linearGradient id="scan" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee" stop-opacity="0"/><stop offset="0.5" stop-color="#22d3ee" stop-opacity="0.35"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1280" height="760" rx="28" fill="#020617"/>
+<rect x="24" y="24" width="1232" height="712" rx="22" fill="url(#screen)" stroke="#334155" stroke-width="2"/>
+<rect x="24" y="24" width="1232" height="42" rx="22" fill="#111827" stroke="#334155" stroke-width="2"/>
+<circle cx="58" cy="45" r="8" fill="#ef4444"/>
+<circle cx="84" cy="45" r="8" fill="#f59e0b"/>
+<circle cx="110" cy="45" r="8" fill="#22c55e"/>
+<text x="118" y="51" font-family="Consolas, Menlo, monospace" font-size="16" fill="#94a3b8">aashish@github: ~/profile --render ascii</text>
+<g font-family="Consolas, Menlo, monospace" font-size="13" letter-spacing="0" filter="url(#glow)">
+<text x="55" y="98" fill="#dbeafe">HHHHHHHHHHGGHMMMHMHGGGGGGGGGGGHhMBB&amp;S&amp;&amp;&amp;SHSB&amp;&amp;&amp;#B&amp;&amp;BG&amp;&amp;9&amp;&amp;&amp;BB99BGGhMHGGGHHHHHMMHHMHHMHHHMMMM</text>
+<text x="55" y="111" fill="#dbeafe">HHHHHHHGGGGGGGGMhMHGGGGGGGGGHGHMB###B&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;9&amp;&amp;&amp;&amp;9S&amp;&amp;H9B&amp;BB&amp;HB#3MMMMHHGHGHMHHHHHHMHHMHHHHH</text>
+<text x="55" y="124" fill="#dbeafe">HHHHHHGGGHGGGHGGGHMMHGGGGGGGH3hMhSB#&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;9&amp;&amp;9MS#&amp;&amp;&amp;&amp;SHSX3GGGHMMHMMHHMMHMHHHMHHHHHH</text>
+<text x="55" y="137" fill="#dbeafe">HHHHHHHGGGGGHGGGGGGHMMHGGGGGGGHA3H#9B9BS#&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;GM9G&amp;&amp;&amp;B#hH25HGGGHHHMHHMHMHHHHHHHHHHHH</text>
+<text x="55" y="150" fill="#dbeafe">HHHHHGHHHGHHGGGGGGGGGGHhHGGGGGh53H9#GHH3M&amp;S#BH#B&amp;&amp;&amp;&amp;&amp;99G&amp;BH&amp;&amp;BMMh3MGGGHHHGGHHHHHMHHHHHHHHHHH</text>
+<text x="55" y="163" fill="#dbeafe">HHHHHHHGHHGGGGGGGGGGGGHHHMHGGGhA5HMhhhMM9GGMSM939BB&amp;B&amp;&amp;#&amp;&amp;GH9&amp;h3h5hHGGGGGGGHHHHHHHHHHHHHHHMM</text>
+<text x="55" y="176" fill="#dbeafe">HHHHHHHMHGGGGGGGGGGGHHGGSGHMMMH55hA3G#SB#MMSGSBMGH9BB&amp;B&amp;99BhHGH3553hGGGGGGGGHHHHHHHHHHHHHMMH</text>
+<text x="55" y="189" fill="#dbeafe">GHHHHHHHGHGGGGGGGGGHHGGGGGGGGHH52s2BBBB&amp;G9#9S&amp;#9#MGM9BSB#SHMhh5523SGGGGGGGGHHHHHHHHHHHHHHHHH</text>
+<text x="55" y="202" fill="#dbeafe">HHHHMHGGGHHHHGGGGHHGGGGGGGGGGGGHX;3&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;9&amp;99HhH9HS#Hh3555AA3GGGGGHGHHHGHHHHHHHHHHHHHHH</text>
+<text x="55" y="215" fill="#dbeafe">HMMHGGGGGGGGGHHGHGGGGGGGGGGGGGGMM2h#S&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;99MGMS9M5235222hMHGGGGHHGGGHHHHHHHHHHHHHHH</text>
+<text x="55" y="228" fill="#dbeafe">HHGGGGGGGGGGGGGHHGGGGGGGGGGGGGGGSSMBSM&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;999&amp;#AHS#35G32A5GHGHMHHHHGGGGHGGGGHHHHHHHHHH</text>
+<text x="55" y="241" fill="#dbeafe">HGGGGGGGGGGGGGGGHHHGGGGGGGGGGGGGGH25HG3&amp;&amp;&amp;&amp;BGHhMS9B&amp;BG3HS5H5525hMGGGGHHMHHGGGHGGHHHHHHHHHHHH</text>
+<text x="55" y="254" fill="#bae6fd">HGGGGGGGGGGGGGGGGGGHGGGGGGGGGGGGGSMAhXAM&amp;&amp;&amp;H22h9BBB&amp;&amp;&amp;53Mh3M#5h9GGGGGGGGHMMHGGGHHHHGGHHHHHHM</text>
+<text x="55" y="267" fill="#bae6fd">HGGGGGGHHGGGGGGGGGGGGHHGGGGGGGGGGSGH&amp;hAs9&amp;&amp;Gh552hhHGS&amp;#53H53#A;AMSGGGGGGGGHHMMHGGHHHHHHHHHhM</text>
+<text x="55" y="280" fill="#bae6fd">HGGGGGHHGGGGGGGGGGGGGGGMHGGGGGGGGGGM&amp;BSS#&amp;&amp;B#3Msir3G9&amp;BHH9AHS.   rHSGGGGGGGGGHMMHHGHHHHHMhHG</text>
+<text x="55" y="293" fill="#bae6fd">GGGGHHGGGGGGGGGGGGGGGGHHGHHGGGGGGGGHS99&amp;&amp;&amp;&amp;&amp;BB&amp;9#9##&amp;&amp;&amp;BBM5#i ..  .3SGGGGGGGGHMMHMMHGGHMMHHH</text>
+<text x="55" y="306" fill="#bae6fd">GGHHGGGGGGGGGGGGGGGGHMGGGGGHHGGGGGGG&amp;B&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;9&amp;9S#&amp;&amp;BB&amp;B#9;  .. . ,hSGGGGGGHMGGGGHMMMMHHHHH</text>
+<text x="55" y="319" fill="#bae6fd">MHGGGGGGGGGGGGGGGSGHHGSGGGGGGHHGSSSG&amp;&amp;&amp;BB&amp;&amp;&amp;&amp;&amp;BB99&amp;&amp;BB&amp;B9&amp;r    .  .,sSGGGGGHHGGGGGGGHMMHHHGH</text>
+<text x="55" y="332" fill="#bae6fd">HHHHGGGGGGGGGGGGGHHGSGGGGGGGGGGHHSHA&amp;&amp;&amp;9B&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;BB&amp;h,;       ::,:HSGGHMGGGGGGGHGGGHHMMHH</text>
+<text x="55" y="345" fill="#bae6fd">GGHHHHGGGGGGGGGHHGGGGGGSGGGGGGGGSSr 9&amp;9#B&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;B&amp;9A        :r,:.3SGHHGGGGGGGGGGGGGGGHMM</text>
+<text x="55" y="358" fill="#bae6fd">GHGGHHHHGGGGGGHHGGGGGGGGGGGGGGG#Hr; 2&amp;&amp;G99&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;BB&amp;M5       ;i;,; 2SMHGGGGGGGGGGGGGGGGGGH</text>
+<text x="55" y="371" fill="#bae6fd">GGGGGGGHHHGGHHGSGGGGGGGGGGGGGGS2:.i  B&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;Hh9i  ,, ;ii:.; sGHGGGGGGGGGGGGGGGGGGGG</text>
+<text x="55" y="384" fill="#bae6fd">GGGGGGGGGHMMGGGGGGGGGGGGGGGGG#A,i;i. i&amp;#B&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;BH5S&amp;3. :,;ii;.:, ;#HHGGGGGGGGGGGGGGGGGGG</text>
+<text x="55" y="397" fill="#bae6fd">GGGGGGGGGGHHGGGGGGGGGGGGGGGG#5:ii:i.. 2BG#B&amp;&amp;&amp;&amp;&amp;&amp;&amp;#h5MBBGr ::iii:::. .HSGGGGGGGGGGGGGGGGGGGH</text>
+<text x="55" y="410" fill="#bae6fd">GGGGGGGGGGGGHHGGSGGGGGGGGGGSM:iii:i.   G&amp;B&amp;&amp;&amp;&amp;&amp;&amp;9M5339BBMi:;iii;;:,.. .HSGGGGHHGGGGGGGHHGGMH</text>
+<text x="55" y="423" fill="#99f6e4">GGGGGGGGGGGGGGHHGGGGGGGGSGGSr:iii:i,   ,B&amp;&amp;&amp;&amp;&amp;93A5h3H&amp;&amp;Sr;iii;;;:,.... s#GGGGGGHHGGGGGGGHMHG</text>
+<text x="55" y="436" fill="#99f6e4">GGGGGGGGGGGGGGGGHHHGSGGGGGSh,iiii:;i. . r&amp;&amp;&amp;SXiA3h33B&amp;Gi;iii;;i;,... . r#GGGGGGGHHHHGGGHMGGG</text>
+<text x="55" y="449" fill="#99f6e4">GGGGGGGGGGGGGGGGSGGMGGGSSG#X,;iii:.i;  . ,;,,r5h335S&amp;2:iii:,:;;;;;;::: i#GGGGGGGGGGGGHhMGGGG</text>
+<text x="55" y="462" fill="#99f6e4">GGGGGGGGGGGGGGGGSSHMGGGGSSSi,:;;;i .r;      ,53333MSs:iii;,;:;;;;i;iii;;GSGGGGGGGGGGHMHHMHGG</text>
+<text x="55" y="475" fill="#99f6e4">HGGGGGGGGGGGGGGSGMHSSSSGGSH;::;;:i: .r;.,. ,is3353Xiii;ii;;;iiiiiii;:.,,3SGGGGGGGGGHMGGGGHMH</text>
+<text x="55" y="488" fill="#99f6e4">HHGGGGGGGGGGGSGHHGSGSSSGGSM::,;::i;..,r;,:,,As53A: i;..;iiiiiiiii;:,,,  3SGGGGGGGGMHGGGGGGHH</text>
+<text x="55" y="501" fill="#99f6e4">GGGGGGGGGGGGSGHGSGGSSGSSGS3::,;::;i,:.,i;::i553X..,;;;ii;;;;:::,.,;iiri 3#GGGGGGHHGGGGGGGGGG</text>
+<text x="55" y="514" fill="#99f6e4">GGGGGGGGGGGGHHGSGGGGGSSSG#r,,.;::iii.; :;::i32r;iii;;;;::::.   .;ii;iiii;HSGGGGHHGGGGGGGGGGG</text>
+<text x="55" y="527" fill="#99f6e4">GGGGGGGGGGHHGSSGSSSGGGGGSh,., ;:;i;i;:; ::i:r;:;;;;i;iiiii;.  .iiiii;iii:rSGGGHGGGGGGGGGGGGG</text>
+<text x="55" y="540" fill="#99f6e4">GGGGGGGGGMHGGSSSSGGSSGGGSs, ..;:;i;;i:,,,,:;;::;;ii,,iiiii.  .;iiiiii;iii:2#GGGGGGGGGGGGGGGM</text>
+<text x="55" y="553" fill="#99f6e4">GGGGGGGHHGGGGGSSSSGGGGGSM:,  .:;;i;;;i,,. ,;i;::i:..;iii;. ,::iiiiiiii;;;;;MGGGGGGGGGGGGGHMH</text>
+<text x="55" y="566" fill="#e0f2fe">GGGGGHMHGGGGGGGGGSSGGGSSr::   :;;;;;;i;:,.:;;;:,. .::,....;;:;iii;iiii:::;:2GMHGGGGGGGGGMMGG</text>
+<text x="55" y="579" fill="#e0f2fe">GGGGHHGGGGGGGGGGSSGGGGSX,i:   :;;;;;;;;,,;:;,.:.,;;;;..:;i;:;;ii;;iii;:i,::iGGMMHGGGGGGMHGGG</text>
+<text x="55" y="592" fill="#e0f2fe">3MHHHGGGGGGGGGGSGGGGGSM:;,,   :;;;;;;;:,.;;;:::  ,;:.:i;;;:;i;;;;;ii;:ii:.;,3SGGHhHGGHMHGGGG</text>
+<text x="55" y="605" fill="#e0f2fe">Hh5MGGGGGGGGGGGGGGGGG#5:.     ,;;;;;;;:,;,;;;;,.;;;:;;;;;;;;ii;:;ii;:;;ii.:,sSGGHMHMhMGGGGGG</text>
+<text x="55" y="618" fill="#e0f2fe">GGH33HGSGGGGGGGGGGGGGS5:,     ,;;;;;;;,,i:;;;:,;;::;;;i;;;;;;;::;ii,,;;ii,.:iSGMHGGGMMHGGGGG</text>
+<text x="55" y="631" fill="#e0f2fe">GGGGH33HSGGGGGGGGGGGGSM:i;.   ,;;;;;;;,:i;;;;:,;:;;;;;;;;;;;;:::ii;. :iii: ,;HHHGGGGGGHMHHGG</text>
+<text x="55" y="644" fill="#e0f2fe">GGGGSGH3hGSGGGGGGGGGGGG;.,;.  ,;;;;;;:.:i;;;:,:;;;;;;;;;;;;;;::;i;:..;i;;;..,hGGGGGGGGGGHMMH</text>
+<text x="55" y="657" fill="#e0f2fe">GGGGGGSHhhhGSGGGSGGGGGSr  .,  .;;;;;;,.;;;;;:,:;;;;;;;;;;;;;;,:i;::.;;:;;;:..MSGGGGGGHGGGGHM</text>
+<text x="55" y="670" fill="#e0f2fe">GGGGGGHHGGM3MGSSSSGGGSM,  .   .;;;;;;,.;;;;;:,:i;;;;;;;;;;;;:,:i;i:;i,.:i;:, 3SGGGGGGGHHHGGG</text>
+<text x="55" y="683" fill="#e0f2fe">GGGGHHGGGGSGM3MGSGGGGSX  ,     ;;;;;;,,;;;;;,.:;;;;;;;;;;;;;:,;;;;:i;. ,i;:, ASGGGGGGGGGHHHG</text>
+</g>
+<g font-family="Consolas, Menlo, monospace">
+<text x="760" y="130" fill="#22d3ee" font-size="18">$ whoami</text>
+<text x="760" y="172" fill="#f8fafc" font-size="54" font-weight="700">Aashish Thakuri</text>
+<text x="760" y="214" fill="#cbd5e1" font-size="23">developer from Nepal</text>
+<text x="760" y="252" fill="#94a3b8" font-size="17">full-stack systems / python / javascript / ai tools</text>
+<text x="760" y="312" fill="#22d3ee" font-size="18">$ current_project --focus</text>
+<text x="760" y="350" fill="#e2e8f0" font-size="20">Nepal COVID-19 SEIR RK4 Model</text>
+<text x="760" y="382" fill="#94a3b8" font-size="16">10 beta segments per wave. RK4 one day at a time.</text>
+<text x="760" y="442" fill="#22d3ee" font-size="18">$ build_rule</text>
+<text x="760" y="480" fill="#e2e8f0" font-size="18">make it work. make it explainable. make it hard to ignore.</text>
+</g>
+<rect x="-260" y="66" width="260" height="670" fill="url(#scan)" opacity="0.9"><animate attributeName="x" values="-260;1280" dur="4.2s" repeatCount="indefinite"/></rect>
+<line x1="42" y1="704" x2="1238" y2="704" stroke="#0f766e" stroke-width="2" stroke-dasharray="8 12"><animate attributeName="stroke-dashoffset" values="0;-120" dur="6s" repeatCount="indefinite"/></line>
+<text x="640" y="728" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="14" fill="#64748b">generated from the profile image using terminal characters</text>
+</svg>
