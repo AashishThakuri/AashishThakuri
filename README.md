@@ -1,17 +1,17 @@
 <p align="center">
-  <img src="./assets/capability-garden.svg" width="100%" alt="KSHAM capability garden for Aashish Thakuri">
+  <img src="./assets/ascii-terminal-portrait.svg" width="72%" alt="Animated terminal character portrait">
 </p>
 
 <p align="center">
-  <strong>My profile begins with verbs.</strong><br>
-  Here is what I can transform.
+  <strong>This is not an embedded picture.</strong><br>
+  Every visible mark is a terminal character.
 </p>
 
 ## KSHAM/1
 
 KSHAM is a small capability language created for this profile. It introduces semantic botany: source code is compiled as a living plant. A capability has an input type, an output type, an outcome, and the tools that make it possible. Capabilities compose with `|>` only when their types match.
 
-The cherry tree is the syntax tree. Its branches are parsed capabilities. Its blossoms come from the `using` declarations. Every continuously falling petal is deterministically generated from the source and its SHA-256 identity.
+The opening portrait is compiled from the supplied monochrome reference into 161 rows of real monospace text. Slow code streams and a decode scan move behind it while the reconstructed subject stays stable.
 
 <img src="./assets/capability-grammar.svg" width="100%" alt="Typed KSHAM capability compositions">
 
