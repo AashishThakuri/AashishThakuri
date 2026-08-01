@@ -598,65 +598,8 @@ def capability_markdown(capability):
 
 
 def render_readme(garden, source):
-    capability_sections = "\n\n".join(
-        capability_markdown(capability) for capability in garden.capabilities
-    )
-    composition_lines = []
-    for composition in garden.compositions:
-        expression = " |> ".join(composition.capabilities)
-        composition_lines.append(f"compose {expression} as \"{composition.label}\"")
-    composition_source = "\n".join(composition_lines)
-    example = garden.capabilities[0]
-    example_tools = ", ".join(f'\"{tool}\"' for tool in example.tools)
-    language_example = (
-        f"capability {example.name}: {example.input_type} -> {example.output_type} {{\n"
-        f"  can \"{example.statement}\"\n"
-        f"  using [{example_tools}]\n"
-        f"}}\n\n"
-        f"{composition_source}"
-    )
-
     return f'''<p align="center">
-  <img src="./assets/ascii-terminal-portrait.svg" width="72%" alt="Animated terminal character portrait">
-</p>
-
-<p align="center">
-  <strong>This is not an embedded picture.</strong><br>
-  Every visible mark is a terminal character.
-</p>
-
-## KSHAM/1
-
-KSHAM is a small capability language created for this profile. It introduces semantic botany: source code is compiled as a living plant. A capability has an input type, an output type, an outcome, and the tools that make it possible. Capabilities compose with `|>` only when their types match.
-
-The opening portrait is compiled from the supplied monochrome reference into 161 rows of real monospace text. Slow code streams and a decode scan move behind it while the reconstructed subject stays stable.
-
-<img src="./assets/capability-grammar.svg" width="100%" alt="Typed KSHAM capability compositions">
-
-## What I Can Do
-
-{capability_sections}
-
-## The Language
-
-```ksham
-{language_example}
-```
-
-The first composition means I can take raw human or camera input, turn it into a signal, reason over it, engineer a complete product, and shape that product into an experience. The second means I can turn a real-world question into a numerical mechanism and then make that mechanism understandable.
-
-## Compile The Profile
-
-```powershell
-python ksham.py check
-python ksham.py build
-python ksham.py test
-```
-
-The human-edited source is [`profile.ksham`](./profile.ksham). The lexer, parser, semantic checker, composition type system, cherry-blossom animation, capability map, and README compiler are implemented in [`ksham.py`](./ksham.py) using only the Python standard library.
-
-<p align="center">
-  <sub>{garden.place} / {garden.vow}</sub>
+  <img src="./assets/ascii-terminal-portrait.svg" width="100%" alt="Animated terminal profile and high-density character portrait for {garden.name}">
 </p>
 '''
 
