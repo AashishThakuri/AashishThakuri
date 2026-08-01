@@ -4,7 +4,6 @@ import argparse
 import base64
 import hashlib
 import html
-import math
 import random
 from pathlib import Path
 
@@ -77,62 +76,6 @@ def portrait_text(rows):
     return "".join(text_rows)
 
 
-def falling_ascii_rope(digest):
-    """Draw a looping terminal-character rope released from the lower hand."""
-
-    rng = random.Random(int(digest[32:48], 16))
-    origin_x = 1024
-    origin_y = 792
-    segment_gap = 13
-    segment_count = 57
-    duration = 12.0
-    rope = []
-
-    for index in range(segment_count):
-        progress = index / (segment_count - 1)
-        base_x = origin_x + math.sin(index * 0.42) * (4 + progress * 8)
-        base_y = origin_y + index * segment_gap
-        reveal = 0.055 + progress * 0.655
-        visible = min(reveal + 0.025, 0.89)
-        sway = 1.8 + progress * 4.2
-        sway_duration = rng.uniform(2.8, 4.8)
-        glyph = "o" if index and index % 11 == 0 else (":" if index % 3 == 1 else "|")
-        rope.append(
-            f'''<text x="{base_x:.2f}" y="{base_y:.2f}" class="rope-glyph" opacity="0">{glyph}
-  <animate attributeName="opacity" values="0;0;0.92;0.92;0"
-    keyTimes="0;{reveal:.4f};{visible:.4f};0.93;1" dur="{duration}s"
-    begin="-3.5s" repeatCount="indefinite"/>
-  <animate attributeName="x"
-    values="{base_x - sway:.2f};{base_x + sway:.2f};{base_x - sway * 0.55:.2f};{base_x - sway:.2f}"
-    dur="{sway_duration:.2f}s" begin="{-rng.uniform(0, sway_duration):.2f}s"
-    repeatCount="indefinite"/>
-  <animate attributeName="y"
-    values="{base_y:.2f};{base_y:.2f};{base_y:.2f};{base_y + 145:.2f}"
-    keyTimes="0;{visible:.4f};0.93;1" dur="{duration}s" begin="-3.5s"
-    repeatCount="indefinite"/>
-</text>'''
-        )
-
-    rope_end_y = origin_y + (segment_count - 1) * segment_gap + 18
-    return f'''<g aria-label="ASCII rope continuously unspooling from the lower hand">
-  <text x="{origin_x}" y="{origin_y - 5}" class="rope-knot">o
-    <animate attributeName="opacity" values="0.65;1;0.72;1;0.65" dur="3.2s" repeatCount="indefinite"/>
-  </text>
-  {''.join(rope)}
-  <text x="{origin_x - 12}" y="{origin_y}" class="rope-weight" opacity="0">[+]
-    <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.04;0.71;0.93;1"
-      dur="{duration}s" begin="-3.5s" repeatCount="indefinite"/>
-    <animate attributeName="y"
-      values="{origin_y:.2f};{origin_y:.2f};{rope_end_y:.2f};{rope_end_y:.2f};{rope_end_y + 165:.2f}"
-      keyTimes="0;0.055;0.71;0.93;1" dur="{duration}s" begin="-3.5s"
-      repeatCount="indefinite"/>
-    <animate attributeName="x"
-      values="{origin_x - 12};{origin_x + 2};{origin_x - 20};{origin_x + 8};{origin_x - 12}"
-      dur="4.1s" repeatCount="indefinite"/>
-  </text>
-</g>'''
-
-
 def profile_source_text():
     lines = [
         ("prompt", 60, 56, "aashish@github:~$ ./profile --from aashishthakuri.com"),
@@ -181,16 +124,13 @@ def render_svg(rows, digest):
     ).decode("ascii")
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{SVG_WIDTH}" height="{SVG_HEIGHT}" viewBox="0 0 {SVG_WIDTH} {SVG_HEIGHT}" role="img" aria-labelledby="title desc" xml:space="preserve">
 <title id="title">Aashish Thakuri terminal profile</title>
-<desc id="desc">A full developer profile beside a living high-density character portrait with an ASCII rope continuously unspooling from its hand.</desc>
+<desc id="desc">A full developer profile beside a living high-density character portrait reconstructed entirely from terminal glyphs.</desc>
 <style>
   @font-face {{ font-family: "Profile Sans"; src: url(data:font/woff2;base64,{inter_data}) format("woff2"); font-weight: 100 900; }}
   @font-face {{ font-family: "Profile Serif"; src: url(data:font/woff2;base64,{playfair_data}) format("woff2"); font-weight: 400 900; }}
   text {{ font-family: "Cascadia Mono", Consolas, "Courier New", monospace; letter-spacing: 0; white-space: pre; }}
   .portrait {{ fill: #f0f0ec; font-size: {PORTRAIT_FONT_SIZE}px; font-weight: 700; }}
   .stream {{ fill: #777772; font-size: 8px; opacity: 0.13; }}
-  .rope-glyph {{ fill: #ffffff; stroke: #000000; stroke-width: 1.2px; paint-order: stroke; font-size: 21px; font-weight: 700; }}
-  .rope-knot {{ fill: #ffffff; stroke: #000000; stroke-width: 1.2px; paint-order: stroke; font-size: 22px; font-weight: 700; }}
-  .rope-weight {{ fill: #ffffff; stroke: #000000; stroke-width: 1.2px; paint-order: stroke; font-size: 20px; font-weight: 700; }}
   .prompt {{ fill: #aaa9a3; font-size: 15px; }}
   .name {{ font-family: "Profile Serif", Georgia, serif; fill: #f5f5f0; font-size: 76px; font-weight: 700; }}
   .role {{ font-family: "Profile Sans", Arial, sans-serif; fill: #deded8; font-size: 17px; font-weight: 700; }}
@@ -218,7 +158,6 @@ def render_svg(rows, digest):
       dur="9s" begin="-2.7s" repeatCount="indefinite"/>
     {portrait_text(rows)}
   </g>
-  {falling_ascii_rope(digest)}
 </g>
 </svg>
 '''
