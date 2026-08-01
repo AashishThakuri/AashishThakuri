@@ -599,7 +599,7 @@ def capability_markdown(capability):
 
 def render_readme(garden, source):
     return f'''<p align="center">
-  <img src="./assets/ascii-terminal-portrait.svg" width="100%" alt="Animated terminal profile and high-density character portrait for {garden.name}">
+  <img src="./assets/ascii-terminal-profile-tall.svg" width="100%" alt="Animated full-height terminal profile and high-density character portrait for {garden.name}">
 </p>
 '''
 
