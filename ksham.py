@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import html
 import json
+import random
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -322,6 +323,8 @@ def svg_text_lines(lines, x, y, line_height, css_class, anchor="start"):
 
 
 def blossom(x, y, scale, color=ROSE_LIGHT):
+    """Draw the small vector blossom used by the capability map."""
+
     petal = "M0,-3 C-10,-16 -7,-29 0,-27 C7,-29 10,-16 0,-3 Z"
     petals = []
     for angle in (0, 72, 144, 216, 288):
@@ -335,116 +338,181 @@ def blossom(x, y, scale, color=ROSE_LIGHT):
     )
 
 
-def falling_petals(garden, digest):
-    palette = [ROSE, ROSE_LIGHT, ROSE_PALE, "#c9798b", "#e2adb7"]
+def terminal_tree_characters(digest):
+    """Build a deterministic cherry tree from terminal characters."""
+
+    columns = 118
+    rows = 35
+    characters = [[" " for _ in range(columns)] for _ in range(rows)]
+    colors = [["" for _ in range(columns)] for _ in range(rows)]
+    priorities = [[-1 for _ in range(columns)] for _ in range(rows)]
+    rng = random.Random(int(digest[:16], 16))
+
+    def put(x, y, character, color, priority):
+        if 0 <= x < columns and 0 <= y < rows and priority >= priorities[y][x]:
+            characters[y][x] = character
+            colors[y][x] = color
+            priorities[y][x] = priority
+
+    def draw_segment(start, end, width=0):
+        x1, y1 = start
+        x2, y2 = end
+        dx = x2 - x1
+        dy = y2 - y1
+        steps = max(abs(dx), abs(dy), 1)
+        if abs(dx) < abs(dy) * 0.4:
+            character = "|"
+        elif abs(dy) < abs(dx) * 0.28:
+            character = "_"
+        elif dx * dy > 0:
+            character = "\\"
+        else:
+            character = "/"
+
+        for step in range(steps + 1):
+            x = round(x1 + dx * step / steps)
+            y = round(y1 + dy * step / steps)
+            put(x, y, character, "bark", 3)
+            for offset in range(1, width + 1):
+                if abs(dy) >= abs(dx):
+                    put(x - offset, y, "#", "bark-shadow", 2)
+                    put(x + offset, y, "#", "bark-light", 2)
+                else:
+                    put(x, y - offset, "=", "bark-shadow", 2)
+                    put(x, y + offset, "_", "bark-light", 2)
+
+    blossom_fields = [
+        (20, 12, 14, 6),
+        (35, 7, 13, 5),
+        (50, 6, 14, 5),
+        (68, 5, 13, 5),
+        (88, 8, 15, 6),
+        (103, 13, 12, 6),
+        (39, 14, 12, 5),
+        (55, 11, 11, 5),
+        (80, 13, 13, 5),
+        (101, 24, 11, 5),
+    ]
+    blossom_characters = ["*", "*", "+", ".", "o", "@"]
+    blossom_colors = ["blossom-pale", "blossom-soft", "blossom-deep"]
+
+    for center_x, center_y, radius_x, radius_y in blossom_fields:
+        for y in range(center_y - radius_y, center_y + radius_y + 1):
+            for x in range(center_x - radius_x, center_x + radius_x + 1):
+                distance = ((x - center_x) / radius_x) ** 2 + (
+                    (y - center_y) / radius_y
+                ) ** 2
+                if distance > 1:
+                    continue
+                density = 0.18 + (1 - distance) * 0.34
+                if rng.random() < density:
+                    character = rng.choice(blossom_characters)
+                    color = rng.choice(blossom_colors)
+                    put(x, y, character, color, 1)
+
+    trunk = [(79, 34), (77, 31), (74, 28), (72, 24), (69, 21), (68, 17), (66, 13), (68, 9)]
+    branches = [
+        (trunk, 2),
+        ([(74, 28), (63, 25), (52, 22), (41, 19), (31, 16), (21, 12)], 1),
+        ([(53, 22), (47, 18), (42, 13), (36, 8)], 0),
+        ([(68, 17), (60, 14), (54, 10), (50, 6)], 0),
+        ([(68, 17), (76, 15), (83, 12), (89, 8)], 0),
+        ([(66, 13), (64, 10), (68, 5)], 0),
+        ([(69, 21), (80, 20), (91, 17), (102, 13)], 0),
+        ([(77, 31), (87, 29), (96, 26), (102, 23)], 0),
+        ([(79, 34), (67, 34), (56, 32)], 0),
+        ([(79, 34), (91, 34), (104, 32)], 0),
+        ([(76, 33), (69, 31), (63, 29)], 0),
+    ]
+    for points, width in branches:
+        for start, end in zip(points, points[1:]):
+            draw_segment(start, end, width)
+
+    for center_x, center_y, _radius_x, _radius_y in blossom_fields:
+        put(center_x, center_y, "@", "blossom-pale", 4)
+        put(center_x - 1, center_y, "*", "blossom-soft", 4)
+        put(center_x + 1, center_y, "*", "blossom-soft", 4)
+
+    runs = []
+    x_start = 48
+    y_start = 54
+    character_width = 11.1
+    line_height = 18.2
+    for row in range(rows):
+        column = 0
+        while column < columns:
+            if characters[row][column] == " ":
+                column += 1
+                continue
+            color = colors[row][column]
+            start = column
+            text = []
+            while column < columns and colors[row][column] == color and characters[row][column] != " ":
+                text.append(characters[row][column])
+                column += 1
+            x = x_start + start * character_width
+            y = y_start + row * line_height
+            runs.append(
+                f'<text x="{x:.1f}" y="{y:.1f}" class="ascii {color}">{esc("".join(text))}</text>'
+            )
+    return "\n".join(runs)
+
+
+def terminal_falling_petals(digest):
+    """Create continuously moving ASCII petals with staggered start times."""
+
+    rng = random.Random(int(digest[16:32], 16))
     petals = []
-    index = 0
-    for capability_index, capability in enumerate(garden.capabilities):
-        for tool in capability.tools:
-            for copy_index in range(2):
-                seed = hashlib.sha256(
-                    f"{digest}:{capability.name}:{tool}:{copy_index}".encode("utf-8")
-                ).digest()
-                x = 20 + int.from_bytes(seed[0:2], "big") % 1360
-                drift = -140 + int.from_bytes(seed[2:4], "big") % 281
-                bend = -80 + int.from_bytes(seed[4:6], "big") % 161
-                duration = 14 + (seed[6] % 12)
-                begin = -(seed[7] % duration)
-                rotation = 240 + int.from_bytes(seed[8:10], "big") % 540
-                scale = 0.42 + (seed[10] % 60) / 100
-                color = palette[(capability_index + copy_index) % len(palette)]
-                petal_shape = (
-                    "M0,15 C-7,10 -13,2 -9,-5 C-6,-11 -1,-9 0,-4 "
-                    "C1,-9 6,-11 9,-5 C13,2 7,10 0,15 Z"
-                )
-                petals.append(
-                    f'''<g transform="translate({x} 0)">
-  <g>
-    <animateTransform attributeName="transform" type="translate"
-      values="0 -90; {bend} 330; {drift} 810" dur="{duration}s"
-      begin="{begin}s" repeatCount="indefinite" calcMode="spline"
-      keyTimes="0;0.52;1" keySplines="0.35 0 0.65 1;0.35 0 0.65 1"/>
-    <g transform="scale({scale:.2f})">
-      <path d="{petal_shape}" fill="{color}" opacity="0.82">
-        <animateTransform attributeName="transform" type="rotate"
-          values="0; {rotation // 2}; {rotation}" dur="{duration}s"
-          begin="{begin}s" repeatCount="indefinite"/>
-      </path>
-    </g>
-  </g>
-</g>'''
-                )
-                index += 1
+    characters = ["*", "+", ".", "`", "'"]
+    colors = ["#ead0d4", "#d6a0ab", "#b86f82"]
+    for index in range(54):
+        start_x = rng.randint(25, 1375)
+        end_x = max(15, min(1385, start_x + rng.randint(-250, 170)))
+        control_x_1 = max(15, min(1385, start_x + rng.randint(-130, 130)))
+        control_x_2 = max(15, min(1385, end_x + rng.randint(-150, 150)))
+        duration = rng.randint(10, 22)
+        begin = -rng.randint(0, duration)
+        font_size = rng.randint(13, 23)
+        character = characters[index % len(characters)]
+        color = colors[index % len(colors)]
+        petals.append(
+            f'''<text class="falling" font-size="{font_size}" fill="{color}">{esc(character)}
+  <animateMotion path="M {start_x} -28 C {control_x_1} 210, {control_x_2} 500, {end_x} 760"
+    dur="{duration}s" begin="{begin}s" repeatCount="indefinite" rotate="auto"/>
+</text>'''
+        )
     return "\n".join(petals)
 
 
 def render_garden(garden, digest):
-    capability_names = [capability.name.upper() for capability in garden.capabilities]
-    left_names = capability_names[:3]
-    right_names = capability_names[3:]
-
-    branch_points = [
-        (1015, 185, 0.78),
-        (1190, 245, 0.60),
-        (940, 345, 0.67),
-        (1235, 430, 0.82),
-        (995, 535, 0.58),
-        (1260, 600, 0.68),
-    ]
-    blossoms = "".join(
-        blossom(x, y, scale, ROSE_LIGHT if i % 2 == 0 else ROSE_PALE)
-        for i, (x, y, scale) in enumerate(branch_points)
+    tree = terminal_tree_characters(digest)
+    petals = terminal_falling_petals(digest)
+    scanlines = "".join(
+        f'<line x1="22" y1="{y}" x2="1378" y2="{y}"/>' for y in range(36, 706, 20)
     )
 
-    ability_rows = []
-    for index, capability in enumerate(garden.capabilities):
-        x = 72 if index < 3 else 390
-        y = 430 + (index % 3) * 58
-        ability_rows.append(
-            f'<text x="{x}" y="{y}" class="ability">{esc(capability.name.upper())}</text>'
-            f'<text x="{x + 118}" y="{y}" class="type">'
-            f'{esc(capability.input_type)} -> {esc(capability.output_type)}</text>'
-        )
-
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
-<title id="title">KSHAM capability garden for {esc(garden.name)}</title>
-<desc id="desc">A code-generated cherry blossom garden with continuously falling petals and six typed capabilities.</desc>
+<title id="title">Animated terminal cherry blossom tree</title>
+<desc id="desc">A cherry blossom tree drawn entirely with terminal characters while ASCII petals fall continuously.</desc>
 <style>
-  .sans {{ font-family: Inter, "Segoe UI", Arial, sans-serif; letter-spacing: 0; }}
-  .serif {{ font-family: Georgia, "Times New Roman", serif; letter-spacing: 0; }}
-  .mono {{ font-family: Consolas, "Courier New", monospace; letter-spacing: 0; }}
-  .ability {{ font: 700 19px Inter, "Segoe UI", Arial, sans-serif; fill: {INK}; letter-spacing: 0; }}
-  .type {{ font: 15px Consolas, "Courier New", monospace; fill: {INK_SOFT}; letter-spacing: 0; }}
+  .ascii, .falling {{ font-family: "Cascadia Mono", Consolas, "Courier New", monospace; font-weight: 700; letter-spacing: 0; }}
+  .ascii {{ font-size: 18px; }}
+  .bark {{ fill: #9b8172; }}
+  .bark-light {{ fill: #b19a8d; }}
+  .bark-shadow {{ fill: #65544d; }}
+  .blossom-pale {{ fill: #ead0d4; }}
+  .blossom-soft {{ fill: #d6a0ab; }}
+  .blossom-deep {{ fill: #a85f73; }}
+  .falling {{ opacity: 0.9; }}
 </style>
-<rect width="1400" height="720" fill="{PAPER}"/>
-<path d="M0 83 H1400 M0 681 H1400" stroke="{PAPER_DEEP}" stroke-width="2"/>
-<text x="58" y="51" class="mono" font-size="15" fill="{ROSE}">KSHAM/1 :: CAPABILITY GARDEN</text>
-<text x="1342" y="51" class="mono" font-size="14" text-anchor="end" fill="{INK_SOFT}">{esc(digest[:16])}</text>
-
-<g fill="none" stroke="{BRANCH}" stroke-linecap="round">
-  <path d="M1415 742 C1270 675 1185 620 1110 520 C1030 415 1080 302 985 178" stroke-width="18"/>
-  <path d="M1180 620 C1115 570 1065 555 995 535" stroke-width="9"/>
-  <path d="M1122 527 C1200 510 1230 475 1235 430" stroke-width="8"/>
-  <path d="M1074 426 C1000 405 960 382 940 345" stroke-width="7"/>
-  <path d="M1062 328 C1130 310 1175 280 1190 245" stroke-width="6"/>
-  <path d="M1006 238 C1030 220 1025 198 1015 185" stroke-width="5"/>
+<rect width="1400" height="720" fill="#080a0a"/>
+<rect x="18" y="18" width="1364" height="684" rx="4" fill="#101312" stroke="#3b3634" stroke-width="2"/>
+<g stroke="#d9d1c5" stroke-width="1" opacity="0.035">{scanlines}</g>
+<g aria-label="ASCII cherry blossom tree">
+{tree}
 </g>
-<g fill="none" stroke="{MOSS}" stroke-width="3">
-  <path d="M1175 619 C1135 600 1115 580 1098 548"/>
-  <path d="M1119 526 C1160 500 1192 472 1208 438"/>
-  <path d="M1076 426 C1034 397 990 370 951 350"/>
-</g>
-{blossoms}
-
-<text x="58" y="158" class="serif" font-size="74" fill="{INK}">{esc(garden.name)}</text>
-<text x="61" y="204" class="sans" font-size="20" fill="{INK_SOFT}">{esc(garden.role)}</text>
-{svg_text_lines(split_lines(garden.vow, 48), 61, 278, 39, "serif")}
-<line x1="61" y1="382" x2="690" y2="382" stroke="{ROSE}" stroke-width="4"/>
-{''.join(ability_rows)}
-<text x="61" y="655" class="mono" font-size="14" fill="{INK_SOFT}">{esc(garden.place)} / COMPILED FROM profile.ksham</text>
-
-<g aria-label="continuously falling capability petals">
-{falling_petals(garden, digest)}
+<g aria-label="continuously falling ASCII petals">
+{petals}
 </g>
 </svg>
 '''
