@@ -1,158 +1,116 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Aashish Thakuri Header" />
+<img src="assets/header.svg" width="100%" alt="Aashish Thakuri animated command center header">
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="400" alt="coding animation"/>
-</p>
+<pre>
++------------------------------------------------------------------------------+
+|                                                                              |
+|     A A S H I S H   T H A K U R I                                           |
+|                                                                              |
+|     full-stack developer        ai curious builder        nepal based         |
+|                                                                              |
+|     code is not decoration. it is a working machine with a pulse.             |
+|                                                                              |
++------------------------------------------------------------------------------+
+</pre>
 
-### Hi, I'm Aashish Thakuri
+![Profile views](https://komarev.com/ghpvc/?username=AashishThakuri&style=for-the-badge&color=0f766e)
+![GitHub followers](https://img.shields.io/github/followers/AashishThakuri?style=for-the-badge&color=1d4ed8&labelColor=020617)
+![Focus](https://img.shields.io/badge/focus-full_stack_%2B_ai_systems-7c3aed?style=for-the-badge&labelColor=020617)
 
-*"I believe great software isn't just about solving problems, it's about creating experiences that feel like magic while remaining invisible in their complexity."*
-
-I'm a passionate Full-Stack Developer from Nepal who loves to play with AI tools and is eager to learn theoretically about artificial intelligence. I enjoy coding, writing, and turning complex problems into elegant solutions that make technology feel effortless.
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" style="padding: 10px;">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">
-          <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0A66C2" alt="LinkedIn" height="35"/>
-        </a>
-      </td>
-      <td align="center" style="padding: 10px;">
-        <a href="https://twitter.com/yourhandle" target="_blank">
-          <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white&labelColor=1DA1F2" alt="Twitter" height="35"/>
-        </a>
-      </td>
-      <td align="center" style="padding: 10px;">
-        <a href="mailto:your.email@example.com">
-          <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=EA4335" alt="Gmail" height="35"/>
-        </a>
-      </td>
-      <td align="center" style="padding: 10px;">
-        <a href="https://github.com/AashishThakuri" target="_blank">
-          <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white&labelColor=181717" alt="GitHub" height="35"/>
-        </a>
-      </td>
-    </tr>
-  </table>
 </div>
 
----
+## Signal
 
-### Tech Stack
+```text
+input  : messy idea, half-built repo, impossible deadline
+process: understand -> design -> code -> debug -> explain
+output : clean system, working demo, readable story
+```
+
+I am Aashish Thakuri, a developer from Nepal who likes building systems that feel alive but stay understandable. I work around full-stack development, Python, JavaScript, AI tools, data projects, and visual explanations that make hard topics less painful to defend.
+
+## Control Room
+
+| Channel | Current Frequency |
+|---|---|
+| Main stack | Python, JavaScript, React, FastAPI, MySQL |
+| Strong interest | AI systems, data modelling, developer tools |
+| Recent work | SEIR RK4 COVID-19 simulation for Nepal |
+| Build style | Practical first, visual second, explanation always |
+| Operating mode | Learn fast, ship clean, make it defendable |
+
+## Featured Experiment
 
 <div align="center">
-<table align="center" style="border:3px solid #30363d;border-radius:12px;background:#0d1117;padding:8px">
+
+<img src="assets/footer.svg" width="100%" alt="Animated project signal line">
+
+</div>
+
+```text
+project : Nepal COVID-19 SEIR RK4 Model
+method  : 10 fitted beta segments per wave
+solver  : fourth-order Runge-Kutta
+result  : model curve, beta table, reduction scenarios, teaching simulator
+repo    : github.com/AashishThakuri/Covid-19-SEIR-Model
+```
+
+The project turns COVID-19 time-series data into a two-wave SEIR simulation. Instead of using one beta for the whole wave, each wave is divided into 10 date segments and one beta value is fitted for each segment. RK4 then moves the model forward one day at a time.
+
+[Open The SEIR RK4 Repository](https://github.com/AashishThakuri/Covid-19-SEIR-Model)
+
+## Toolkit
+
+<table align="center">
   <tr>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" />
-      </a>
-      <br>Python
-    </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="65" height="65" />
-      </a>
-      <br>JavaScript
-    </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="65" height="65" />
-      </a>
-      <br>AWS
-    </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
-      </a>
-      <br>Docker
-    </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="Kubernetes" width="65" height="65" />
-      </a>
-      <br>Kubernetes
-    </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
-      </a>
-      <br>GitHub
-    </td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=python" width="48" alt="Python"><br>Python</td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=js" width="48" alt="JavaScript"><br>JavaScript</td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=react" width="48" alt="React"><br>React</td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=fastapi" width="48" alt="FastAPI"><br>FastAPI</td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=mysql" width="48" alt="MySQL"><br>MySQL</td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=git" width="48" alt="Git"><br>Git</td>
   </tr>
   <tr>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="65" height="65" />
-      </a>
-      <br>React
-    </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="RestAPI" width="65" height="65" />
-      </a>
-      <br>REST API
-    </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="Nginx" width="65" height="65" />
-      </a>
-      <br>Nginx
-    </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" width="65" height="65" />
-      </a>
-      <br>MySQL
-    </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" width="65" height="65" />
-      </a>
-      <br>TypeScript
-    </td>
-    <td align="center" width="96">
-      <a href="javascript:void(0)">
-        <img src="https://techstack-generator.vercel.app/swift-icon.svg" alt="Swift" width="65" height="65" />
-      </a>
-      <br>Swift
-    </td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=docker" width="48" alt="Docker"><br>Docker</td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=linux" width="48" alt="Linux"><br>Linux</td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=html" width="48" alt="HTML"><br>HTML</td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=css" width="48" alt="CSS"><br>CSS</td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=vite" width="48" alt="Vite"><br>Vite</td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=github" width="48" alt="GitHub"><br>GitHub</td>
   </tr>
- </table>
-</div>
+</table>
 
----
+## Build Philosophy
 
-### Interactive Code Matrix
+```text
+01. Start with the real problem.
+02. Make the system work before making it loud.
+03. Make the explanation as strong as the code.
+04. Treat every graph, README, and demo as part of the product.
+05. Leave the next person less confused than before.
+```
 
-<div align="center">
-
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=CFA98E&background=0D1117&center=true&vCenter=true&width=600&height=100&lines=Full-Stack+Developer;Problem+Solver;Code+Architect;Innovation+Driver" alt="Typing Animation"/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&bg_color=0d1117&color=CFA98E&line=E6B59A&point=F1D3BF&area=true&hide_border=true&custom_title=Code%20Matrix%20Activity" alt="Code Matrix"/>
-
-</div>
-
-### Dynamic Developer Metrics
+## Live Panels
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AashishThakuri&theme=github_dark" alt="Profile Details"/>
+<img src="https://github-readme-stats.vercel.app/api?username=AashishThakuri&show_icons=true&hide_border=true&theme=tokyonight&rank_icon=github" width="49%" alt="GitHub stats">
+<img src="https://github-readme-streak-stats.herokuapp.com?user=AashishThakuri&theme=tokyonight&hide_border=true" width="49%" alt="GitHub streak">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AashishThakuri&theme=github_dark" alt="Repos per Language"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AashishThakuri&theme=github_dark" alt="Most Commit Language"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AashishThakuri&theme=github_dark" alt="Stats"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=AashishThakuri&theme=github_dark&utcOffset=5.75" alt="Productive Time"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AashishThakuri&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Signal" width="100%" alt="Contribution graph">
 
 </div>
 
----
+## Contact
 
+<div align="center">
 
-<img src="assets/footer.svg" width="100%" alt="Footer" />
+[![GitHub](https://img.shields.io/badge/GitHub-AashishThakuri-181717?style=for-the-badge&logo=github)](https://github.com/AashishThakuri)
+[![SEIR RK4 Project](https://img.shields.io/badge/Project-SEIR_RK4_Model-0f766e?style=for-the-badge&logo=github)](https://github.com/AashishThakuri/Covid-19-SEIR-Model)
 
 </div>
+
+<pre align="center">
+              system status: still learning, still building, still restless enough to improve
+</pre>
