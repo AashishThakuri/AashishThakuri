@@ -1,75 +1,51 @@
-# Aashish Thakuri
+<p align="center">
+  <img src="./assets/signal-room.svg" width="100%" alt="Aashish Thakuri Signal Room: motion, trust, and ideas becoming responsive software systems">
+</p>
 
-**I build systems that respond.**
+I build software that turns difficult inputs into clear responses. Pick a signal below and follow it to the code.
 
-I am a full-stack developer from Nepal. My work moves between product engineering, applied AI, computer vision, data, and interactive software.
-
-The common thread is simple: I want the person using the system to feel the mechanism, not fight it.
-
----
-
-## Pick A Door
+## Enter The Signal Room
 
 <details>
-<summary><strong>01 / MOVE</strong> &nbsp; Make a screen obey your hands.</summary>
+<summary><strong>01 / MOTION TO RESPONSE</strong></summary>
 
-### Hand Gesture Live Visuals
+### [Hand Gesture Live Visuals](https://github.com/AashishThakuri/hand-gesture-live-visuals)
 
-A real-time visual instrument where hand movement controls twelve OpenCV effects. The camera is the input device and motion becomes the interface.
+Twelve real-time visual effects controlled through hand movement. The camera becomes the input device.
 
-`Python` `OpenCV` `MediaPipe` `real-time interaction`
-
-**[Open the project](https://github.com/AashishThakuri/hand-gesture-live-visuals)**
+`Python` `OpenCV` `MediaPipe`
 
 </details>
 
 <details>
-<summary><strong>02 / TRUST</strong> &nbsp; Decide how much proof a user needs.</summary>
+<summary><strong>02 / SIGNALS TO TRUST</strong></summary>
 
-### RiskLock
+### [RiskLock](https://github.com/AashishThakuri/EsewaHackathon_TeamLyrical_ChallengeSix_Submission)
 
-An adaptive account-recovery flow that reads device and behavior signals, evaluates risk, and opens only the verification steps required for that session.
+Adaptive account recovery that turns device and behavior signals into the right verification path.
 
-`Python` `FastAPI` `React` `MySQL` `applied AI`
-
-**[Open the project](https://github.com/AashishThakuri/EsewaHackathon_TeamLyrical_ChallengeSix_Submission)**
+`FastAPI` `React` `MySQL` `Applied AI`
 
 </details>
 
 <details>
-<summary><strong>03 / EXPLORE</strong> &nbsp; Turn a product page into a place.</summary>
+<summary><strong>03 / IDEA TO SYSTEM</strong></summary>
 
-### 3D Interactive Watch Vault
+I build complete products across interface, API, data, and interaction. The stack changes; the rule does not: make the mechanism understandable and the experience simple.
 
-A browser experience built around interaction, motion, and three-dimensional product presentation.
-
-`JavaScript` `3D web` `interaction design`
-
-**[Open the project](https://github.com/AashishThakuri/3D---Interactive-Watch-Vault-)**
+`Python` `JavaScript` `TypeScript` `React` `FastAPI` `Computer Vision` `Data`
 
 </details>
 
----
-
-## Current Direction
-
-- Building complete products, from interface to API to database.
-- Exploring computer vision as a natural input method.
-- Putting AI inside useful workflows instead of treating it as decoration.
-- Making technical work understandable without making it shallow.
-
-## Working Language
-
-`Python` `JavaScript` `TypeScript` `React` `FastAPI` `MySQL` `OpenCV` `MediaPipe` `NumPy` `Pandas`
-
-> Based in Nepal. Curious everywhere.
+<p align="center">
+  <sub>Kathmandu, Nepal / building for anywhere</sub>
+</p>
 
 <!--
-DOOR 00 / SOURCE
+You found the quiet channel.
 
-You opened the README instead of only looking at it.
-That is exactly how I like to understand systems too.
+The visible interface is only the surface.
+The source is where the decisions live.
 
-The rest of the workshop:
 https://github.com/AashishThakuri?tab=repositories&type=source
 -->
