@@ -1,6 +1,7 @@
 """Compile a reference image into a text-only animated SVG portrait."""
 
 import argparse
+import base64
 import hashlib
 import html
 import random
@@ -10,13 +11,14 @@ from PIL import Image, ImageEnhance, ImageOps
 
 
 CHARACTERS = "  .`',:;i1tfLCG08@"
-SVG_WIDTH = 1400
-SVG_HEIGHT = 1500
-PORTRAIT_LEFT = 536
+ROOT = Path(__file__).resolve().parent
+SVG_WIDTH = 1600
+SVG_HEIGHT = 1650
+PORTRAIT_LEFT = 710
 PORTRAIT_TOP = 18
-PORTRAIT_WIDTH = 846
-PORTRAIT_COLUMNS = 214
-PORTRAIT_ROWS = 340
+PORTRAIT_WIDTH = 870
+PORTRAIT_COLUMNS = 220
+PORTRAIT_ROWS = 370
 PORTRAIT_FONT_SIZE = 4.55
 PORTRAIT_LINE_HEIGHT = 4.32
 
@@ -53,7 +55,7 @@ def background_streams(digest):
         symbol = symbols[index % len(symbols)]
         streams.append(
             f'''<text x="{x}" y="-30" class="stream">{html.escape(symbol)}
-  <animate attributeName="y" values="-30;1530" dur="{duration}s"
+  <animate attributeName="y" values="-30;1680" dur="{duration}s"
     begin="{begin}s" repeatCount="indefinite"/>
 </text>'''
         )
@@ -62,42 +64,36 @@ def background_streams(digest):
 
 def profile_source_text():
     lines = [
-        ("prompt", 54, 52, "aashish@github:~$ ./identity --verbose"),
-        ("name", 54, 124, "AASHISH"),
-        ("name", 54, 184, "THAKURI"),
-        ("role", 57, 226, "FULL-STACK ENGINEER / APPLIED AI BUILDER"),
-        ("muted", 57, 256, "KATHMANDU, NEPAL  ::  UTC+05:45"),
-        ("rule", 54, 316, "01  CAPABILITIES {"),
-        ("code", 76, 354, 'product     : "interface -> api -> database";'),
-        ("code", 76, 389, 'vision      : "camera -> gesture -> interaction";'),
-        ("code", 76, 424, 'intelligence: "signal -> model -> decision";'),
-        ("code", 76, 459, 'simulation  : "question -> numerical system";'),
-        ("code", 76, 494, 'explanation : "complexity -> visible mechanism";'),
-        ("rule", 54, 529, "}"),
-        ("rule", 54, 589, "02  SYSTEMS I BUILD {"),
-        ("code", 76, 627, 'web_product : "interface + api + database";'),
-        ("code", 76, 662, 'ai_workflow : "model inside useful process";'),
-        ("code", 76, 697, 'live_vision : "camera + hand + movement";'),
-        ("code", 76, 732, 'data_model  : "measure + simulate + explain";'),
-        ("rule", 54, 767, "}"),
-        ("rule", 54, 827, "03  STACK [ACTIVE] {"),
-        ("code", 76, 865, "PYTHON      TYPESCRIPT    REACT"),
-        ("code", 76, 900, "FASTAPI     MYSQL         OPENCV"),
-        ("code", 76, 935, "MEDIAPIPE   NUMPY         PANDAS"),
-        ("code", 76, 970, "THREE.JS    GSAP          CSS"),
-        ("rule", 54, 1005, "}"),
-        ("rule", 54, 1065, "04  METHOD {"),
-        ("code", 76, 1103, "observe     -> understand;"),
-        ("code", 76, 1138, "design      -> build;"),
-        ("code", 76, 1173, "test        -> debug;"),
-        ("code", 76, 1208, "explain     -> ship;"),
-        ("rule", 54, 1243, "}"),
-        ("rule", 54, 1303, "05  CURRENT DIRECTION {"),
-        ("code", 76, 1341, 'focus: "responsive, adaptive, explainable systems";'),
-        ("code", 76, 1376, 'rule : "hide complexity from the user, not the code";'),
-        ("rule", 54, 1411, "}"),
-        ("prompt", 54, 1450, "aashish@github:~$ transform --input idea"),
-        ("output", 54, 1477, "> WORKING SYSTEM / CLEAR INTERFACE / EXPLAINABLE CORE"),
+        ("prompt", 60, 56, "aashish@github:~$ ./profile --from aashishthakuri.com"),
+        ("name", 60, 145, "Aashish"),
+        ("name", 60, 228, "Thakuri"),
+        ("role", 64, 276, "DATA SCIENCE STUDENT / PRODUCT BUILDER"),
+        ("muted", 64, 308, "KATHMANDU UNIVERSITY  ::  NEPAL  ::  UTC+05:45"),
+        ("section", 60, 378, "01 / About me"),
+        ("about", 64, 425, "I turn ideas into fast, accessible web interfaces"),
+        ("about", 64, 455, "and reliable data applications."),
+        ("about", 64, 500, "I care about performance, thoughtful micro-interactions,"),
+        ("about", 64, 530, "and products that feel precise without feeling complicated."),
+        ("section", 60, 610, "02 / Skills"),
+        ("skill", 64, 660, "WEB      HTML / CSS / JAVASCRIPT / REACT / TAILWIND"),
+        ("skill", 64, 700, "DATA     PYTHON / SQL / SUPABASE"),
+        ("skill", 64, 740, "SYSTEMS  NODE.JS / VERCEL / AI"),
+        ("section", 60, 825, "03 / What I think"),
+        ("about", 64, 872, "Artificial Intelligence is more than technology to me."),
+        ("about", 64, 902, "It is a way to reimagine how we interact with the world."),
+        ("about", 64, 947, "I like challenges where design and engineering meet,"),
+        ("about", 64, 977, "and where difficult mechanisms become understandable."),
+        ("section", 60, 1062, "04 / Exploring now"),
+        ("skill", 64, 1112, "GENERATIVE UI / RAG PATTERNS / LIGHTWEIGHT MLOPS"),
+        ("about", 64, 1154, "The goal is to deploy intelligent systems responsibly."),
+        ("section", 60, 1239, "05 / Beyond code"),
+        ("about", 64, 1286, "Music and writing keep me creative."),
+        ("about", 64, 1316, "I am always learning, testing, and refining."),
+        ("section", 60, 1401, "06 / Principle"),
+        ("quote", 64, 1455, "Remember, every model is a human opinion"),
+        ("quote", 64, 1490, "embedded in mathematics."),
+        ("prompt", 60, 1574, "aashish@github:~$ open --portfolio"),
+        ("output", 60, 1612, "https://www.aashishthakuri.com/"),
     ]
     return "\n".join(
         f'<text x="{x}" y="{y}" class="{css_class}">{html.escape(text)}</text>'
@@ -106,6 +102,12 @@ def profile_source_text():
 
 
 def render_svg(rows, digest):
+    inter_data = base64.b64encode(
+        (ROOT / "assets" / "fonts" / "inter-latin.woff2").read_bytes()
+    ).decode("ascii")
+    playfair_data = base64.b64encode(
+        (ROOT / "assets" / "fonts" / "playfair-display-latin.woff2").read_bytes()
+    ).decode("ascii")
     text_rows = []
     for index, row in enumerate(rows):
         y = PORTRAIT_TOP + PORTRAIT_FONT_SIZE + index * PORTRAIT_LINE_HEIGHT
@@ -118,33 +120,38 @@ def render_svg(rows, digest):
 <title id="title">Aashish Thakuri terminal profile</title>
 <desc id="desc">A full developer profile in terminal syntax beside a supplied portrait reconstructed entirely from high-density monospace characters.</desc>
 <style>
+  @font-face {{ font-family: "Profile Sans"; src: url(data:font/woff2;base64,{inter_data}) format("woff2"); font-weight: 100 900; }}
+  @font-face {{ font-family: "Profile Serif"; src: url(data:font/woff2;base64,{playfair_data}) format("woff2"); font-weight: 400 900; }}
   text {{ font-family: "Cascadia Mono", Consolas, "Courier New", monospace; letter-spacing: 0; white-space: pre; }}
   .portrait {{ fill: #f0f0ec; font-size: {PORTRAIT_FONT_SIZE}px; font-weight: 700; }}
   .stream {{ fill: #777772; font-size: 8px; opacity: 0.13; }}
-  .prompt {{ fill: #c4c4be; font-size: 15px; }}
-  .name {{ fill: #f5f5f0; font-size: 56px; font-weight: 700; }}
-  .role {{ fill: #deded8; font-size: 15px; font-weight: 700; }}
-  .muted {{ fill: #777772; font-size: 12px; }}
-  .rule {{ fill: #b0b0aa; font-size: 14px; font-weight: 700; }}
-  .code {{ fill: #d0d0ca; font-size: 13px; }}
-  .output {{ fill: #eeeeea; font-size: 13px; font-weight: 700; }}
+  .prompt {{ fill: #aaa9a3; font-size: 15px; }}
+  .name {{ font-family: "Profile Serif", Georgia, serif; fill: #f5f5f0; font-size: 76px; font-weight: 700; }}
+  .role {{ font-family: "Profile Sans", Arial, sans-serif; fill: #deded8; font-size: 17px; font-weight: 700; }}
+  .muted {{ fill: #777772; font-size: 13px; }}
+  .section {{ font-family: "Profile Serif", Georgia, serif; fill: #f0f0eb; font-size: 28px; font-weight: 700; }}
+  .about {{ font-family: "Profile Sans", Arial, sans-serif; fill: #d5d5cf; font-size: 18px; font-weight: 450; }}
+  .skill {{ font-family: "Profile Sans", Arial, sans-serif; fill: #e7e7e1; font-size: 17px; font-weight: 650; }}
+  .quote {{ font-family: "Profile Serif", Georgia, serif; fill: #ededE7; font-size: 24px; font-style: italic; }}
+  .output {{ font-family: "Profile Sans", Arial, sans-serif; fill: #eeeeea; font-size: 18px; font-weight: 700; }}
 </style>
-<rect width="1400" height="1500" fill="#000000"/>
-<rect x="18" y="18" width="1364" height="1464" fill="none" stroke="#30302e" stroke-width="1"/>
+<rect width="1600" height="1650" fill="#000000"/>
+<rect x="18" y="18" width="1564" height="1614" fill="none" stroke="#30302e" stroke-width="1"/>
 <g aria-label="slow falling code behind the portrait">
 {background_streams(digest)}
 </g>
-<line x1="518" y1="42" x2="518" y2="1458" stroke="#343432" stroke-width="1"/>
+<line x1="680" y1="42" x2="680" y2="1608" stroke="#343432" stroke-width="1"/>
 <g aria-label="profile identity and capabilities written as terminal source">
 {profile_source_text()}
 </g>
 <g aria-label="portrait reconstructed from terminal characters">
 {''.join(text_rows)}
 </g>
-<line x1="20" y1="0" x2="1380" y2="0" stroke="#ffffff" stroke-width="1" opacity="0.16">
-  <animate attributeName="y1" values="0;1500" dur="16s" repeatCount="indefinite"/>
-  <animate attributeName="y2" values="0;1500" dur="16s" repeatCount="indefinite"/>
-</line>
+<g aria-label="decode scan moving from top to bottom">
+  <line x1="20" y1="0" x2="1580" y2="0" stroke="#ffffff" stroke-width="2" opacity="0.42"/>
+  <line x1="20" y1="-8" x2="1580" y2="-8" stroke="#ffffff" stroke-width="1" opacity="0.12"/>
+  <animateTransform attributeName="transform" type="translate" values="0 -10;0 1660" dur="11s" repeatCount="indefinite"/>
+</g>
 </svg>
 '''
 
