@@ -1,36 +1,43 @@
 <p align="center">
-  <img src="./assets/rk4-four-futures.svg" width="100%" alt="Four animated SEIR futures solved with RK4">
+  <img src="./assets/aashish-signal.gif" width="100%" alt="Aashish Thakuri, developer from Nepal, illustrated as a manga risograph print">
 </p>
 
-The population on the left automatically switches between four transmission scenarios. The graph keeps all four futures visible so the effect of reducing beta can be compared directly.
+<h2 align="center">I build things that reveal how they work.</h2>
 
-<details>
-<summary><strong>This is calculated, not decorative</strong></summary>
+<p align="center">
+  Full-stack developer from Nepal working across software, AI, data, and visual systems.<br>
+  I like ambitious ideas, visible mechanisms, and products that are easier to use than they were to build.
+</p>
 
-The visual begins from one population of 1,000 people with the same initial S, E, I, and R values. Python creates four copies, applies a different beta to each copy, and advances every model for 60 days with the fourth-order Runge-Kutta method.
+## What I Build
 
-The generated SVG contains the actual compartment values and infection curves. It animates by itself inside GitHub without JavaScript, a server, a database, an external image service, or GitHub Actions. [Read the generator](./profile_lab.py).
+**Products with a complete spine**<br>
+Interfaces, APIs, databases, and the decisions that connect them into one working system.
 
-</details>
+**Machines that can see and respond**<br>
+Computer-vision experiments where movement, cameras, and real-time feedback become the interface.
 
-## Aashish Thakuri
+**AI that earns its place**<br>
+Applied models inside real workflows, with the surrounding product logic doing as much work as the model.
 
-I build software that can be tested, inspected, and explained. My work moves between full-stack systems, data, numerical modelling, computer vision, and applied AI.
+**Technical ideas made visible**<br>
+Data, simulations, and interactive explanations that let people inspect the mechanism instead of trusting a black box.
 
-## Selected work
+## Selected Builds
 
-**[Covid-19-SEIR-Model](https://github.com/AashishThakuri/Covid-19-SEIR-Model)**
+### [Hand Gesture Live Visuals](https://github.com/AashishThakuri/hand-gesture-live-visuals)
+A live visual instrument controlled by hand movement, built with Python, OpenCV, and MediaPipe.
 
-Two Nepal COVID-19 waves solved with RK4, ten fitted transmission segments per wave, validation against Johns Hopkins data, and intervention scenarios.
+### [RiskLock](https://github.com/AashishThakuri/EsewaHackathon_TeamLyrical_ChallengeSix_Submission)
+An adaptive account-recovery system combining a full-stack product flow with AI-assisted risk decisions.
 
-**[Hand Gesture Live Visuals](https://github.com/AashishThakuri/hand-gesture-live-visuals)**
+### [3D Interactive Watch Vault](https://github.com/AashishThakuri/3D---Interactive-Watch-Vault-)
+A browser-based product experience exploring interaction, motion, and three-dimensional presentation.
 
-A real-time OpenCV instrument with twelve visual effects controlled through MediaPipe hand tracking.
+## Working Language
 
-**[RiskLock](https://github.com/AashishThakuri/EsewaHackathon_TeamLyrical_ChallengeSix_Submission)**
+`Python` `JavaScript` `TypeScript` `React` `FastAPI` `MySQL` `OpenCV` `MediaPipe` `NumPy` `Pandas`
 
-Adaptive account recovery using device and behavior signals, Qwen3 with LoRA, FastAPI, React, Vite, and MySQL.
-
-## Working set
-
-`Python` `JavaScript` `TypeScript` `React` `FastAPI` `MySQL` `OpenCV` `MediaPipe` `NumPy` `Pandas` `SciPy`
+<p align="center">
+  <sub>Made in Nepal. Built for anywhere.</sub>
+</p>
