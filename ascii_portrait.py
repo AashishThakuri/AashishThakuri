@@ -4,6 +4,7 @@ import argparse
 import base64
 import hashlib
 import html
+import json
 import random
 from pathlib import Path
 
@@ -12,13 +13,17 @@ from PIL import Image, ImageEnhance, ImageOps
 
 CHARACTERS = "  .`',:;i1tfLCG08@"
 ROOT = Path(__file__).resolve().parent
-SVG_WIDTH = 1900
-SVG_HEIGHT = 2150
-PORTRAIT_LEFT = 820
+# Official brand paths from Simple Icons 16.27.1 (CC0-1.0).
+SKILL_ICON_PATHS = json.loads(
+    (ROOT / "assets" / "skill-icons.json").read_text(encoding="utf-8-sig")
+)
+SVG_WIDTH = 2000
+SVG_HEIGHT = 2320
+PORTRAIT_LEFT = 750
 PORTRAIT_TOP = 18
-PORTRAIT_WIDTH = 1060
-PORTRAIT_COLUMNS = 260
-PORTRAIT_ROWS = 485
+PORTRAIT_WIDTH = 1230
+PORTRAIT_COLUMNS = 300
+PORTRAIT_ROWS = 525
 PORTRAIT_FONT_SIZE = 4.45
 PORTRAIT_LINE_HEIGHT = 4.36
 
@@ -76,46 +81,105 @@ def portrait_text(rows):
     return "".join(text_rows)
 
 
+def portrait_echo_definitions():
+    """Create narrow portrait windows used for smooth terminal displacement."""
+
+    widths = [96, 128, 82, 142, 104, 154, 90, 136, 110]
+    starts = [770, 888, 1038, 1156, 1320, 1448, 1624, 1740, 1880]
+    return "\n".join(
+        f'<clipPath id="portrait-slice-{index}"><rect x="{x}" y="18" '
+        f'width="{width}" height="{SVG_HEIGHT - 36}"/></clipPath>'
+        for index, (x, width) in enumerate(zip(starts, widths))
+    )
+
+
+def portrait_echoes():
+    """Animate displaced portrait slices without flashes or scan lines."""
+
+    echoes = []
+    for index in range(9):
+        direction = 1 if index % 2 == 0 else -1
+        distance = 8 + (index % 4) * 3
+        lift = 2 + index % 3
+        duration = 6.4 + index * 0.71
+        begin = -(index * 1.13)
+        echoes.append(
+            f'''<g clip-path="url(#portrait-slice-{index})" opacity="0.24">
+  <use href="#portrait-source">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0;{direction * distance} {-lift};0 {lift};{-direction * distance * 0.55:.2f} 0;0 0"
+      dur="{duration:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>
+  </use>
+</g>'''
+        )
+    return "\n".join(echoes)
+
+
 def animated_skill_icons(digest):
-    """Render a monochrome terminal icon grid with staggered motion."""
+    """Render recognizable technology marks with staggered kinetic motion."""
 
     rng = random.Random(int(digest[16:32], 16))
     skills = [
-        ("HTML", "</>"),
-        ("CSS", "{ }"),
-        ("JAVASCRIPT", "JS"),
-        ("REACT", "(*)"),
-        ("PYTHON", "Py"),
-        ("SQL", "[=]"),
-        ("TAILWIND", "~~"),
-        ("SUPABASE", "//"),
-        ("NODE", "N"),
-        ("AI", "o-o"),
+        ("HTML5", "html5"),
+        ("CSS", "css"),
+        ("JAVASCRIPT", "javascript"),
+        ("TYPESCRIPT", "typescript"),
+        ("REACT", "react"),
+        ("PYTHON", "python"),
+        ("NODE.JS", "nodedotjs"),
+        ("FASTAPI", "fastapi"),
+        ("MYSQL", "mysql"),
+        ("SUPABASE", "supabase"),
+        ("TAILWIND", "tailwindcss"),
+        ("VERCEL", "vercel"),
+        ("OPENCV", "opencv"),
+        ("NUMPY", "numpy"),
+        ("PANDAS", "pandas"),
+        ("GIT", "git"),
+        ("GITHUB", "github"),
+        ("DOCKER", "docker"),
     ]
     icons = []
 
-    for index, (label, mark) in enumerate(skills):
+    for index, (label, slug) in enumerate(skills):
         column = index % 5
         row = index // 5
-        x = 68 + column * 140
-        y = 800 + row * 148
-        duration = rng.uniform(4.8, 7.5)
+        x = 50 + column * 136
+        y = 825 + row * 144
+        duration = rng.uniform(3.8, 6.4)
         begin = -rng.uniform(0, duration)
+        orbit_direction = 360 if index % 2 == 0 else -360
+        icon_path = SKILL_ICON_PATHS[slug]
         icons.append(
             f'''<g transform="translate({x} {y})" aria-label="{label} skill icon">
   <g>
-    <rect x="0" y="0" width="118" height="118" rx="3" class="skill-frame"
-      stroke-dasharray="13 8">
-      <animate attributeName="stroke-dashoffset" values="0;-42" dur="{duration:.2f}s"
+    <rect x="0" y="0" width="122" height="122" rx="3" class="skill-frame"
+      stroke-dasharray="11 7">
+      <animate attributeName="stroke-dashoffset" values="0;-54" dur="{duration:.2f}s"
         begin="{begin:.2f}s" repeatCount="indefinite"/>
     </rect>
-    <text x="59" y="54" text-anchor="middle" class="skill-mark">{html.escape(mark)}</text>
-    <line x1="18" y1="72" x2="100" y2="72" class="skill-rule"/>
-    <text x="59" y="98" text-anchor="middle" class="skill-label">{label}</text>
+    <g>
+      <g transform="translate(40.5 15) scale(1.7)">
+        <path d="{icon_path}" class="brand-path"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="-5 61 36;6 61 36;-3 61 36;4 61 36;-5 61 36"
+        dur="{duration * 0.86:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.62;1;0.78;1;0.62"
+        dur="{duration * 0.72:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle cx="61" cy="8" r="2.7" class="icon-orbit-dot"/>
+      <animateTransform attributeName="transform" type="rotate"
+        values="0 61 41;{orbit_direction} 61 41" dur="{duration * 0.92:.2f}s"
+        begin="{begin:.2f}s" repeatCount="indefinite"/>
+    </g>
+    <line x1="17" y1="78" x2="105" y2="78" class="skill-rule"/>
+    <text x="61" y="104" text-anchor="middle" class="skill-label">{label}</text>
     <animateTransform attributeName="transform" type="translate"
-      values="0 0;0 -6;0 0;0 3;0 0" dur="{duration:.2f}s"
+      values="0 0;0 -9;4 -2;0 4;-3 -1;0 0" dur="{duration:.2f}s"
       begin="{begin:.2f}s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.76;1;0.88;1;0.76"
+    <animate attributeName="opacity" values="0.68;1;0.82;1;0.68"
       dur="{duration * 1.16:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>
   </g>
 </g>'''
@@ -130,27 +194,28 @@ def portrait_particles(digest):
     rng = random.Random(int(digest[32:48], 16))
     symbols = ["0", "1", "{", "}", "/", ";", "+", "<", ">", "::"]
     regions = [
-        (930, 210, 1320, 620),
-        (1030, 590, 1610, 1030),
-        (1390, 330, 1790, 900),
+        (820, 170, 1380, 660),
+        (900, 540, 1740, 1120),
+        (1350, 260, 1950, 980),
+        (850, 1160, 1900, 2140),
     ]
     particles = []
 
-    for index in range(34):
+    for index in range(82):
         left, top, right, bottom = regions[index % len(regions)]
         x = rng.randint(left, right)
         y = rng.randint(top, bottom)
         dx = rng.randint(-90, 110)
         dy = rng.randint(150, 390)
         bend = rng.randint(-90, 90)
-        duration = rng.uniform(7.0, 15.0)
+        duration = rng.uniform(4.5, 10.5)
         begin = -rng.uniform(0, duration)
         symbol = symbols[index % len(symbols)]
         particles.append(
             f'''<text x="{x}" y="{y}" class="portrait-particle" opacity="0">{html.escape(symbol)}
   <animateMotion path="M 0 0 C {bend} {dy * 0.32:.1f}, {dx - bend} {dy * 0.68:.1f}, {dx} {dy}"
     dur="{duration:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0;0.48;0.24;0"
+  <animate attributeName="opacity" values="0;0.82;0.44;0"
     keyTimes="0;0.18;0.76;1" dur="{duration:.2f}s" begin="{begin:.2f}s"
     repeatCount="indefinite"/>
 </text>'''
@@ -161,34 +226,33 @@ def portrait_particles(digest):
 
 def profile_source_text():
     lines = [
-        ("prompt", 68, 66, "aashish@github:~$ ./profile --from aashishthakuri.com"),
-        ("name", 68, 164, "Aashish"),
-        ("name", 68, 258, "Thakuri"),
-        ("role", 72, 316, "DATA SCIENCE STUDENT / PRODUCT BUILDER"),
-        ("muted", 72, 352, "KATHMANDU UNIVERSITY  ::  NEPAL  ::  UTC+05:45"),
-        ("section", 68, 430, "01 / About me"),
-        ("about", 72, 482, "I see every interface as a piece of art with a purpose."),
-        ("about", 72, 520, "I love turning symbols, stories, and ideas into visual language,"),
-        ("about", 72, 558, "then building them into websites people can feel and understand."),
-        ("about", 72, 610, "For me, design is never decoration."),
-        ("about", 72, 648, "Every line, movement, and interaction should symbolize something"),
-        ("about", 72, 686, "and make the experience more human, memorable, and meaningful."),
-        ("section", 68, 758, "02 / Languages and tools"),
-        ("section", 68, 1152, "03 / What I think"),
-        ("about", 72, 1204, "Technology should not flatten creativity; it should give ideas form."),
-        ("about", 72, 1242, "I build to make difficult systems visible, intuitive, and expressive."),
-        ("about", 72, 1294, "I want every interaction to carry intention, not just function."),
-        ("section", 68, 1380, "04 / Exploring now"),
-        ("skill", 72, 1434, "GENERATIVE UI / RAG PATTERNS / LIGHTWEIGHT MLOPS"),
-        ("about", 72, 1478, "I am exploring how intelligent systems can become useful creative material."),
-        ("section", 68, 1570, "05 / Beyond code"),
-        ("about", 72, 1622, "Music and writing keep my imagination moving."),
-        ("about", 72, 1660, "I am always observing, learning, testing, and refining."),
-        ("section", 68, 1752, "06 / Principle"),
-        ("quote", 72, 1812, "Every interface can carry a symbol."),
-        ("quote", 72, 1854, "Every interaction can tell part of the story."),
-        ("prompt", 68, 2048, "aashish@github:~$ open --portfolio"),
-        ("output", 68, 2094, "https://www.aashishthakuri.com/"),
+        ("name", 52, 132, "Aashish"),
+        ("name", 52, 236, "Thakuri"),
+        ("role", 56, 304, "DATA SCIENCE STUDENT"),
+        ("tagline", 56, 362, 'I WRITE CODE BECAUSE "LOOKED GREAT IN MY HEAD"'),
+        ("tagline", 56, 400, "IS STILL NOT A DEPLOYMENT STRATEGY."),
+        ("muted", 56, 446, "KATHMANDU UNIVERSITY  ::  NEPAL"),
+        ("section", 52, 522, "01 / About me"),
+        ("about", 56, 574, "I see every interface as a piece of art with a purpose."),
+        ("about", 56, 612, "I turn symbols, stories, and ideas into visual language,"),
+        ("about", 56, 650, "then build them into websites people can feel and understand."),
+        ("about", 56, 702, "Design is not decoration to me."),
+        ("about", 56, 740, "Every line, movement, and interaction should mean something."),
+        ("section", 52, 802, "02 / Languages and tools"),
+        ("section", 52, 1460, "03 / What I think"),
+        ("about", 56, 1512, "Technology should not flatten creativity;"),
+        ("about", 56, 1550, "it should give ideas form."),
+        ("about", 56, 1602, "I build to make difficult systems visible,"),
+        ("about", 56, 1640, "intuitive, expressive, and easier to understand."),
+        ("about", 56, 1692, "Every interaction should carry intention, not just function."),
+        ("section", 52, 1770, "04 / Beyond code"),
+        ("about", 56, 1822, "Music and writing keep my imagination moving."),
+        ("about", 56, 1860, "I am always observing, learning, testing, and refining."),
+        ("section", 52, 1950, "05 / Principle"),
+        ("quote", 56, 2010, "Every interface can carry a symbol."),
+        ("quote", 56, 2052, "Every interaction can tell part of the story."),
+        ("prompt", 52, 2200, "aashish@github:~$ open --portfolio"),
+        ("output", 52, 2248, "https://www.aashishthakuri.com/"),
     ]
     return "\n".join(
         f'<text x="{x}" y="{y}" class="{css_class}">{html.escape(text)}</text>'
@@ -207,6 +271,10 @@ def render_svg(rows, digest):
 <title id="title">Aashish Thakuri terminal profile</title>
 <desc id="desc">An expanded developer profile with animated skill symbols beside a living high-density character portrait reconstructed entirely from terminal glyphs.</desc>
 <defs>
+  <g id="portrait-source">
+    {portrait_text(rows)}
+  </g>
+  {portrait_echo_definitions()}
   <linearGradient id="portrait-sheen" gradientUnits="userSpaceOnUse"
     x1="{PORTRAIT_LEFT - 430}" y1="0" x2="{PORTRAIT_LEFT - 40}" y2="0">
     <stop offset="0" stop-color="#000000"/>
@@ -228,27 +296,28 @@ def render_svg(rows, digest):
   text {{ font-family: "Cascadia Mono", Consolas, "Courier New", monospace; letter-spacing: 0; white-space: pre; }}
   .portrait {{ fill: #f0f0ec; font-size: {PORTRAIT_FONT_SIZE}px; font-weight: 700; }}
   .stream {{ fill: #777772; font-size: 9px; opacity: 0.13; }}
-  .portrait-particle {{ fill: #f2f2ed; font-size: 11px; font-weight: 700; }}
+  .portrait-particle {{ fill: #f2f2ed; font-size: 16px; font-weight: 700; }}
   .prompt {{ fill: #aaa9a3; font-size: 17px; }}
-  .name {{ font-family: "Profile Serif", Georgia, serif; fill: #f5f5f0; font-size: 92px; font-weight: 700; }}
-  .role {{ font-family: "Profile Sans", Arial, sans-serif; fill: #deded8; font-size: 20px; font-weight: 700; }}
-  .muted {{ fill: #777772; font-size: 14px; }}
+  .name {{ font-family: "Profile Serif", Georgia, serif; fill: #f5f5f0; font-size: 106px; font-weight: 700; }}
+  .role {{ font-family: "Profile Sans", Arial, sans-serif; fill: #f0f0eb; font-size: 30px; font-weight: 800; }}
+  .tagline {{ font-family: "Profile Sans", Arial, sans-serif; fill: #d8d8d2; font-size: 22px; font-weight: 750; }}
+  .muted {{ fill: #777772; font-size: 15px; }}
   .section {{ font-family: "Profile Serif", Georgia, serif; fill: #f0f0eb; font-size: 32px; font-weight: 700; }}
-  .about {{ font-family: "Profile Sans", Arial, sans-serif; fill: #d5d5cf; font-size: 20px; font-weight: 450; }}
-  .skill {{ font-family: "Profile Sans", Arial, sans-serif; fill: #e7e7e1; font-size: 19px; font-weight: 650; }}
+  .about {{ font-family: "Profile Sans", Arial, sans-serif; fill: #d5d5cf; font-size: 19px; font-weight: 450; }}
   .quote {{ font-family: "Profile Serif", Georgia, serif; fill: #edede7; font-size: 28px; font-style: italic; }}
   .output {{ font-family: "Profile Sans", Arial, sans-serif; fill: #eeeeea; font-size: 21px; font-weight: 700; }}
   .skill-frame {{ fill: #050505; stroke: #5f5f5a; stroke-width: 1.5; }}
   .skill-rule {{ stroke: #4a4a46; stroke-width: 1; }}
-  .skill-mark {{ fill: #f3f3ee; font-size: 27px; font-weight: 700; }}
-  .skill-label {{ font-family: "Profile Sans", Arial, sans-serif; fill: #cfcfc9; font-size: 13px; font-weight: 700; }}
+  .brand-path {{ fill: #f3f3ee; }}
+  .icon-orbit-dot {{ fill: #ffffff; }}
+  .skill-label {{ font-family: "Profile Sans", Arial, sans-serif; fill: #cfcfc9; font-size: 12px; font-weight: 750; }}
 </style>
 <rect width="{SVG_WIDTH}" height="{SVG_HEIGHT}" fill="#000000"/>
 <rect x="18" y="18" width="{SVG_WIDTH - 36}" height="{SVG_HEIGHT - 36}" fill="none" stroke="#30302e" stroke-width="1"/>
 <g aria-label="slow falling code behind the portrait">
 {background_streams(digest)}
 </g>
-<line x1="790" y1="48" x2="790" y2="2102" stroke="#343432" stroke-width="1"/>
+<line x1="730" y1="48" x2="730" y2="2272" stroke="#343432" stroke-width="1"/>
 <g aria-label="profile identity and capabilities written as terminal source">
 {profile_source_text()}
 {animated_skill_icons(digest)}
@@ -256,12 +325,18 @@ def render_svg(rows, digest):
 <g aria-label="portrait reconstructed from terminal characters">
   <g aria-label="the complete character portrait breathing as one continuous field">
     <animateTransform attributeName="transform" type="translate"
-      values="0 0;2.8 -3.0;0 0;-2.0 1.8;0 0" dur="14s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.965;1;0.982;1;0.965"
-      dur="9s" begin="-2.7s" repeatCount="indefinite"/>
-    {portrait_text(rows)}
-    <g mask="url(#portrait-sheen-mask)" opacity="0.34" aria-label="soft character light moving through the portrait">
-      {portrait_text(rows)}
+      values="0 0;10 -7;2 3;-8 5;0 0" dur="14s" repeatCount="indefinite"/>
+    <g aria-label="portrait rotating almost imperceptibly around its center">
+      <animateTransform attributeName="transform" type="rotate"
+        values="-0.28 1365 1160;0.34 1365 1160;-0.2 1365 1160;-0.28 1365 1160"
+        dur="13s" begin="-4.2s" repeatCount="indefinite"/>
+      <use href="#portrait-source"/>
+      <g mask="url(#portrait-sheen-mask)" opacity="0.38" aria-label="soft character light moving through the portrait">
+        <use href="#portrait-source"/>
+      </g>
+      <g aria-label="smoothly displaced terminal slices moving through the portrait">
+        {portrait_echoes()}
+      </g>
     </g>
   </g>
   <g aria-label="terminal fragments moving around the living portrait">
