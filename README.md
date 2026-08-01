@@ -1,53 +1,70 @@
 <p align="center">
-  <img src="./assets/aashish.biform.png" width="100%" alt="BIFORM identity artifact for Aashish Thakuri">
+  <img src="./assets/capability-garden.svg" width="100%" alt="KSHAM capability garden for Aashish Thakuri">
 </p>
 
 <p align="center">
-  <strong>This is not only a picture.</strong><br>
-  The file above is simultaneously a GitHub-renderable PNG and an inspectable source archive.
+  <strong>My profile begins with verbs.</strong><br>
+  Here is what I can transform.
 </p>
 
-<p align="center">
-  <a href="https://raw.githubusercontent.com/AashishThakuri/AashishThakuri/main/assets/aashish.biform.png">Download the artifact</a>
-  &nbsp;/&nbsp;
-  <a href="./identity.biform">Read the identity source</a>
-  &nbsp;/&nbsp;
-  <a href="./assets/biform-manifest.json">Verify the payload</a>
-</p>
+## KSHAM/1
 
-## BIFORM
+KSHAM is a small capability language created for this profile. It introduces semantic botany: source code is compiled as a living plant. A capability has an input type, an output type, an outcome, and the tools that make it possible. Capabilities compose with `|>` only when their types match.
 
-Most profile images hide how they were made. This one carries its construction inside itself. Rename `aashish.biform.png` to `aashish.biform.zip` and open it. The archive contains the identity source, compiler, visual sources, generated profile, and a SHA-256 proof manifest.
+The cherry tree is the syntax tree. Its branches are parsed capabilities. Its blossoms come from the `using` declarations. Every continuously falling petal is deterministically generated from the source and its SHA-256 identity.
 
-The image is the interface. The archive is the implementation. They are the same bytes.
+<img src="./assets/capability-grammar.svg" width="100%" alt="Typed KSHAM capability compositions">
 
-<img src="./assets/biform-principle.png" width="100%" alt="How the BIFORM profile artifact works">
+## What I Can Do
 
-## Selected Experiments
+**PERCEIVE**<br>
+I can make cameras, gestures, and movement become useful input.<br>
+`Python` `OpenCV` `MediaPipe` `real-time vision`
 
-<a href="https://github.com/AashishThakuri/hand-gesture-live-visuals">
-  <img src="./assets/exhibits/01-motion.png" width="100%" alt="Movement becomes input.">
-</a>
-<a href="https://github.com/AashishThakuri/EsewaHackathon_TeamLyrical_ChallengeSix_Submission">
-  <img src="./assets/exhibits/02-trust.png" width="100%" alt="Risk changes the path.">
-</a>
-<a href="https://github.com/AashishThakuri/3D---Interactive-Watch-Vault-">
-  <img src="./assets/exhibits/03-space.png" width="100%" alt="A product becomes a place.">
-</a>
-<a href="https://github.com/AashishThakuri/Streaming_Website_Resonance">
-  <img src="./assets/exhibits/04-story.png" width="100%" alt="The interface holds a mood.">
-</a>
+**REASON**<br>
+I can turn noisy data and behavior into adaptive decisions.<br>
+`NumPy` `Pandas` `Qwen` `LoRA`
 
-## Open The Other Reading
+**ENGINEER**<br>
+I can build complete products from interface to API to database.<br>
+`React` `TypeScript` `FastAPI` `MySQL`
 
-```powershell
-Copy-Item assets/aashish.biform.png aashish.biform.zip
-Expand-Archive aashish.biform.zip biform-profile
-python biform-profile/biform.py verify --artifact aashish.biform.zip
+**SHAPE**<br>
+I can create spatial, cinematic, and responsive digital experiences.<br>
+`Three.js` `React Three Fiber` `GSAP` `CSS`
+
+**SIMULATE**<br>
+I can translate real-world change into equations and numerical simulations.<br>
+`SciPy` `RK4` `SEIR` `Matplotlib`
+
+**EXPLAIN**<br>
+I can make difficult systems visible without making them shallow.<br>
+`visualization` `documentation` `teaching` `storytelling`
+
+## The Language
+
+```ksham
+capability perceive: raw -> signal {
+  can "make cameras, gestures, and movement become useful input"
+  using ["Python", "OpenCV", "MediaPipe", "real-time vision"]
+}
+
+compose perceive |> reason |> engineer |> shape as "responsive products"
+compose simulate |> explain as "understandable models"
 ```
 
-`identity.biform` is the single human-edited source. `biform.py build` compiles the cover, project plates, README, manifest, and dual-valid artifact deterministically.
+The first composition means I can take raw human or camera input, turn it into a signal, reason over it, engineer a complete product, and shape that product into an experience. The second means I can turn a real-world question into a numerical mechanism and then make that mechanism understandable.
+
+## Compile The Profile
+
+```powershell
+python ksham.py check
+python ksham.py build
+python ksham.py test
+```
+
+The human-edited source is [`profile.ksham`](./profile.ksham). The lexer, parser, semantic checker, composition type system, cherry-blossom animation, capability map, and README compiler are implemented in [`ksham.py`](./ksham.py) using only the Python standard library.
 
 <p align="center">
-  <sub>Kathmandu, Nepal / I build the mechanism, then make it visible.</sub>
+  <sub>Kathmandu, Nepal / I turn raw reality into systems people can see, use, and understand.</sub>
 </p>

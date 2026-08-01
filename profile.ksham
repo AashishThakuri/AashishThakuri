@@ -1,0 +1,41 @@
+ksham 1
+
+garden Aashish {
+  name "Aashish Thakuri"
+  place "Kathmandu, Nepal"
+  role "Full-stack engineer, applied AI builder, and visual systems experimenter"
+  vow "I turn raw reality into systems people can see, use, and understand."
+
+  capability perceive: raw -> signal {
+    can "make cameras, gestures, and movement become useful input"
+    using ["Python", "OpenCV", "MediaPipe", "real-time vision"]
+  }
+
+  capability reason: signal -> decision {
+    can "turn noisy data and behavior into adaptive decisions"
+    using ["NumPy", "Pandas", "Qwen", "LoRA"]
+  }
+
+  capability engineer: decision -> product {
+    can "build complete products from interface to API to database"
+    using ["React", "TypeScript", "FastAPI", "MySQL"]
+  }
+
+  capability shape: product -> experience {
+    can "create spatial, cinematic, and responsive digital experiences"
+    using ["Three.js", "React Three Fiber", "GSAP", "CSS"]
+  }
+
+  capability simulate: question -> mechanism {
+    can "translate real-world change into equations and numerical simulations"
+    using ["SciPy", "RK4", "SEIR", "Matplotlib"]
+  }
+
+  capability explain: mechanism -> clarity {
+    can "make difficult systems visible without making them shallow"
+    using ["visualization", "documentation", "teaching", "storytelling"]
+  }
+
+  compose perceive |> reason |> engineer |> shape as "responsive products"
+  compose simulate |> explain as "understandable models"
+}
